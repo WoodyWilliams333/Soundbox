@@ -1,0 +1,507 @@
+<!-- HTML header for doxygen 1.8.6-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<title>MDP820: desfire.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="styleSheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<script type="text/javascript" src="version.js"></script>
+<script type="text/javascript" src="language.js"></script>
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="MDP820.jpg"/></td>
+  <td width="100%" style="padding-left: 0.5em;">
+   <div id="projectname" style="display:table-cell;vertical-align:middle;text-align:center">MDP820
+		<span id="projectnumber">
+			<select>
+				<option value ="8.2.3">8.2.3</option>
+			</select>
+		</span>
+   </div>
+   <div id="projectbrief">MDP820-API</div>
+  </td>
+  <td>
+    <span id="projectlang" style="margin-right: 1em;">
+		<select>
+			<!-- <option value ="ch">中文</option> -->
+			<!-- <option value ="en">English</option> -->
+		</select>
+	</span>
+   </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('desfire_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">desfire.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="desfire_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * desfire.h</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> *  Created on: Oct 14, 2010</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> *      Author: neal</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#ifndef DESFIRE_H_</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#define DESFIRE_H_</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#define DESFireErr  &quot;Just to show the table above.&quot;</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#ga2d1f5d3856481c1e2ae052807e0f5b7a">desfire_poll</a>(<span class="keywordtype">int</span> fd,uint8_t mode,<span class="keywordtype">void</span> *uid, uint8_t *atslen, <span class="keywordtype">void</span> *ats);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#gad7f87b7bae28d51540d6bddf8c16e2e8">desfire_deactive</a>(<span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#gae3dfeaa74d1420aef2be147858a0e8cc">desfire_authenticate</a>(<span class="keywordtype">int</span> fd,uint8_t keyno, <span class="keyword">const</span> <span class="keywordtype">void</span> *key);</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#ga80c143026c57e162bb10c29b639efe9a">desfire_authenticate_iso</a>(<span class="keywordtype">int</span> fd,uint8_t keyno, <span class="keyword">const</span> <span class="keywordtype">void</span> *key);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#gab8a8b7d7ac538bcbae3b3d351ede0d40">desfire_authenticate_aes</a>(<span class="keywordtype">int</span> fd,uint8_t keyno, <span class="keyword">const</span> <span class="keywordtype">void</span> *key);</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#ga87ce4937822a8a0913dc03e796f146fb">desfire_change_key_settings</a>(<span class="keywordtype">int</span> fd,uint8_t key_setting);</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160; </div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#ga78508b5e6d1d80c956e3e0ac5fbe31ab">desfire_get_key_settings</a>(<span class="keywordtype">int</span> fd,uint8_t *key_setting, uint8_t *max_key_num);</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160; </div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#ga3f8997aa500616507238008dc777f9c0">desfire_change_picc_masterkey</a>(<span class="keywordtype">int</span> fd,uint8_t type, <span class="keyword">const</span> <span class="keywordtype">void</span> *key,uint8_t version);</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160; </div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#ga22b4d8a26e369a33be7caf2884e92144">desfire_change_app_key</a>(<span class="keywordtype">int</span> fd,</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;                                 uint8_t keysetting,</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;                                 uint8_t type, </div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;                                 uint8_t keyno, </div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;                                 <span class="keyword">const</span> <span class="keywordtype">void</span> *oldkey,</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;                                 <span class="keyword">const</span> <span class="keywordtype">void</span> *newkey, </div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;                                 uint8_t version);</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#ga9919612d6f03e3dd8cf101711c84a2b8">desfire_get_key_version</a>(<span class="keywordtype">int</span> fd,uint8_t keyno,uint8_t *version);</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160; </div>
+<div class="line"><a name="l00505"></a><span class="lineno"><a class="line" href="structdesfire__appinfo.html">  505</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;{</div>
+<div class="line"><a name="l00507"></a><span class="lineno"><a class="line" href="structdesfire__appinfo.html#a5f6d7855a03905876c52e83feacf0e78">  507</a></span>&#160;    uint8_t AID[3];             </div>
+<div class="line"><a name="l00508"></a><span class="lineno"><a class="line" href="structdesfire__appinfo.html#ab8564e09b4c1b940b4f32293b9c6ba72">  508</a></span>&#160;    uint8_t <a class="code" href="structdesfire__appinfo.html#ab8564e09b4c1b940b4f32293b9c6ba72">MasterKeySetting</a>;   </div>
+<div class="line"><a name="l00509"></a><span class="lineno"><a class="line" href="structdesfire__appinfo.html#a9d550f1434f87ff59bdd93df25711eb9">  509</a></span>&#160;    uint8_t <a class="code" href="structdesfire__appinfo.html#a9d550f1434f87ff59bdd93df25711eb9">NumberOfKey</a>;        </div>
+<div class="line"><a name="l00510"></a><span class="lineno"><a class="line" href="structdesfire__appinfo.html#af2f319589e40521f4e2329c82c2679a4">  510</a></span>&#160;    uint8_t <a class="code" href="structdesfire__appinfo.html#af2f319589e40521f4e2329c82c2679a4">CryptoMode</a>;         </div>
+<div class="line"><a name="l00511"></a><span class="lineno"><a class="line" href="structdesfire__appinfo.html#a8ba6fb5f401b54e6cf7cbf85e4df28ce">  511</a></span>&#160;    uint8_t <a class="code" href="structdesfire__appinfo.html#a8ba6fb5f401b54e6cf7cbf85e4df28ce">IsSupFID</a>;           </div>
+<div class="line"><a name="l00512"></a><span class="lineno"><a class="line" href="structdesfire__appinfo.html#aa1a3ca28d58fe3c6b02025caffcdd04f">  512</a></span>&#160;    uint8_t <a class="code" href="structdesfire__appinfo.html#aa1a3ca28d58fe3c6b02025caffcdd04f">IsSupISOFID</a>;        </div>
+<div class="line"><a name="l00513"></a><span class="lineno"><a class="line" href="structdesfire__appinfo.html#aabb665371eeadb572495525650f4d1f0">  513</a></span>&#160;    uint8_t ISOFID[2];          </div>
+<div class="line"><a name="l00514"></a><span class="lineno"><a class="line" href="structdesfire__appinfo.html#a158b77832e0916d9bee7df264a587d14">  514</a></span>&#160;    uint8_t <a class="code" href="structdesfire__appinfo.html#a158b77832e0916d9bee7df264a587d14">LenOfDFName</a>;        </div>
+<div class="line"><a name="l00515"></a><span class="lineno"><a class="line" href="structdesfire__appinfo.html#abb0b4fc3ba501923cd1da4ab05a16454">  515</a></span>&#160;    uint8_t DFName[16];         </div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;    uint8_t RFU;</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;}<a class="code" href="structdesfire__appinfo.html">desfire_appinfo</a>;</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160; </div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#ga2e6de82a2677dce6d9c90319730fcce4">desfire_create_application</a>(<span class="keywordtype">int</span> fd,<span class="keyword">const</span> <a class="code" href="structdesfire__appinfo.html">desfire_appinfo</a> *info);</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160; </div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#ga49d6ba10f7c274ef4bed7e69b8074418">desfire_delete_application</a>(<span class="keywordtype">int</span> fd,<span class="keyword">const</span> <span class="keywordtype">void</span> *aid);</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160; </div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#ga94495f4de8f424f372c18384a29186bc">desfire_get_application_ids</a>(<span class="keywordtype">int</span> fd,uint8_t *num, <span class="keywordtype">void</span> *aid);</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160; </div>
+<div class="line"><a name="l00627"></a><span class="lineno"><a class="line" href="structdfname__info.html">  627</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;{</div>
+<div class="line"><a name="l00629"></a><span class="lineno"><a class="line" href="structdfname__info.html#ac6a12b769b67549b48a2c3073e2ecf55">  629</a></span>&#160;    uint8_t AID[3];         </div>
+<div class="line"><a name="l00630"></a><span class="lineno"><a class="line" href="structdfname__info.html#a4288e47960474f5bb8aabbf22a482ff3">  630</a></span>&#160;    uint8_t FID[2];         </div>
+<div class="line"><a name="l00631"></a><span class="lineno"><a class="line" href="structdfname__info.html#ad92b35880258c9521b81a259f49a9098">  631</a></span>&#160;    uint8_t <a class="code" href="structdfname__info.html#ad92b35880258c9521b81a259f49a9098">LenOfDFName</a>;    </div>
+<div class="line"><a name="l00632"></a><span class="lineno"><a class="line" href="structdfname__info.html#a7cfa8b2b5c8969aad36331a2c43e738b">  632</a></span>&#160;    uint8_t DFName[16];     </div>
+<div class="line"><a name="l00633"></a><span class="lineno"><a class="line" href="structdfname__info.html#ad60699be579baf876a5184bf1d5c7972">  633</a></span>&#160;    uint8_t RFU[2];         </div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;}<a class="code" href="structdfname__info.html">dfname_info</a>;</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160; </div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#ga3355f56e0a0d293e19e3ba7301122a70">desfire_get_dfnames</a>(<span class="keywordtype">int</span> fd,uint8_t *appnum,<a class="code" href="structdfname__info.html">dfname_info</a> *info);</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160; </div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#gab59b67dc6801545e8d4536ef0c2b77f3">desfire_select_application</a>(<span class="keywordtype">int</span> fd,<span class="keyword">const</span> <span class="keywordtype">void</span> *aid);</div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160; </div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#ga3ac6cdf99bd8c96c02ff5b6baabba52c">desfire_format_picc</a>(<span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160; </div>
+<div class="line"><a name="l00742"></a><span class="lineno"><a class="line" href="structdesfire__version.html">  742</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct  </span></div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;{</div>
+<div class="line"><a name="l00744"></a><span class="lineno"><a class="line" href="structdesfire__version.html#ab00805674c9a40b7096af47720412e27">  744</a></span>&#160;    uint8_t <a class="code" href="structdesfire__version.html#ab00805674c9a40b7096af47720412e27">HW_VendorID</a>;    </div>
+<div class="line"><a name="l00745"></a><span class="lineno"><a class="line" href="structdesfire__version.html#afbdc7bfd08cca41d704f8d1e4e07bffc">  745</a></span>&#160;    uint8_t <a class="code" href="structdesfire__version.html#afbdc7bfd08cca41d704f8d1e4e07bffc">HW_Type</a>;        </div>
+<div class="line"><a name="l00746"></a><span class="lineno"><a class="line" href="structdesfire__version.html#a33e42ee0474c4232589cc8a2a1da3c3f">  746</a></span>&#160;    uint8_t <a class="code" href="structdesfire__version.html#a33e42ee0474c4232589cc8a2a1da3c3f">HW_SubType</a>;     </div>
+<div class="line"><a name="l00747"></a><span class="lineno"><a class="line" href="structdesfire__version.html#a11f92b7b39541581ac4c1ae8d1b41c73">  747</a></span>&#160;    uint8_t <a class="code" href="structdesfire__version.html#a11f92b7b39541581ac4c1ae8d1b41c73">HW_MajorVer</a>;    </div>
+<div class="line"><a name="l00748"></a><span class="lineno"><a class="line" href="structdesfire__version.html#a475827b93e5040a5250cf793bc1e4f03">  748</a></span>&#160;    uint8_t <a class="code" href="structdesfire__version.html#a475827b93e5040a5250cf793bc1e4f03">HW_MinorVer</a>;    </div>
+<div class="line"><a name="l00749"></a><span class="lineno"><a class="line" href="structdesfire__version.html#a183077beb6d1141c38ac4aef9cfbb686">  749</a></span>&#160;    uint8_t <a class="code" href="structdesfire__version.html#a183077beb6d1141c38ac4aef9cfbb686">HW_Size</a>;        </div>
+<div class="line"><a name="l00750"></a><span class="lineno"><a class="line" href="structdesfire__version.html#a553eb8ad16de5b96a0bb5103d58ade26">  750</a></span>&#160;    uint8_t <a class="code" href="structdesfire__version.html#a553eb8ad16de5b96a0bb5103d58ade26">HW_Protocol</a>;    </div>
+<div class="line"><a name="l00752"></a><span class="lineno"><a class="line" href="structdesfire__version.html#a582cff3752ab3a7d3f1b1444f3540e01">  752</a></span>&#160;    uint8_t <a class="code" href="structdesfire__version.html#a582cff3752ab3a7d3f1b1444f3540e01">SW_VendorID</a>;    </div>
+<div class="line"><a name="l00753"></a><span class="lineno"><a class="line" href="structdesfire__version.html#a9e6952e2a6aab4f9c53a1523f1f26f52">  753</a></span>&#160;    uint8_t <a class="code" href="structdesfire__version.html#a9e6952e2a6aab4f9c53a1523f1f26f52">SW_Type</a>;        </div>
+<div class="line"><a name="l00754"></a><span class="lineno"><a class="line" href="structdesfire__version.html#a25a07b125da239d39d0df94fb96311d6">  754</a></span>&#160;    uint8_t <a class="code" href="structdesfire__version.html#a25a07b125da239d39d0df94fb96311d6">SW_SubType</a>;     </div>
+<div class="line"><a name="l00755"></a><span class="lineno"><a class="line" href="structdesfire__version.html#a78d886ac8b5545edefa4558e2b12bab4">  755</a></span>&#160;    uint8_t <a class="code" href="structdesfire__version.html#a78d886ac8b5545edefa4558e2b12bab4">SW_MajorVer</a>;    </div>
+<div class="line"><a name="l00756"></a><span class="lineno"><a class="line" href="structdesfire__version.html#af6f3aa7d017c3346dabe13215855337a">  756</a></span>&#160;    uint8_t <a class="code" href="structdesfire__version.html#af6f3aa7d017c3346dabe13215855337a">SW_MinorVer</a>;    </div>
+<div class="line"><a name="l00757"></a><span class="lineno"><a class="line" href="structdesfire__version.html#a2082b3c1ab1d5bc3a29c8a75d39858fd">  757</a></span>&#160;    uint8_t <a class="code" href="structdesfire__version.html#a2082b3c1ab1d5bc3a29c8a75d39858fd">SW_Size</a>;        </div>
+<div class="line"><a name="l00758"></a><span class="lineno"><a class="line" href="structdesfire__version.html#a626f0a2e0e14cb3a74373cce7742a592">  758</a></span>&#160;    uint8_t <a class="code" href="structdesfire__version.html#a626f0a2e0e14cb3a74373cce7742a592">SW_Protocol</a>;    </div>
+<div class="line"><a name="l00760"></a><span class="lineno"><a class="line" href="structdesfire__version.html#a8a5f679397d68bb8241d5d7ea7875877">  760</a></span>&#160;    uint8_t UID[7];         </div>
+<div class="line"><a name="l00761"></a><span class="lineno"><a class="line" href="structdesfire__version.html#a4fbc1ae5dc47dc341dfa94b17082f698">  761</a></span>&#160;    uint8_t BatchNo[5];     </div>
+<div class="line"><a name="l00762"></a><span class="lineno"><a class="line" href="structdesfire__version.html#accb0af0260543d1ffc7a60cbbb3a73db">  762</a></span>&#160;    uint8_t <a class="code" href="structdesfire__version.html#accb0af0260543d1ffc7a60cbbb3a73db">CW_Prod</a>;        </div>
+<div class="line"><a name="l00763"></a><span class="lineno"><a class="line" href="structdesfire__version.html#a754dce3fda2603e2a687f6939f616845">  763</a></span>&#160;    uint8_t <a class="code" href="structdesfire__version.html#a754dce3fda2603e2a687f6939f616845">Year_Prod</a>;      </div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;}<a class="code" href="structdesfire__version.html">desfire_version</a>;</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160; </div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#gaa268e155e089f2d8cec805a43ff5a279">desfire_get_version</a>(<span class="keywordtype">int</span> fd, <a class="code" href="structdesfire__version.html">desfire_version</a> *version);</div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160; </div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#ga21864e9161aa5b6bad484d38f35f12af">desfire_set_configuration</a>(<span class="keywordtype">int</span> fd,uint8_t option, uint8_t len,<span class="keyword">const</span> <span class="keywordtype">void</span> *info);</div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160; </div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#ga63fa0cb60b7445d41c135fc9db2c766e">desfire_free_memory</a>(<span class="keywordtype">int</span> fd,uint32_t *freesize);</div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160; </div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#ga725b0978f1274f4f3bb15fc6c443d7bd">desfire_get_card_uid</a>(<span class="keywordtype">int</span> fd,<span class="keywordtype">void</span> *uid);</div>
+<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160; </div>
+<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#ga7887fd93e3d6af76d89649a88878c9c8">desfire_get_fids</a>(<span class="keywordtype">int</span> fd,uint8_t *num, <span class="keywordtype">void</span> *fid);</div>
+<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160; </div>
+<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#ga59dceb04cc71f4461ff2a2e57d7f5402">desfire_get_iso_fids</a>(<span class="keywordtype">int</span> fd,uint8_t *num, <span class="keywordtype">void</span> *fid);</div>
+<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160; </div>
+<div class="line"><a name="l00979"></a><span class="lineno"><a class="line" href="structdesfire__file.html">  979</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;{</div>
+<div class="line"><a name="l00998"></a><span class="lineno"><a class="line" href="structdesfire__file.html#a37ebddf6a3f770298a2928296fa121de">  998</a></span>&#160;    uint8_t <a class="code" href="structdesfire__file.html#a37ebddf6a3f770298a2928296fa121de">file_type</a>;  </div>
+<div class="line"><a name="l01012"></a><span class="lineno"><a class="line" href="structdesfire__file.html#a6f7ad5b5e3afaa5d48849e46a4859695"> 1012</a></span>&#160;    uint8_t <a class="code" href="structdesfire__file.html#a6f7ad5b5e3afaa5d48849e46a4859695">com_sett</a>;</div>
+<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160; </div>
+<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;    <span class="comment">// Access right capability, 0x0E means free access, and 0x0F means deny access.</span></div>
+<div class="line"><a name="l01015"></a><span class="lineno"><a class="line" href="structdesfire__file.html#a3b88a84f5d02252c9cf822af5c4fb04a"> 1015</a></span>&#160;    uint8_t <a class="code" href="structdesfire__file.html#a3b88a84f5d02252c9cf822af5c4fb04a">read_access_right_keyno</a>;            </div>
+<div class="line"><a name="l01016"></a><span class="lineno"><a class="line" href="structdesfire__file.html#a63fee96fe2ecb6ce4a906847b036754e"> 1016</a></span>&#160;    uint8_t <a class="code" href="structdesfire__file.html#a63fee96fe2ecb6ce4a906847b036754e">write_access_right_keyno</a>;           </div>
+<div class="line"><a name="l01017"></a><span class="lineno"><a class="line" href="structdesfire__file.html#a5cf3a3c81a8597706a1e8548b9d5557b"> 1017</a></span>&#160;    uint8_t <a class="code" href="structdesfire__file.html#a5cf3a3c81a8597706a1e8548b9d5557b">read_and_write_access_right_keyno</a>;  </div>
+<div class="line"><a name="l01018"></a><span class="lineno"><a class="line" href="structdesfire__file.html#afa688fd49bf4b43fd306bcd12d610cae"> 1018</a></span>&#160;    uint8_t <a class="code" href="structdesfire__file.html#afa688fd49bf4b43fd306bcd12d610cae">change_access_right_keyno</a>;          </div>
+<div class="line"><a name="l01020"></a><span class="lineno"><a class="line" href="structdesfire__file.html#aee05156050f2635343557856eb82355a"> 1020</a></span>&#160;    uint32_t <a class="code" href="structdesfire__file.html#aee05156050f2635343557856eb82355a">file_size</a>;                         </div>
+<div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160;    <span class="comment">// the following four parameters only available when file_type = 0x02</span></div>
+<div class="line"><a name="l01023"></a><span class="lineno"><a class="line" href="structdesfire__file.html#a8f1e0acf339816cf91a03826e3c4935c"> 1023</a></span>&#160;    uint32_t <a class="code" href="structdesfire__file.html#a8f1e0acf339816cf91a03826e3c4935c">lower_limit</a>;               </div>
+<div class="line"><a name="l01024"></a><span class="lineno"><a class="line" href="structdesfire__file.html#ac82542c1d8db8e971181dea656bdf504"> 1024</a></span>&#160;    uint32_t <a class="code" href="structdesfire__file.html#ac82542c1d8db8e971181dea656bdf504">upper_limit</a>;               </div>
+<div class="line"><a name="l01025"></a><span class="lineno"><a class="line" href="structdesfire__file.html#a5a79362febaee41bcd74030e3a98747e"> 1025</a></span>&#160;    uint32_t <a class="code" href="structdesfire__file.html#a5a79362febaee41bcd74030e3a98747e">limited_credit_value</a>;      </div>
+<div class="line"><a name="l01026"></a><span class="lineno"><a class="line" href="structdesfire__file.html#ab2c98fffa5b6bc46dc8fd9d39367e73b"> 1026</a></span>&#160;    uint8_t  <a class="code" href="structdesfire__file.html#ab2c98fffa5b6bc46dc8fd9d39367e73b">limited_credit_enabled</a>;    </div>
+<div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;    <span class="comment">// the following three parameters  only available when file_type = 0x03 or file_type = 0x04</span></div>
+<div class="line"><a name="l01029"></a><span class="lineno"><a class="line" href="structdesfire__file.html#a50a7359f3abbb2c9509419ef21789582"> 1029</a></span>&#160;    uint32_t <a class="code" href="structdesfire__file.html#a50a7359f3abbb2c9509419ef21789582">record_size</a>;               </div>
+<div class="line"><a name="l01030"></a><span class="lineno"><a class="line" href="structdesfire__file.html#a018d13d7a14b4eac5582a56ca0d22511"> 1030</a></span>&#160;    uint32_t <a class="code" href="structdesfire__file.html#a018d13d7a14b4eac5582a56ca0d22511">max_number_of_records</a>;     </div>
+<div class="line"><a name="l01031"></a><span class="lineno"><a class="line" href="structdesfire__file.html#ac1189257704a157c7bd4e11c091db690"> 1031</a></span>&#160;    uint32_t <a class="code" href="structdesfire__file.html#ac1189257704a157c7bd4e11c091db690">current_number_of_records</a>; </div>
+<div class="line"><a name="l01032"></a><span class="lineno"> 1032</span>&#160;}<a class="code" href="structdesfire__file.html">desfire_file</a>;</div>
+<div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160; </div>
+<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#ga89b9061d28177afee21911324ef276da">desfire_get_filesetting</a>(<span class="keywordtype">int</span> fd,uint8_t fileno, <a class="code" href="structdesfire__file.html">desfire_file</a> *filesetting);</div>
+<div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160; </div>
+<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#gaf59ef4e4aabe0aacd9fc69c3fc7f16ad">desfire_change_filesettings</a>(<span class="keywordtype">int</span> fd,</div>
+<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;                                uint8_t fileno, </div>
+<div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;                                uint8_t comm_set,</div>
+<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;                                uint8_t old_change_access_keyno,</div>
+<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;                                uint8_t new_read_access_keyno,</div>
+<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;                                uint8_t new_write_access_keyno,</div>
+<div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;                                uint8_t new_read_write_access_keyno,</div>
+<div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160;                                uint8_t new_change_access_keyno);</div>
+<div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160; </div>
+<div class="line"><a name="l01134"></a><span class="lineno"><a class="line" href="structdesfire__std__backup__file__info.html"> 1134</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct  </span></div>
+<div class="line"><a name="l01135"></a><span class="lineno"> 1135</span>&#160;{   </div>
+<div class="line"><a name="l01136"></a><span class="lineno"><a class="line" href="structdesfire__std__backup__file__info.html#a332ca881dfda3a10fb96a3af2401588f"> 1136</a></span>&#160;    uint8_t <a class="code" href="structdesfire__std__backup__file__info.html#a332ca881dfda3a10fb96a3af2401588f">FlgISOFileID</a>; </div>
+<div class="line"><a name="l01137"></a><span class="lineno"><a class="line" href="structdesfire__std__backup__file__info.html#ac08dd3c59abab408278840570683052f"> 1137</a></span>&#160;    uint8_t ISOFileID[2]; </div>
+<div class="line"><a name="l01151"></a><span class="lineno"><a class="line" href="structdesfire__std__backup__file__info.html#af51174f76c8e5e9e632582a52777fa55"> 1151</a></span>&#160;    uint8_t <a class="code" href="structdesfire__std__backup__file__info.html#af51174f76c8e5e9e632582a52777fa55">com_sett</a>;</div>
+<div class="line"><a name="l01152"></a><span class="lineno"><a class="line" href="structdesfire__std__backup__file__info.html#a0839a79747cb5892f032da76b72069df"> 1152</a></span>&#160;    uint8_t <a class="code" href="structdesfire__std__backup__file__info.html#a0839a79747cb5892f032da76b72069df">read_access_right_keyno</a>;    </div>
+<div class="line"><a name="l01153"></a><span class="lineno"><a class="line" href="structdesfire__std__backup__file__info.html#a209d1604c07de4b9e3ecc831c96b562c"> 1153</a></span>&#160;    uint8_t <a class="code" href="structdesfire__std__backup__file__info.html#a209d1604c07de4b9e3ecc831c96b562c">write_access_right_keyno</a>;   </div>
+<div class="line"><a name="l01154"></a><span class="lineno"><a class="line" href="structdesfire__std__backup__file__info.html#af57ad8eef2c62989a6aa9bbf33d0bbf0"> 1154</a></span>&#160;    uint8_t <a class="code" href="structdesfire__std__backup__file__info.html#af57ad8eef2c62989a6aa9bbf33d0bbf0">read_and_write_access_right_keyno</a>;  </div>
+<div class="line"><a name="l01155"></a><span class="lineno"><a class="line" href="structdesfire__std__backup__file__info.html#a50b10b8a0cfe1fdc61449f45f8dd53f5"> 1155</a></span>&#160;    uint8_t <a class="code" href="structdesfire__std__backup__file__info.html#a50b10b8a0cfe1fdc61449f45f8dd53f5">change_access_right_keyno</a>;  </div>
+<div class="line"><a name="l01156"></a><span class="lineno"><a class="line" href="structdesfire__std__backup__file__info.html#afde22fa456eee2d556738e25af71f08f"> 1156</a></span>&#160;    uint32_t <a class="code" href="structdesfire__std__backup__file__info.html#afde22fa456eee2d556738e25af71f08f">file_size</a>; </div>
+<div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160;}<a class="code" href="structdesfire__std__backup__file__info.html">desfire_std_backup_file_info</a>;</div>
+<div class="line"><a name="l01158"></a><span class="lineno"> 1158</span>&#160; </div>
+<div class="line"><a name="l01192"></a><span class="lineno"> 1192</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#ga6809deabde0ddc8ae5a96009600ca9eb">desfire_create_std_datafile</a>(<span class="keywordtype">int</span> fd,</div>
+<div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;                                    uint8_t fileno, </div>
+<div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;                                    <span class="keyword">const</span> <a class="code" href="structdesfire__std__backup__file__info.html">desfire_std_backup_file_info</a> *fileinfo);</div>
+<div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160; </div>
+<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#ga5567515fda926c918ca7012245041b1e">desfire_create_backup_datafile</a>(<span class="keywordtype">int</span> fd,</div>
+<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;                                        uint8_t fileno, </div>
+<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;                                        <span class="keyword">const</span> <a class="code" href="structdesfire__std__backup__file__info.html">desfire_std_backup_file_info</a> *fileinfo);</div>
+<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160; </div>
+<div class="line"><a name="l01240"></a><span class="lineno"><a class="line" href="structdesfire__value__file__info.html"> 1240</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct  </span></div>
+<div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;{</div>
+<div class="line"><a name="l01255"></a><span class="lineno"><a class="line" href="structdesfire__value__file__info.html#af4d0e9919d1a8e443e0a1dd792169d51"> 1255</a></span>&#160;    uint8_t <a class="code" href="structdesfire__value__file__info.html#af4d0e9919d1a8e443e0a1dd792169d51">com_sett</a>;</div>
+<div class="line"><a name="l01256"></a><span class="lineno"><a class="line" href="structdesfire__value__file__info.html#a498b358e1589fd119e17e162f9b393fa"> 1256</a></span>&#160;    uint8_t <a class="code" href="structdesfire__value__file__info.html#a498b358e1589fd119e17e162f9b393fa">read_access_right_keyno</a>;    </div>
+<div class="line"><a name="l01257"></a><span class="lineno"><a class="line" href="structdesfire__value__file__info.html#a9bb6d6a386c29c8e6b0c2297d36eaa13"> 1257</a></span>&#160;    uint8_t <a class="code" href="structdesfire__value__file__info.html#a9bb6d6a386c29c8e6b0c2297d36eaa13">write_access_right_keyno</a>;   </div>
+<div class="line"><a name="l01258"></a><span class="lineno"><a class="line" href="structdesfire__value__file__info.html#a96a5f824510f9af13c54cf7f2293bb95"> 1258</a></span>&#160;    uint8_t <a class="code" href="structdesfire__value__file__info.html#a96a5f824510f9af13c54cf7f2293bb95">read_and_write_access_right_keyno</a>;  </div>
+<div class="line"><a name="l01259"></a><span class="lineno"><a class="line" href="structdesfire__value__file__info.html#a713d80898277f2dfc03a58ebc81da4ff"> 1259</a></span>&#160;    uint8_t <a class="code" href="structdesfire__value__file__info.html#a713d80898277f2dfc03a58ebc81da4ff">change_access_right_keyno</a>;  </div>
+<div class="line"><a name="l01261"></a><span class="lineno"><a class="line" href="structdesfire__value__file__info.html#a445615bd2c6b1cf1aa41bb4d100d4b67"> 1261</a></span>&#160;    uint32_t <a class="code" href="structdesfire__value__file__info.html#a445615bd2c6b1cf1aa41bb4d100d4b67">lower_limit</a>;   </div>
+<div class="line"><a name="l01262"></a><span class="lineno"><a class="line" href="structdesfire__value__file__info.html#a88dbeb8a2a13450f44c1bd734691fb1e"> 1262</a></span>&#160;    uint32_t <a class="code" href="structdesfire__value__file__info.html#a88dbeb8a2a13450f44c1bd734691fb1e">upper_limit</a>;   </div>
+<div class="line"><a name="l01263"></a><span class="lineno"><a class="line" href="structdesfire__value__file__info.html#a6e4aa474f7b1c2e65a5196e55223f2c0"> 1263</a></span>&#160;    uint32_t <a class="code" href="structdesfire__value__file__info.html#a6e4aa474f7b1c2e65a5196e55223f2c0">init_value</a>;    </div>
+<div class="line"><a name="l01264"></a><span class="lineno"><a class="line" href="structdesfire__value__file__info.html#a57d613325827d91862199d52a506191a"> 1264</a></span>&#160;    uint8_t  <a class="code" href="structdesfire__value__file__info.html#a57d613325827d91862199d52a506191a">limited_credit_enabled</a>;    </div>
+<div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;}<a class="code" href="structdesfire__value__file__info.html">desfire_value_file_info</a>;</div>
+<div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160; </div>
+<div class="line"><a name="l01300"></a><span class="lineno"> 1300</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#ga350987192701297754e2bc1a8326fd0f">desfire_create_valuefile</a>(<span class="keywordtype">int</span> fd, </div>
+<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;                                uint8_t fileno, </div>
+<div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;                                <span class="keyword">const</span> <a class="code" href="structdesfire__value__file__info.html">desfire_value_file_info</a> *fileinfo);</div>
+<div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160; </div>
+<div class="line"><a name="l01311"></a><span class="lineno"><a class="line" href="structdesfire__record__file__info.html"> 1311</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct  </span></div>
+<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;{   </div>
+<div class="line"><a name="l01313"></a><span class="lineno"><a class="line" href="structdesfire__record__file__info.html#a3deb29ad736ff82ba6c6af6ee30bec50"> 1313</a></span>&#160;    uint8_t <a class="code" href="structdesfire__record__file__info.html#a3deb29ad736ff82ba6c6af6ee30bec50">FlgISOFileID</a>; </div>
+<div class="line"><a name="l01314"></a><span class="lineno"><a class="line" href="structdesfire__record__file__info.html#aa0dd023d8b38db7cbf591d6f4d2eec92"> 1314</a></span>&#160;    uint8_t ISOFileID[2]; </div>
+<div class="line"><a name="l01328"></a><span class="lineno"><a class="line" href="structdesfire__record__file__info.html#abc3e13d51b803773469dae1a78a06434"> 1328</a></span>&#160;    uint8_t <a class="code" href="structdesfire__record__file__info.html#abc3e13d51b803773469dae1a78a06434">com_sett</a>;</div>
+<div class="line"><a name="l01329"></a><span class="lineno"><a class="line" href="structdesfire__record__file__info.html#a92823d776b785f450dfa761ee0406b9a"> 1329</a></span>&#160;    uint8_t <a class="code" href="structdesfire__record__file__info.html#a92823d776b785f450dfa761ee0406b9a">read_access_right_keyno</a>;            </div>
+<div class="line"><a name="l01330"></a><span class="lineno"><a class="line" href="structdesfire__record__file__info.html#a3f893d440b4cb811cefcd4aa7f53cd37"> 1330</a></span>&#160;    uint8_t <a class="code" href="structdesfire__record__file__info.html#a3f893d440b4cb811cefcd4aa7f53cd37">write_access_right_keyno</a>;           </div>
+<div class="line"><a name="l01331"></a><span class="lineno"><a class="line" href="structdesfire__record__file__info.html#a442afcb199ccc1aa907036214ae94048"> 1331</a></span>&#160;    uint8_t <a class="code" href="structdesfire__record__file__info.html#a442afcb199ccc1aa907036214ae94048">read_and_write_access_right_keyno</a>;  </div>
+<div class="line"><a name="l01332"></a><span class="lineno"><a class="line" href="structdesfire__record__file__info.html#a20c29f8653fc750b7bc5af754b172d97"> 1332</a></span>&#160;    uint8_t <a class="code" href="structdesfire__record__file__info.html#a20c29f8653fc750b7bc5af754b172d97">change_access_right_keyno</a>;          </div>
+<div class="line"><a name="l01334"></a><span class="lineno"><a class="line" href="structdesfire__record__file__info.html#a679e6e6ebfbaaf48e8ca74581059ba89"> 1334</a></span>&#160;    uint32_t <a class="code" href="structdesfire__record__file__info.html#a679e6e6ebfbaaf48e8ca74581059ba89">record_size</a>;                       </div>
+<div class="line"><a name="l01335"></a><span class="lineno"><a class="line" href="structdesfire__record__file__info.html#af16466cc6a1090d4e9d892c66d022a07"> 1335</a></span>&#160;    uint32_t <a class="code" href="structdesfire__record__file__info.html#af16466cc6a1090d4e9d892c66d022a07">max_number_of_records</a>;             </div>
+<div class="line"><a name="l01336"></a><span class="lineno"><a class="line" href="structdesfire__record__file__info.html#a0fa054ee6d9d66489eb8650c92a71fb4"> 1336</a></span>&#160;    uint32_t <a class="code" href="structdesfire__record__file__info.html#a0fa054ee6d9d66489eb8650c92a71fb4">FlgRndAcc</a>;                         </div>
+<div class="line"><a name="l01337"></a><span class="lineno"><a class="line" href="structdesfire__record__file__info.html#ac29308e26c59104ab6215af05662d7d2"> 1337</a></span>&#160;    uint32_t <a class="code" href="structdesfire__record__file__info.html#ac29308e26c59104ab6215af05662d7d2">rnd_acc</a>;                           </div>
+<div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;}<a class="code" href="structdesfire__record__file__info.html">desfire_record_file_info</a>;</div>
+<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160; </div>
+<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#gaf35747c1a5329346755f1f57be5d34de">desfire_create_linear_recordfile</a>(<span class="keywordtype">int</span> fd,</div>
+<div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;                                        uint8_t fileno,</div>
+<div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;                                        <span class="keyword">const</span> <a class="code" href="structdesfire__record__file__info.html">desfire_record_file_info</a> *fileinfo);</div>
+<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160; </div>
+<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#ga1733deef3718eb9f24692c750862b95f">desfire_create_cyclic_recordfile</a>(<span class="keywordtype">int</span> fd,</div>
+<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;                                        uint8_t fileno,</div>
+<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;                                        <span class="keyword">const</span> <a class="code" href="structdesfire__record__file__info.html">desfire_record_file_info</a> *fileinfo);</div>
+<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160; </div>
+<div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#ga1fcb7d8beba10a145e020d39ba562788">desfire_delete_file</a>(<span class="keywordtype">int</span> fd,uint8_t fileno);</div>
+<div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160; </div>
+<div class="line"><a name="l01494"></a><span class="lineno"> 1494</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#ga16b075f685cac67235816cc1c0d9e81b">desfire_read_data</a>(<span class="keywordtype">int</span> fd,</div>
+<div class="line"><a name="l01495"></a><span class="lineno"> 1495</span>&#160;                        uint8_t fileno, </div>
+<div class="line"><a name="l01496"></a><span class="lineno"> 1496</span>&#160;                        uint8_t comm_set,   </div>
+<div class="line"><a name="l01497"></a><span class="lineno"> 1497</span>&#160;                        uint32_t offset, </div>
+<div class="line"><a name="l01498"></a><span class="lineno"> 1498</span>&#160;                        uint32_t len, </div>
+<div class="line"><a name="l01499"></a><span class="lineno"> 1499</span>&#160;                        uint32_t *outlen, </div>
+<div class="line"><a name="l01500"></a><span class="lineno"> 1500</span>&#160;                        <span class="keywordtype">void</span> *dataout);</div>
+<div class="line"><a name="l01501"></a><span class="lineno"> 1501</span>&#160; </div>
+<div class="line"><a name="l01552"></a><span class="lineno"> 1552</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#gac6a5f6899a40165ee007b282b7063d26">desfire_read_data_safe</a>(<span class="keywordtype">int</span> fd,</div>
+<div class="line"><a name="l01553"></a><span class="lineno"> 1553</span>&#160;                        uint8_t fileno, </div>
+<div class="line"><a name="l01554"></a><span class="lineno"> 1554</span>&#160;                        uint8_t comm_set,                           </div>
+<div class="line"><a name="l01555"></a><span class="lineno"> 1555</span>&#160;                        uint32_t offset, </div>
+<div class="line"><a name="l01556"></a><span class="lineno"> 1556</span>&#160;                        uint32_t len, </div>
+<div class="line"><a name="l01557"></a><span class="lineno"> 1557</span>&#160;                        uint32_t *outlen, </div>
+<div class="line"><a name="l01558"></a><span class="lineno"> 1558</span>&#160;                        <span class="keywordtype">void</span> *dataout, </div>
+<div class="line"><a name="l01559"></a><span class="lineno"> 1559</span>&#160;                        uint32_t dataout_size);</div>
+<div class="line"><a name="l01560"></a><span class="lineno"> 1560</span>&#160; </div>
+<div class="line"><a name="l01606"></a><span class="lineno"> 1606</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#ga11abb729c1acabf7cae44e77e9919983">desfire_write_data</a>(<span class="keywordtype">int</span> fd, </div>
+<div class="line"><a name="l01607"></a><span class="lineno"> 1607</span>&#160;                        uint8_t fileno, </div>
+<div class="line"><a name="l01608"></a><span class="lineno"> 1608</span>&#160;                        uint8_t comm_set, </div>
+<div class="line"><a name="l01609"></a><span class="lineno"> 1609</span>&#160;                        uint32_t offset, </div>
+<div class="line"><a name="l01610"></a><span class="lineno"> 1610</span>&#160;                        uint32_t len, </div>
+<div class="line"><a name="l01611"></a><span class="lineno"> 1611</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">void</span> *datain);</div>
+<div class="line"><a name="l01612"></a><span class="lineno"> 1612</span>&#160; </div>
+<div class="line"><a name="l01654"></a><span class="lineno"> 1654</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#ga338301d0db316e26eee60bac526e38da">desfire_get_value</a>(<span class="keywordtype">int</span> fd,uint8_t fileno,uint8_t comm_set,uint32_t *value);</div>
+<div class="line"><a name="l01655"></a><span class="lineno"> 1655</span>&#160; </div>
+<div class="line"><a name="l01697"></a><span class="lineno"> 1697</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#ga329d012b18d5cf926a2ea3f2908c6825">desfire_credit</a>(<span class="keywordtype">int</span> fd,uint8_t fileno,uint8_t comm_set,uint32_t value);</div>
+<div class="line"><a name="l01698"></a><span class="lineno"> 1698</span>&#160; </div>
+<div class="line"><a name="l01740"></a><span class="lineno"> 1740</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#ga8392ebaa22a92852681c418b9ce1cabb">desfire_debit</a>(<span class="keywordtype">int</span> fd,uint8_t fileno,uint8_t comm_set,uint32_t value);</div>
+<div class="line"><a name="l01741"></a><span class="lineno"> 1741</span>&#160; </div>
+<div class="line"><a name="l01783"></a><span class="lineno"> 1783</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#ga1ddfbd15927bf9caee91a46dc9cf09ed">desfire_limited_credit</a>(<span class="keywordtype">int</span> fd,uint8_t fileno,uint8_t comm_set,uint32_t value);</div>
+<div class="line"><a name="l01784"></a><span class="lineno"> 1784</span>&#160; </div>
+<div class="line"><a name="l01830"></a><span class="lineno"> 1830</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#ga19de066c16edeb695e67cb841b9ff932">desfire_write_record</a>(<span class="keywordtype">int</span> fd,</div>
+<div class="line"><a name="l01831"></a><span class="lineno"> 1831</span>&#160;                            uint8_t fileno, </div>
+<div class="line"><a name="l01832"></a><span class="lineno"> 1832</span>&#160;                            uint8_t comm_set, </div>
+<div class="line"><a name="l01833"></a><span class="lineno"> 1833</span>&#160;                            <span class="keywordtype">int</span> offset, </div>
+<div class="line"><a name="l01834"></a><span class="lineno"> 1834</span>&#160;                            <span class="keywordtype">int</span> len, </div>
+<div class="line"><a name="l01835"></a><span class="lineno"> 1835</span>&#160;                            <span class="keyword">const</span> <span class="keywordtype">void</span> *info);</div>
+<div class="line"><a name="l01836"></a><span class="lineno"> 1836</span>&#160; </div>
+<div class="line"><a name="l01886"></a><span class="lineno"> 1886</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#gaf86bd6f7f589b4a2f74e3ca1337d3204">desfire_read_records</a>(<span class="keywordtype">int</span> fd,</div>
+<div class="line"><a name="l01887"></a><span class="lineno"> 1887</span>&#160;                            uint8_t fileno, </div>
+<div class="line"><a name="l01888"></a><span class="lineno"> 1888</span>&#160;                            uint8_t comm_set,</div>
+<div class="line"><a name="l01889"></a><span class="lineno"> 1889</span>&#160;                            uint32_t recordsize,</div>
+<div class="line"><a name="l01890"></a><span class="lineno"> 1890</span>&#160;                            <span class="keywordtype">int</span> first, </div>
+<div class="line"><a name="l01891"></a><span class="lineno"> 1891</span>&#160;                            <span class="keywordtype">int</span> num, </div>
+<div class="line"><a name="l01892"></a><span class="lineno"> 1892</span>&#160;                            uint32_t *outlen, </div>
+<div class="line"><a name="l01893"></a><span class="lineno"> 1893</span>&#160;                            <span class="keywordtype">void</span> *info);</div>
+<div class="line"><a name="l01894"></a><span class="lineno"> 1894</span>&#160; </div>
+<div class="line"><a name="l01946"></a><span class="lineno"> 1946</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#ga81dd884e84eb7ea0b6ce879456e5d463">desfire_read_records_safe</a>(<span class="keywordtype">int</span> fd,</div>
+<div class="line"><a name="l01947"></a><span class="lineno"> 1947</span>&#160;                            uint8_t fileno, </div>
+<div class="line"><a name="l01948"></a><span class="lineno"> 1948</span>&#160;                            uint8_t comm_set,</div>
+<div class="line"><a name="l01949"></a><span class="lineno"> 1949</span>&#160;                            uint32_t recordsize,</div>
+<div class="line"><a name="l01950"></a><span class="lineno"> 1950</span>&#160;                            <span class="keywordtype">int</span> first, </div>
+<div class="line"><a name="l01951"></a><span class="lineno"> 1951</span>&#160;                            <span class="keywordtype">int</span> num, </div>
+<div class="line"><a name="l01952"></a><span class="lineno"> 1952</span>&#160;                            uint32_t *outlen, </div>
+<div class="line"><a name="l01953"></a><span class="lineno"> 1953</span>&#160;                            <span class="keywordtype">void</span> *info, </div>
+<div class="line"><a name="l01954"></a><span class="lineno"> 1954</span>&#160;                            uint32_t info_size);</div>
+<div class="line"><a name="l01955"></a><span class="lineno"> 1955</span>&#160; </div>
+<div class="line"><a name="l01987"></a><span class="lineno"> 1987</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#ga4381fcd21291ccf6422d4bd88e794db4">desfire_clear_recordfile</a>(<span class="keywordtype">int</span> fd,uint8_t fileno);</div>
+<div class="line"><a name="l01988"></a><span class="lineno"> 1988</span>&#160; </div>
+<div class="line"><a name="l02018"></a><span class="lineno"> 2018</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#gaea55f692433a0adaf880ccc8df2abfa2">desfire_commit_transaction</a>(<span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l02019"></a><span class="lineno"> 2019</span>&#160; </div>
+<div class="line"><a name="l02049"></a><span class="lineno"> 2049</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__desfire.html#ga29252292a087cbda4c515d0e2f13ab34">desfire_abort_transaction</a>(<span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l02050"></a><span class="lineno"> 2050</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l02051"></a><span class="lineno"> 2051</span>&#160;  }</div>
+<div class="line"><a name="l02052"></a><span class="lineno"> 2052</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l02053"></a><span class="lineno"> 2053</span>&#160; </div>
+<div class="line"><a name="l02054"></a><span class="lineno"> 2054</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DESFIRE_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l02055"></a><span class="lineno"> 2055</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="astructdesfire__version_html_a475827b93e5040a5250cf793bc1e4f03"><div class="ttname"><a href="structdesfire__version.html#a475827b93e5040a5250cf793bc1e4f03">desfire_version::HW_MinorVer</a></div><div class="ttdeci">uint8_t HW_MinorVer</div><div class="ttdef"><b>Definition:</b> desfire.h:748</div></div>
+<div class="ttc" id="astructdesfire__record__file__info_html_a92823d776b785f450dfa761ee0406b9a"><div class="ttname"><a href="structdesfire__record__file__info.html#a92823d776b785f450dfa761ee0406b9a">desfire_record_file_info::read_access_right_keyno</a></div><div class="ttdeci">uint8_t read_access_right_keyno</div><div class="ttdef"><b>Definition:</b> desfire.h:1329</div></div>
+<div class="ttc" id="astructdesfire__value__file__info_html_a57d613325827d91862199d52a506191a"><div class="ttname"><a href="structdesfire__value__file__info.html#a57d613325827d91862199d52a506191a">desfire_value_file_info::limited_credit_enabled</a></div><div class="ttdeci">uint8_t limited_credit_enabled</div><div class="ttdef"><b>Definition:</b> desfire.h:1264</div></div>
+<div class="ttc" id="astructdesfire__appinfo_html_a158b77832e0916d9bee7df264a587d14"><div class="ttname"><a href="structdesfire__appinfo.html#a158b77832e0916d9bee7df264a587d14">desfire_appinfo::LenOfDFName</a></div><div class="ttdeci">uint8_t LenOfDFName</div><div class="ttdef"><b>Definition:</b> desfire.h:514</div></div>
+<div class="ttc" id="astructdesfire__file_html_a63fee96fe2ecb6ce4a906847b036754e"><div class="ttname"><a href="structdesfire__file.html#a63fee96fe2ecb6ce4a906847b036754e">desfire_file::write_access_right_keyno</a></div><div class="ttdeci">uint8_t write_access_right_keyno</div><div class="ttdef"><b>Definition:</b> desfire.h:1016</div></div>
+<div class="ttc" id="agroup__desfire_html_ga6809deabde0ddc8ae5a96009600ca9eb"><div class="ttname"><a href="group__desfire.html#ga6809deabde0ddc8ae5a96009600ca9eb">desfire_create_std_datafile</a></div><div class="ttdeci">int desfire_create_std_datafile(int fd, uint8_t fileno, const desfire_std_backup_file_info *fileinfo)</div><div class="ttdoc">创建一般数据文件</div></div>
+<div class="ttc" id="astructdesfire__std__backup__file__info_html_a0839a79747cb5892f032da76b72069df"><div class="ttname"><a href="structdesfire__std__backup__file__info.html#a0839a79747cb5892f032da76b72069df">desfire_std_backup_file_info::read_access_right_keyno</a></div><div class="ttdeci">uint8_t read_access_right_keyno</div><div class="ttdef"><b>Definition:</b> desfire.h:1152</div></div>
+<div class="ttc" id="astructdesfire__value__file__info_html"><div class="ttname"><a href="structdesfire__value__file__info.html">desfire_value_file_info</a></div><div class="ttdoc">Desfire值文件信息</div><div class="ttdef"><b>Definition:</b> desfire.h:1240</div></div>
+<div class="ttc" id="astructdesfire__appinfo_html_ab8564e09b4c1b940b4f32293b9c6ba72"><div class="ttname"><a href="structdesfire__appinfo.html#ab8564e09b4c1b940b4f32293b9c6ba72">desfire_appinfo::MasterKeySetting</a></div><div class="ttdeci">uint8_t MasterKeySetting</div><div class="ttdef"><b>Definition:</b> desfire.h:508</div></div>
+<div class="ttc" id="agroup__desfire_html_ga89b9061d28177afee21911324ef276da"><div class="ttname"><a href="group__desfire.html#ga89b9061d28177afee21911324ef276da">desfire_get_filesetting</a></div><div class="ttdeci">int desfire_get_filesetting(int fd, uint8_t fileno, desfire_file *filesetting)</div><div class="ttdoc">获取指定文件的信息</div></div>
+<div class="ttc" id="astructdesfire__file_html_a5a79362febaee41bcd74030e3a98747e"><div class="ttname"><a href="structdesfire__file.html#a5a79362febaee41bcd74030e3a98747e">desfire_file::limited_credit_value</a></div><div class="ttdeci">uint32_t limited_credit_value</div><div class="ttdef"><b>Definition:</b> desfire.h:1025</div></div>
+<div class="ttc" id="astructdesfire__version_html_a183077beb6d1141c38ac4aef9cfbb686"><div class="ttname"><a href="structdesfire__version.html#a183077beb6d1141c38ac4aef9cfbb686">desfire_version::HW_Size</a></div><div class="ttdeci">uint8_t HW_Size</div><div class="ttdef"><b>Definition:</b> desfire.h:749</div></div>
+<div class="ttc" id="agroup__desfire_html_ga350987192701297754e2bc1a8326fd0f"><div class="ttname"><a href="group__desfire.html#ga350987192701297754e2bc1a8326fd0f">desfire_create_valuefile</a></div><div class="ttdeci">int desfire_create_valuefile(int fd, uint8_t fileno, const desfire_value_file_info *fileinfo)</div><div class="ttdoc">创建值文件</div></div>
+<div class="ttc" id="astructdesfire__file_html_a50a7359f3abbb2c9509419ef21789582"><div class="ttname"><a href="structdesfire__file.html#a50a7359f3abbb2c9509419ef21789582">desfire_file::record_size</a></div><div class="ttdeci">uint32_t record_size</div><div class="ttdef"><b>Definition:</b> desfire.h:1029</div></div>
+<div class="ttc" id="agroup__desfire_html_ga80c143026c57e162bb10c29b639efe9a"><div class="ttname"><a href="group__desfire.html#ga80c143026c57e162bb10c29b639efe9a">desfire_authenticate_iso</a></div><div class="ttdeci">int desfire_authenticate_iso(int fd, uint8_t keyno, const void *key)</div><div class="ttdoc">对mifare DESFire卡进行DES/3DES密钥认证</div></div>
+<div class="ttc" id="astructdesfire__file_html_aee05156050f2635343557856eb82355a"><div class="ttname"><a href="structdesfire__file.html#aee05156050f2635343557856eb82355a">desfire_file::file_size</a></div><div class="ttdeci">uint32_t file_size</div><div class="ttdef"><b>Definition:</b> desfire.h:1020</div></div>
+<div class="ttc" id="astructdesfire__file_html_a3b88a84f5d02252c9cf822af5c4fb04a"><div class="ttname"><a href="structdesfire__file.html#a3b88a84f5d02252c9cf822af5c4fb04a">desfire_file::read_access_right_keyno</a></div><div class="ttdeci">uint8_t read_access_right_keyno</div><div class="ttdef"><b>Definition:</b> desfire.h:1015</div></div>
+<div class="ttc" id="agroup__desfire_html_ga8392ebaa22a92852681c418b9ce1cabb"><div class="ttname"><a href="group__desfire.html#ga8392ebaa22a92852681c418b9ce1cabb">desfire_debit</a></div><div class="ttdeci">int desfire_debit(int fd, uint8_t fileno, uint8_t comm_set, uint32_t value)</div><div class="ttdoc">扣值操作</div></div>
+<div class="ttc" id="agroup__desfire_html_ga59dceb04cc71f4461ff2a2e57d7f5402"><div class="ttname"><a href="group__desfire.html#ga59dceb04cc71f4461ff2a2e57d7f5402">desfire_get_iso_fids</a></div><div class="ttdeci">int desfire_get_iso_fids(int fd, uint8_t *num, void *fid)</div><div class="ttdoc">获取mifare DESFire卡当前子应用内的文件iso fid信息</div></div>
+<div class="ttc" id="agroup__desfire_html_ga87ce4937822a8a0913dc03e796f146fb"><div class="ttname"><a href="group__desfire.html#ga87ce4937822a8a0913dc03e796f146fb">desfire_change_key_settings</a></div><div class="ttdeci">int desfire_change_key_settings(int fd, uint8_t key_setting)</div><div class="ttdoc">修改PICC Master Key设置或者Application Master Key设置</div></div>
+<div class="ttc" id="astructdesfire__version_html_a754dce3fda2603e2a687f6939f616845"><div class="ttname"><a href="structdesfire__version.html#a754dce3fda2603e2a687f6939f616845">desfire_version::Year_Prod</a></div><div class="ttdeci">uint8_t Year_Prod</div><div class="ttdef"><b>Definition:</b> desfire.h:763</div></div>
+<div class="ttc" id="astructdesfire__value__file__info_html_a9bb6d6a386c29c8e6b0c2297d36eaa13"><div class="ttname"><a href="structdesfire__value__file__info.html#a9bb6d6a386c29c8e6b0c2297d36eaa13">desfire_value_file_info::write_access_right_keyno</a></div><div class="ttdeci">uint8_t write_access_right_keyno</div><div class="ttdef"><b>Definition:</b> desfire.h:1257</div></div>
+<div class="ttc" id="astructdesfire__record__file__info_html_abc3e13d51b803773469dae1a78a06434"><div class="ttname"><a href="structdesfire__record__file__info.html#abc3e13d51b803773469dae1a78a06434">desfire_record_file_info::com_sett</a></div><div class="ttdeci">uint8_t com_sett</div><div class="ttdef"><b>Definition:</b> desfire.h:1328</div></div>
+<div class="ttc" id="astructdesfire__version_html_a11f92b7b39541581ac4c1ae8d1b41c73"><div class="ttname"><a href="structdesfire__version.html#a11f92b7b39541581ac4c1ae8d1b41c73">desfire_version::HW_MajorVer</a></div><div class="ttdeci">uint8_t HW_MajorVer</div><div class="ttdef"><b>Definition:</b> desfire.h:747</div></div>
+<div class="ttc" id="astructdesfire__version_html_ab00805674c9a40b7096af47720412e27"><div class="ttname"><a href="structdesfire__version.html#ab00805674c9a40b7096af47720412e27">desfire_version::HW_VendorID</a></div><div class="ttdeci">uint8_t HW_VendorID</div><div class="ttdef"><b>Definition:</b> desfire.h:744</div></div>
+<div class="ttc" id="astructdesfire__file_html_a37ebddf6a3f770298a2928296fa121de"><div class="ttname"><a href="structdesfire__file.html#a37ebddf6a3f770298a2928296fa121de">desfire_file::file_type</a></div><div class="ttdeci">uint8_t file_type</div><div class="ttdef"><b>Definition:</b> desfire.h:998</div></div>
+<div class="ttc" id="astructdesfire__version_html_a582cff3752ab3a7d3f1b1444f3540e01"><div class="ttname"><a href="structdesfire__version.html#a582cff3752ab3a7d3f1b1444f3540e01">desfire_version::SW_VendorID</a></div><div class="ttdeci">uint8_t SW_VendorID</div><div class="ttdef"><b>Definition:</b> desfire.h:752</div></div>
+<div class="ttc" id="astructdfname__info_html"><div class="ttname"><a href="structdfname__info.html">dfname_info</a></div><div class="ttdoc">Desfire卡应用名字信息</div><div class="ttdef"><b>Definition:</b> desfire.h:627</div></div>
+<div class="ttc" id="agroup__desfire_html_gab8a8b7d7ac538bcbae3b3d351ede0d40"><div class="ttname"><a href="group__desfire.html#gab8a8b7d7ac538bcbae3b3d351ede0d40">desfire_authenticate_aes</a></div><div class="ttdeci">int desfire_authenticate_aes(int fd, uint8_t keyno, const void *key)</div><div class="ttdoc">对mifare DESFire卡进行AES密钥认证</div></div>
+<div class="ttc" id="agroup__desfire_html_ga81dd884e84eb7ea0b6ce879456e5d463"><div class="ttname"><a href="group__desfire.html#ga81dd884e84eb7ea0b6ce879456e5d463">desfire_read_records_safe</a></div><div class="ttdeci">int desfire_read_records_safe(int fd, uint8_t fileno, uint8_t comm_set, uint32_t recordsize, int first, int num, uint32_t *outlen, void *info, uint32_t info_size)</div><div class="ttdoc">读记录操作</div></div>
+<div class="ttc" id="agroup__desfire_html_gab59b67dc6801545e8d4536ef0c2b77f3"><div class="ttname"><a href="group__desfire.html#gab59b67dc6801545e8d4536ef0c2b77f3">desfire_select_application</a></div><div class="ttdeci">int desfire_select_application(int fd, const void *aid)</div><div class="ttdoc">选择一个子应用</div></div>
+<div class="ttc" id="astructdesfire__std__backup__file__info_html_afde22fa456eee2d556738e25af71f08f"><div class="ttname"><a href="structdesfire__std__backup__file__info.html#afde22fa456eee2d556738e25af71f08f">desfire_std_backup_file_info::file_size</a></div><div class="ttdeci">uint32_t file_size</div><div class="ttdef"><b>Definition:</b> desfire.h:1156</div></div>
+<div class="ttc" id="astructdesfire__record__file__info_html_a0fa054ee6d9d66489eb8650c92a71fb4"><div class="ttname"><a href="structdesfire__record__file__info.html#a0fa054ee6d9d66489eb8650c92a71fb4">desfire_record_file_info::FlgRndAcc</a></div><div class="ttdeci">uint32_t FlgRndAcc</div><div class="ttdef"><b>Definition:</b> desfire.h:1336</div></div>
+<div class="ttc" id="agroup__desfire_html_ga29252292a087cbda4c515d0e2f13ab34"><div class="ttname"><a href="group__desfire.html#ga29252292a087cbda4c515d0e2f13ab34">desfire_abort_transaction</a></div><div class="ttdeci">int desfire_abort_transaction(int fd)</div><div class="ttdoc">撤销之前队当前应用内各个文件的相关操作</div></div>
+<div class="ttc" id="agroup__desfire_html_gae3dfeaa74d1420aef2be147858a0e8cc"><div class="ttname"><a href="group__desfire.html#gae3dfeaa74d1420aef2be147858a0e8cc">desfire_authenticate</a></div><div class="ttdeci">int desfire_authenticate(int fd, uint8_t keyno, const void *key)</div><div class="ttdoc">对mifare DESFire卡进行DES/3DES密钥认证</div></div>
+<div class="ttc" id="agroup__desfire_html_ga3f8997aa500616507238008dc777f9c0"><div class="ttname"><a href="group__desfire.html#ga3f8997aa500616507238008dc777f9c0">desfire_change_picc_masterkey</a></div><div class="ttdeci">int desfire_change_picc_masterkey(int fd, uint8_t type, const void *key, uint8_t version)</div><div class="ttdoc">修改PICC Master Key</div></div>
+<div class="ttc" id="agroup__desfire_html_gaf86bd6f7f589b4a2f74e3ca1337d3204"><div class="ttname"><a href="group__desfire.html#gaf86bd6f7f589b4a2f74e3ca1337d3204">desfire_read_records</a></div><div class="ttdeci">int desfire_read_records(int fd, uint8_t fileno, uint8_t comm_set, uint32_t recordsize, int first, int num, uint32_t *outlen, void *info)</div><div class="ttdoc">读记录操作</div></div>
+<div class="ttc" id="agroup__desfire_html_gaea55f692433a0adaf880ccc8df2abfa2"><div class="ttname"><a href="group__desfire.html#gaea55f692433a0adaf880ccc8df2abfa2">desfire_commit_transaction</a></div><div class="ttdeci">int desfire_commit_transaction(int fd)</div><div class="ttdoc">确认之前对当前应用内各个文件的相关操作并保存</div></div>
+<div class="ttc" id="agroup__desfire_html_ga5567515fda926c918ca7012245041b1e"><div class="ttname"><a href="group__desfire.html#ga5567515fda926c918ca7012245041b1e">desfire_create_backup_datafile</a></div><div class="ttdeci">int desfire_create_backup_datafile(int fd, uint8_t fileno, const desfire_std_backup_file_info *fileinfo)</div><div class="ttdoc">创建备份数据文件</div></div>
+<div class="ttc" id="astructdesfire__version_html_accb0af0260543d1ffc7a60cbbb3a73db"><div class="ttname"><a href="structdesfire__version.html#accb0af0260543d1ffc7a60cbbb3a73db">desfire_version::CW_Prod</a></div><div class="ttdeci">uint8_t CW_Prod</div><div class="ttdef"><b>Definition:</b> desfire.h:762</div></div>
+<div class="ttc" id="astructdesfire__version_html"><div class="ttname"><a href="structdesfire__version.html">desfire_version</a></div><div class="ttdoc">Desfire卡的版本信息</div><div class="ttdef"><b>Definition:</b> desfire.h:742</div></div>
+<div class="ttc" id="astructdesfire__version_html_a9e6952e2a6aab4f9c53a1523f1f26f52"><div class="ttname"><a href="structdesfire__version.html#a9e6952e2a6aab4f9c53a1523f1f26f52">desfire_version::SW_Type</a></div><div class="ttdeci">uint8_t SW_Type</div><div class="ttdef"><b>Definition:</b> desfire.h:753</div></div>
+<div class="ttc" id="agroup__desfire_html_ga3ac6cdf99bd8c96c02ff5b6baabba52c"><div class="ttname"><a href="group__desfire.html#ga3ac6cdf99bd8c96c02ff5b6baabba52c">desfire_format_picc</a></div><div class="ttdeci">int desfire_format_picc(int fd)</div><div class="ttdoc">格式化整个DESFire卡，删除所有的应用以及应用下的密钥和文件信息</div></div>
+<div class="ttc" id="agroup__desfire_html_gad7f87b7bae28d51540d6bddf8c16e2e8"><div class="ttname"><a href="group__desfire.html#gad7f87b7bae28d51540d6bddf8c16e2e8">desfire_deactive</a></div><div class="ttdeci">int desfire_deactive(int fd)</div><div class="ttdoc">复位mifare DESFire卡</div></div>
+<div class="ttc" id="agroup__desfire_html_ga2d1f5d3856481c1e2ae052807e0f5b7a"><div class="ttname"><a href="group__desfire.html#ga2d1f5d3856481c1e2ae052807e0f5b7a">desfire_poll</a></div><div class="ttdeci">int desfire_poll(int fd, uint8_t mode, void *uid, uint8_t *atslen, void *ats)</div><div class="ttdoc">检测感应区内是否存在mifare DESFire卡，若有，则激活</div></div>
+<div class="ttc" id="astructdesfire__record__file__info_html_a442afcb199ccc1aa907036214ae94048"><div class="ttname"><a href="structdesfire__record__file__info.html#a442afcb199ccc1aa907036214ae94048">desfire_record_file_info::read_and_write_access_right_keyno</a></div><div class="ttdeci">uint8_t read_and_write_access_right_keyno</div><div class="ttdef"><b>Definition:</b> desfire.h:1331</div></div>
+<div class="ttc" id="agroup__desfire_html_ga19de066c16edeb695e67cb841b9ff932"><div class="ttname"><a href="group__desfire.html#ga19de066c16edeb695e67cb841b9ff932">desfire_write_record</a></div><div class="ttdeci">int desfire_write_record(int fd, uint8_t fileno, uint8_t comm_set, int offset, int len, const void *info)</div><div class="ttdoc">有限充值操作</div></div>
+<div class="ttc" id="agroup__desfire_html_gaf35747c1a5329346755f1f57be5d34de"><div class="ttname"><a href="group__desfire.html#gaf35747c1a5329346755f1f57be5d34de">desfire_create_linear_recordfile</a></div><div class="ttdeci">int desfire_create_linear_recordfile(int fd, uint8_t fileno, const desfire_record_file_info *fileinfo)</div><div class="ttdoc">创建线性记录文件</div></div>
+<div class="ttc" id="astructdesfire__version_html_a553eb8ad16de5b96a0bb5103d58ade26"><div class="ttname"><a href="structdesfire__version.html#a553eb8ad16de5b96a0bb5103d58ade26">desfire_version::HW_Protocol</a></div><div class="ttdeci">uint8_t HW_Protocol</div><div class="ttdef"><b>Definition:</b> desfire.h:750</div></div>
+<div class="ttc" id="agroup__desfire_html_ga4381fcd21291ccf6422d4bd88e794db4"><div class="ttname"><a href="group__desfire.html#ga4381fcd21291ccf6422d4bd88e794db4">desfire_clear_recordfile</a></div><div class="ttdeci">int desfire_clear_recordfile(int fd, uint8_t fileno)</div><div class="ttdoc">清除记录文件内的所有</div></div>
+<div class="ttc" id="agroup__desfire_html_ga21864e9161aa5b6bad484d38f35f12af"><div class="ttname"><a href="group__desfire.html#ga21864e9161aa5b6bad484d38f35f12af">desfire_set_configuration</a></div><div class="ttdeci">int desfire_set_configuration(int fd, uint8_t option, uint8_t len, const void *info)</div><div class="ttdoc">配置mifare DESFire卡</div></div>
+<div class="ttc" id="astructdesfire__version_html_a25a07b125da239d39d0df94fb96311d6"><div class="ttname"><a href="structdesfire__version.html#a25a07b125da239d39d0df94fb96311d6">desfire_version::SW_SubType</a></div><div class="ttdeci">uint8_t SW_SubType</div><div class="ttdef"><b>Definition:</b> desfire.h:754</div></div>
+<div class="ttc" id="agroup__desfire_html_ga338301d0db316e26eee60bac526e38da"><div class="ttname"><a href="group__desfire.html#ga338301d0db316e26eee60bac526e38da">desfire_get_value</a></div><div class="ttdeci">int desfire_get_value(int fd, uint8_t fileno, uint8_t comm_set, uint32_t *value)</div><div class="ttdoc">获取指定值文件的值大小</div></div>
+<div class="ttc" id="astructdesfire__value__file__info_html_a96a5f824510f9af13c54cf7f2293bb95"><div class="ttname"><a href="structdesfire__value__file__info.html#a96a5f824510f9af13c54cf7f2293bb95">desfire_value_file_info::read_and_write_access_right_keyno</a></div><div class="ttdeci">uint8_t read_and_write_access_right_keyno</div><div class="ttdef"><b>Definition:</b> desfire.h:1258</div></div>
+<div class="ttc" id="astructdesfire__std__backup__file__info_html_af57ad8eef2c62989a6aa9bbf33d0bbf0"><div class="ttname"><a href="structdesfire__std__backup__file__info.html#af57ad8eef2c62989a6aa9bbf33d0bbf0">desfire_std_backup_file_info::read_and_write_access_right_keyno</a></div><div class="ttdeci">uint8_t read_and_write_access_right_keyno</div><div class="ttdef"><b>Definition:</b> desfire.h:1154</div></div>
+<div class="ttc" id="astructdesfire__value__file__info_html_a445615bd2c6b1cf1aa41bb4d100d4b67"><div class="ttname"><a href="structdesfire__value__file__info.html#a445615bd2c6b1cf1aa41bb4d100d4b67">desfire_value_file_info::lower_limit</a></div><div class="ttdeci">uint32_t lower_limit</div><div class="ttdef"><b>Definition:</b> desfire.h:1261</div></div>
+<div class="ttc" id="agroup__desfire_html_ga725b0978f1274f4f3bb15fc6c443d7bd"><div class="ttname"><a href="group__desfire.html#ga725b0978f1274f4f3bb15fc6c443d7bd">desfire_get_card_uid</a></div><div class="ttdeci">int desfire_get_card_uid(int fd, void *uid)</div><div class="ttdoc">获取mifare DESFire卡的UID信息</div></div>
+<div class="ttc" id="astructdesfire__version_html_a33e42ee0474c4232589cc8a2a1da3c3f"><div class="ttname"><a href="structdesfire__version.html#a33e42ee0474c4232589cc8a2a1da3c3f">desfire_version::HW_SubType</a></div><div class="ttdeci">uint8_t HW_SubType</div><div class="ttdef"><b>Definition:</b> desfire.h:746</div></div>
+<div class="ttc" id="astructdesfire__value__file__info_html_a88dbeb8a2a13450f44c1bd734691fb1e"><div class="ttname"><a href="structdesfire__value__file__info.html#a88dbeb8a2a13450f44c1bd734691fb1e">desfire_value_file_info::upper_limit</a></div><div class="ttdeci">uint32_t upper_limit</div><div class="ttdef"><b>Definition:</b> desfire.h:1262</div></div>
+<div class="ttc" id="astructdesfire__appinfo_html_aa1a3ca28d58fe3c6b02025caffcdd04f"><div class="ttname"><a href="structdesfire__appinfo.html#aa1a3ca28d58fe3c6b02025caffcdd04f">desfire_appinfo::IsSupISOFID</a></div><div class="ttdeci">uint8_t IsSupISOFID</div><div class="ttdef"><b>Definition:</b> desfire.h:512</div></div>
+<div class="ttc" id="agroup__desfire_html_ga7887fd93e3d6af76d89649a88878c9c8"><div class="ttname"><a href="group__desfire.html#ga7887fd93e3d6af76d89649a88878c9c8">desfire_get_fids</a></div><div class="ttdeci">int desfire_get_fids(int fd, uint8_t *num, void *fid)</div><div class="ttdoc">获取mifare DESFire卡当前子应用内的文件fid信息</div></div>
+<div class="ttc" id="astructdesfire__version_html_a78d886ac8b5545edefa4558e2b12bab4"><div class="ttname"><a href="structdesfire__version.html#a78d886ac8b5545edefa4558e2b12bab4">desfire_version::SW_MajorVer</a></div><div class="ttdeci">uint8_t SW_MajorVer</div><div class="ttdef"><b>Definition:</b> desfire.h:755</div></div>
+<div class="ttc" id="agroup__desfire_html_ga9919612d6f03e3dd8cf101711c84a2b8"><div class="ttname"><a href="group__desfire.html#ga9919612d6f03e3dd8cf101711c84a2b8">desfire_get_key_version</a></div><div class="ttdeci">int desfire_get_key_version(int fd, uint8_t keyno, uint8_t *version)</div><div class="ttdoc">修改PICC Master Key设置或者Application Master Key设置</div></div>
+<div class="ttc" id="agroup__desfire_html_ga49d6ba10f7c274ef4bed7e69b8074418"><div class="ttname"><a href="group__desfire.html#ga49d6ba10f7c274ef4bed7e69b8074418">desfire_delete_application</a></div><div class="ttdeci">int desfire_delete_application(int fd, const void *aid)</div><div class="ttdoc">删除一个子应用</div></div>
+<div class="ttc" id="astructdesfire__value__file__info_html_a713d80898277f2dfc03a58ebc81da4ff"><div class="ttname"><a href="structdesfire__value__file__info.html#a713d80898277f2dfc03a58ebc81da4ff">desfire_value_file_info::change_access_right_keyno</a></div><div class="ttdeci">uint8_t change_access_right_keyno</div><div class="ttdef"><b>Definition:</b> desfire.h:1259</div></div>
+<div class="ttc" id="astructdesfire__std__backup__file__info_html_af51174f76c8e5e9e632582a52777fa55"><div class="ttname"><a href="structdesfire__std__backup__file__info.html#af51174f76c8e5e9e632582a52777fa55">desfire_std_backup_file_info::com_sett</a></div><div class="ttdeci">uint8_t com_sett</div><div class="ttdef"><b>Definition:</b> desfire.h:1151</div></div>
+<div class="ttc" id="astructdesfire__file_html_ac82542c1d8db8e971181dea656bdf504"><div class="ttname"><a href="structdesfire__file.html#ac82542c1d8db8e971181dea656bdf504">desfire_file::upper_limit</a></div><div class="ttdeci">uint32_t upper_limit</div><div class="ttdef"><b>Definition:</b> desfire.h:1024</div></div>
+<div class="ttc" id="agroup__desfire_html_gaf59ef4e4aabe0aacd9fc69c3fc7f16ad"><div class="ttname"><a href="group__desfire.html#gaf59ef4e4aabe0aacd9fc69c3fc7f16ad">desfire_change_filesettings</a></div><div class="ttdeci">int desfire_change_filesettings(int fd, uint8_t fileno, uint8_t comm_set, uint8_t old_change_access_keyno, uint8_t new_read_access_keyno, uint8_t new_write_access_keyno, uint8_t new_read_write_access_keyno, uint8_t new_change_access_keyno)</div><div class="ttdoc">获取指定文件的信息</div></div>
+<div class="ttc" id="astructdesfire__record__file__info_html_a3f893d440b4cb811cefcd4aa7f53cd37"><div class="ttname"><a href="structdesfire__record__file__info.html#a3f893d440b4cb811cefcd4aa7f53cd37">desfire_record_file_info::write_access_right_keyno</a></div><div class="ttdeci">uint8_t write_access_right_keyno</div><div class="ttdef"><b>Definition:</b> desfire.h:1330</div></div>
+<div class="ttc" id="astructdesfire__file_html_ac1189257704a157c7bd4e11c091db690"><div class="ttname"><a href="structdesfire__file.html#ac1189257704a157c7bd4e11c091db690">desfire_file::current_number_of_records</a></div><div class="ttdeci">uint32_t current_number_of_records</div><div class="ttdef"><b>Definition:</b> desfire.h:1031</div></div>
+<div class="ttc" id="astructdesfire__record__file__info_html_ac29308e26c59104ab6215af05662d7d2"><div class="ttname"><a href="structdesfire__record__file__info.html#ac29308e26c59104ab6215af05662d7d2">desfire_record_file_info::rnd_acc</a></div><div class="ttdeci">uint32_t rnd_acc</div><div class="ttdef"><b>Definition:</b> desfire.h:1337</div></div>
+<div class="ttc" id="agroup__desfire_html_ga94495f4de8f424f372c18384a29186bc"><div class="ttname"><a href="group__desfire.html#ga94495f4de8f424f372c18384a29186bc">desfire_get_application_ids</a></div><div class="ttdeci">int desfire_get_application_ids(int fd, uint8_t *num, void *aid)</div><div class="ttdoc">获取DESFire卡内所有应用的AID信息</div></div>
+<div class="ttc" id="astructdesfire__appinfo_html_af2f319589e40521f4e2329c82c2679a4"><div class="ttname"><a href="structdesfire__appinfo.html#af2f319589e40521f4e2329c82c2679a4">desfire_appinfo::CryptoMode</a></div><div class="ttdeci">uint8_t CryptoMode</div><div class="ttdef"><b>Definition:</b> desfire.h:510</div></div>
+<div class="ttc" id="astructdesfire__version_html_afbdc7bfd08cca41d704f8d1e4e07bffc"><div class="ttname"><a href="structdesfire__version.html#afbdc7bfd08cca41d704f8d1e4e07bffc">desfire_version::HW_Type</a></div><div class="ttdeci">uint8_t HW_Type</div><div class="ttdef"><b>Definition:</b> desfire.h:745</div></div>
+<div class="ttc" id="astructdfname__info_html_ad92b35880258c9521b81a259f49a9098"><div class="ttname"><a href="structdfname__info.html#ad92b35880258c9521b81a259f49a9098">dfname_info::LenOfDFName</a></div><div class="ttdeci">uint8_t LenOfDFName</div><div class="ttdef"><b>Definition:</b> desfire.h:631</div></div>
+<div class="ttc" id="astructdesfire__record__file__info_html_a20c29f8653fc750b7bc5af754b172d97"><div class="ttname"><a href="structdesfire__record__file__info.html#a20c29f8653fc750b7bc5af754b172d97">desfire_record_file_info::change_access_right_keyno</a></div><div class="ttdeci">uint8_t change_access_right_keyno</div><div class="ttdef"><b>Definition:</b> desfire.h:1332</div></div>
+<div class="ttc" id="astructdesfire__std__backup__file__info_html_a209d1604c07de4b9e3ecc831c96b562c"><div class="ttname"><a href="structdesfire__std__backup__file__info.html#a209d1604c07de4b9e3ecc831c96b562c">desfire_std_backup_file_info::write_access_right_keyno</a></div><div class="ttdeci">uint8_t write_access_right_keyno</div><div class="ttdef"><b>Definition:</b> desfire.h:1153</div></div>
+<div class="ttc" id="agroup__desfire_html_ga1ddfbd15927bf9caee91a46dc9cf09ed"><div class="ttname"><a href="group__desfire.html#ga1ddfbd15927bf9caee91a46dc9cf09ed">desfire_limited_credit</a></div><div class="ttdeci">int desfire_limited_credit(int fd, uint8_t fileno, uint8_t comm_set, uint32_t value)</div><div class="ttdoc">有限充值操作</div></div>
+<div class="ttc" id="astructdesfire__value__file__info_html_af4d0e9919d1a8e443e0a1dd792169d51"><div class="ttname"><a href="structdesfire__value__file__info.html#af4d0e9919d1a8e443e0a1dd792169d51">desfire_value_file_info::com_sett</a></div><div class="ttdeci">uint8_t com_sett</div><div class="ttdef"><b>Definition:</b> desfire.h:1255</div></div>
+<div class="ttc" id="astructdesfire__appinfo_html"><div class="ttname"><a href="structdesfire__appinfo.html">desfire_appinfo</a></div><div class="ttdoc">Desfire应用程序信息</div><div class="ttdef"><b>Definition:</b> desfire.h:505</div></div>
+<div class="ttc" id="astructdesfire__std__backup__file__info_html"><div class="ttname"><a href="structdesfire__std__backup__file__info.html">desfire_std_backup_file_info</a></div><div class="ttdoc">Desfire一般数据文件信息</div><div class="ttdef"><b>Definition:</b> desfire.h:1134</div></div>
+<div class="ttc" id="agroup__desfire_html_ga16b075f685cac67235816cc1c0d9e81b"><div class="ttname"><a href="group__desfire.html#ga16b075f685cac67235816cc1c0d9e81b">desfire_read_data</a></div><div class="ttdeci">int desfire_read_data(int fd, uint8_t fileno, uint8_t comm_set, uint32_t offset, uint32_t len, uint32_t *outlen, void *dataout)</div><div class="ttdoc">从一般数据文件或者备份数据文件中读取数据</div></div>
+<div class="ttc" id="astructdesfire__file_html_a018d13d7a14b4eac5582a56ca0d22511"><div class="ttname"><a href="structdesfire__file.html#a018d13d7a14b4eac5582a56ca0d22511">desfire_file::max_number_of_records</a></div><div class="ttdeci">uint32_t max_number_of_records</div><div class="ttdef"><b>Definition:</b> desfire.h:1030</div></div>
+<div class="ttc" id="astructdesfire__version_html_a2082b3c1ab1d5bc3a29c8a75d39858fd"><div class="ttname"><a href="structdesfire__version.html#a2082b3c1ab1d5bc3a29c8a75d39858fd">desfire_version::SW_Size</a></div><div class="ttdeci">uint8_t SW_Size</div><div class="ttdef"><b>Definition:</b> desfire.h:757</div></div>
+<div class="ttc" id="astructdesfire__version_html_af6f3aa7d017c3346dabe13215855337a"><div class="ttname"><a href="structdesfire__version.html#af6f3aa7d017c3346dabe13215855337a">desfire_version::SW_MinorVer</a></div><div class="ttdeci">uint8_t SW_MinorVer</div><div class="ttdef"><b>Definition:</b> desfire.h:756</div></div>
+<div class="ttc" id="astructdesfire__std__backup__file__info_html_a50b10b8a0cfe1fdc61449f45f8dd53f5"><div class="ttname"><a href="structdesfire__std__backup__file__info.html#a50b10b8a0cfe1fdc61449f45f8dd53f5">desfire_std_backup_file_info::change_access_right_keyno</a></div><div class="ttdeci">uint8_t change_access_right_keyno</div><div class="ttdef"><b>Definition:</b> desfire.h:1155</div></div>
+<div class="ttc" id="agroup__desfire_html_gac6a5f6899a40165ee007b282b7063d26"><div class="ttname"><a href="group__desfire.html#gac6a5f6899a40165ee007b282b7063d26">desfire_read_data_safe</a></div><div class="ttdeci">int desfire_read_data_safe(int fd, uint8_t fileno, uint8_t comm_set, uint32_t offset, uint32_t len, uint32_t *outlen, void *dataout, uint32_t dataout_size)</div><div class="ttdoc">从一般数据文件或者备份数据文件中读取数据</div></div>
+<div class="ttc" id="agroup__desfire_html_ga11abb729c1acabf7cae44e77e9919983"><div class="ttname"><a href="group__desfire.html#ga11abb729c1acabf7cae44e77e9919983">desfire_write_data</a></div><div class="ttdeci">int desfire_write_data(int fd, uint8_t fileno, uint8_t comm_set, uint32_t offset, uint32_t len, const void *datain)</div><div class="ttdoc">往一般数据文件或者备份数据文件中读取数据</div></div>
+<div class="ttc" id="astructdesfire__file_html_ab2c98fffa5b6bc46dc8fd9d39367e73b"><div class="ttname"><a href="structdesfire__file.html#ab2c98fffa5b6bc46dc8fd9d39367e73b">desfire_file::limited_credit_enabled</a></div><div class="ttdeci">uint8_t limited_credit_enabled</div><div class="ttdef"><b>Definition:</b> desfire.h:1026</div></div>
+<div class="ttc" id="agroup__desfire_html_ga1733deef3718eb9f24692c750862b95f"><div class="ttname"><a href="group__desfire.html#ga1733deef3718eb9f24692c750862b95f">desfire_create_cyclic_recordfile</a></div><div class="ttdeci">int desfire_create_cyclic_recordfile(int fd, uint8_t fileno, const desfire_record_file_info *fileinfo)</div><div class="ttdoc">创建循环记录文件</div></div>
+<div class="ttc" id="astructdesfire__record__file__info_html_a3deb29ad736ff82ba6c6af6ee30bec50"><div class="ttname"><a href="structdesfire__record__file__info.html#a3deb29ad736ff82ba6c6af6ee30bec50">desfire_record_file_info::FlgISOFileID</a></div><div class="ttdeci">uint8_t FlgISOFileID</div><div class="ttdef"><b>Definition:</b> desfire.h:1313</div></div>
+<div class="ttc" id="agroup__desfire_html_ga1fcb7d8beba10a145e020d39ba562788"><div class="ttname"><a href="group__desfire.html#ga1fcb7d8beba10a145e020d39ba562788">desfire_delete_file</a></div><div class="ttdeci">int desfire_delete_file(int fd, uint8_t fileno)</div><div class="ttdoc">删除一个文件</div></div>
+<div class="ttc" id="astructdesfire__file_html_afa688fd49bf4b43fd306bcd12d610cae"><div class="ttname"><a href="structdesfire__file.html#afa688fd49bf4b43fd306bcd12d610cae">desfire_file::change_access_right_keyno</a></div><div class="ttdeci">uint8_t change_access_right_keyno</div><div class="ttdef"><b>Definition:</b> desfire.h:1018</div></div>
+<div class="ttc" id="astructdesfire__value__file__info_html_a498b358e1589fd119e17e162f9b393fa"><div class="ttname"><a href="structdesfire__value__file__info.html#a498b358e1589fd119e17e162f9b393fa">desfire_value_file_info::read_access_right_keyno</a></div><div class="ttdeci">uint8_t read_access_right_keyno</div><div class="ttdef"><b>Definition:</b> desfire.h:1256</div></div>
+<div class="ttc" id="astructdesfire__file_html_a5cf3a3c81a8597706a1e8548b9d5557b"><div class="ttname"><a href="structdesfire__file.html#a5cf3a3c81a8597706a1e8548b9d5557b">desfire_file::read_and_write_access_right_keyno</a></div><div class="ttdeci">uint8_t read_and_write_access_right_keyno</div><div class="ttdef"><b>Definition:</b> desfire.h:1017</div></div>
+<div class="ttc" id="astructdesfire__version_html_a626f0a2e0e14cb3a74373cce7742a592"><div class="ttname"><a href="structdesfire__version.html#a626f0a2e0e14cb3a74373cce7742a592">desfire_version::SW_Protocol</a></div><div class="ttdeci">uint8_t SW_Protocol</div><div class="ttdef"><b>Definition:</b> desfire.h:758</div></div>
+<div class="ttc" id="agroup__desfire_html_ga22b4d8a26e369a33be7caf2884e92144"><div class="ttname"><a href="group__desfire.html#ga22b4d8a26e369a33be7caf2884e92144">desfire_change_app_key</a></div><div class="ttdeci">int desfire_change_app_key(int fd, uint8_t keysetting, uint8_t type, uint8_t keyno, const void *oldkey, const void *newkey, uint8_t version)</div><div class="ttdoc">修改应用密钥</div></div>
+<div class="ttc" id="agroup__desfire_html_ga3355f56e0a0d293e19e3ba7301122a70"><div class="ttname"><a href="group__desfire.html#ga3355f56e0a0d293e19e3ba7301122a70">desfire_get_dfnames</a></div><div class="ttdeci">int desfire_get_dfnames(int fd, uint8_t *appnum, dfname_info *info)</div><div class="ttdoc">获取DESFire卡内所有应用的信息</div></div>
+<div class="ttc" id="agroup__desfire_html_ga329d012b18d5cf926a2ea3f2908c6825"><div class="ttname"><a href="group__desfire.html#ga329d012b18d5cf926a2ea3f2908c6825">desfire_credit</a></div><div class="ttdeci">int desfire_credit(int fd, uint8_t fileno, uint8_t comm_set, uint32_t value)</div><div class="ttdoc">获取指定值文件的值大小</div></div>
+<div class="ttc" id="astructdesfire__file_html_a8f1e0acf339816cf91a03826e3c4935c"><div class="ttname"><a href="structdesfire__file.html#a8f1e0acf339816cf91a03826e3c4935c">desfire_file::lower_limit</a></div><div class="ttdeci">uint32_t lower_limit</div><div class="ttdef"><b>Definition:</b> desfire.h:1023</div></div>
+<div class="ttc" id="astructdesfire__appinfo_html_a8ba6fb5f401b54e6cf7cbf85e4df28ce"><div class="ttname"><a href="structdesfire__appinfo.html#a8ba6fb5f401b54e6cf7cbf85e4df28ce">desfire_appinfo::IsSupFID</a></div><div class="ttdeci">uint8_t IsSupFID</div><div class="ttdef"><b>Definition:</b> desfire.h:511</div></div>
+<div class="ttc" id="astructdesfire__std__backup__file__info_html_a332ca881dfda3a10fb96a3af2401588f"><div class="ttname"><a href="structdesfire__std__backup__file__info.html#a332ca881dfda3a10fb96a3af2401588f">desfire_std_backup_file_info::FlgISOFileID</a></div><div class="ttdeci">uint8_t FlgISOFileID</div><div class="ttdef"><b>Definition:</b> desfire.h:1136</div></div>
+<div class="ttc" id="agroup__desfire_html_ga63fa0cb60b7445d41c135fc9db2c766e"><div class="ttname"><a href="group__desfire.html#ga63fa0cb60b7445d41c135fc9db2c766e">desfire_free_memory</a></div><div class="ttdeci">int desfire_free_memory(int fd, uint32_t *freesize)</div><div class="ttdoc">获取mifare DESFire卡的剩余可用空间大小</div></div>
+<div class="ttc" id="astructdesfire__record__file__info_html_af16466cc6a1090d4e9d892c66d022a07"><div class="ttname"><a href="structdesfire__record__file__info.html#af16466cc6a1090d4e9d892c66d022a07">desfire_record_file_info::max_number_of_records</a></div><div class="ttdeci">uint32_t max_number_of_records</div><div class="ttdef"><b>Definition:</b> desfire.h:1335</div></div>
+<div class="ttc" id="astructdesfire__record__file__info_html"><div class="ttname"><a href="structdesfire__record__file__info.html">desfire_record_file_info</a></div><div class="ttdoc">Desfire线性记录文件信息</div><div class="ttdef"><b>Definition:</b> desfire.h:1311</div></div>
+<div class="ttc" id="astructdesfire__record__file__info_html_a679e6e6ebfbaaf48e8ca74581059ba89"><div class="ttname"><a href="structdesfire__record__file__info.html#a679e6e6ebfbaaf48e8ca74581059ba89">desfire_record_file_info::record_size</a></div><div class="ttdeci">uint32_t record_size</div><div class="ttdef"><b>Definition:</b> desfire.h:1334</div></div>
+<div class="ttc" id="agroup__desfire_html_gaa268e155e089f2d8cec805a43ff5a279"><div class="ttname"><a href="group__desfire.html#gaa268e155e089f2d8cec805a43ff5a279">desfire_get_version</a></div><div class="ttdeci">int desfire_get_version(int fd, desfire_version *version)</div><div class="ttdoc">获取mifare DESFire卡的版本信息</div></div>
+<div class="ttc" id="astructdesfire__value__file__info_html_a6e4aa474f7b1c2e65a5196e55223f2c0"><div class="ttname"><a href="structdesfire__value__file__info.html#a6e4aa474f7b1c2e65a5196e55223f2c0">desfire_value_file_info::init_value</a></div><div class="ttdeci">uint32_t init_value</div><div class="ttdef"><b>Definition:</b> desfire.h:1263</div></div>
+<div class="ttc" id="astructdesfire__file_html_a6f7ad5b5e3afaa5d48849e46a4859695"><div class="ttname"><a href="structdesfire__file.html#a6f7ad5b5e3afaa5d48849e46a4859695">desfire_file::com_sett</a></div><div class="ttdeci">uint8_t com_sett</div><div class="ttdef"><b>Definition:</b> desfire.h:1012</div></div>
+<div class="ttc" id="agroup__desfire_html_ga78508b5e6d1d80c956e3e0ac5fbe31ab"><div class="ttname"><a href="group__desfire.html#ga78508b5e6d1d80c956e3e0ac5fbe31ab">desfire_get_key_settings</a></div><div class="ttdeci">int desfire_get_key_settings(int fd, uint8_t *key_setting, uint8_t *max_key_num)</div><div class="ttdoc">修改PICC Master Key设置或者Application Master Key设置</div></div>
+<div class="ttc" id="agroup__desfire_html_ga2e6de82a2677dce6d9c90319730fcce4"><div class="ttname"><a href="group__desfire.html#ga2e6de82a2677dce6d9c90319730fcce4">desfire_create_application</a></div><div class="ttdeci">int desfire_create_application(int fd, const desfire_appinfo *info)</div><div class="ttdoc">创建一个子应用</div></div>
+<div class="ttc" id="astructdesfire__appinfo_html_a9d550f1434f87ff59bdd93df25711eb9"><div class="ttname"><a href="structdesfire__appinfo.html#a9d550f1434f87ff59bdd93df25711eb9">desfire_appinfo::NumberOfKey</a></div><div class="ttdeci">uint8_t NumberOfKey</div><div class="ttdef"><b>Definition:</b> desfire.h:509</div></div>
+<div class="ttc" id="astructdesfire__file_html"><div class="ttname"><a href="structdesfire__file.html">desfire_file</a></div><div class="ttdoc">Desfire文件信息</div><div class="ttdef"><b>Definition:</b> desfire.h:979</div></div>
+<!-- HTML footer for doxygen 1.8.6-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="desfire_8h.html">desfire.h</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

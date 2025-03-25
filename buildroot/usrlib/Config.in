@@ -1,0 +1,32 @@
+
+menu "User Library"
+
+comment "User Library"
+
+config BR2_PACKAGE_USER_LIBRARY
+	bool "Build User library"
+	default y
+	help
+	  Enable this option if you want to build a library your embedded device
+
+if BR2_PACKAGE_USER_LIBRARY
+
+config BR2_USER_LIBRARY_SOURCE_PATH
+	string
+	default "$(WORKSPACE)/usrlib"
+
+config BR2_USER_LIBRARY_INSTALL_PATH
+	string "user library install path"
+	default "$(BASE_DIR)/sdk/usr/lib"
+
+config BR2_BUILDCONFIG_CONFIG_USE_PED_RANDOM
+	bool "Using ped random"
+	default n
+	help
+		Get random from ped in SSL
+
+source ".config_wrapper/usrlib_wrapper.in"
+
+endif
+
+endmenu

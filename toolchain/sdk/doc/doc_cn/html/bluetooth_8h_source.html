@@ -1,0 +1,269 @@
+<!-- HTML header for doxygen 1.8.6-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<title>MDP820: bluetooth.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="styleSheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<script type="text/javascript" src="version.js"></script>
+<script type="text/javascript" src="language.js"></script>
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="MDP820.jpg"/></td>
+  <td width="100%" style="padding-left: 0.5em;">
+   <div id="projectname" style="display:table-cell;vertical-align:middle;text-align:center">MDP820
+		<span id="projectnumber">
+			<select>
+				<option value ="8.2.3">8.2.3</option>
+			</select>
+		</span>
+   </div>
+   <div id="projectbrief">MDP820-API</div>
+  </td>
+  <td>
+    <span id="projectlang" style="margin-right: 1em;">
+		<select>
+			<!-- <option value ="ch">中文</option> -->
+			<!-- <option value ="en">English</option> -->
+		</select>
+	</span>
+   </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('bluetooth_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">bluetooth.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#ifndef __BLUETOOTH_H__</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#define __BLUETOOTH_H__</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define PAIRING_MODE_PINCODE        (0x00)</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#define PAIRING_MODE_JUSTWORK       (0x01)</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#define PAIRING_MODE_PASSKEY        (0x02)</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#define PAIRING_MODE_CONFIRM        (0x03)</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="group__bluetooth.html#gaaee4ff9976e9ba10ba3ef529503acc19">   46</a></span>&#160;<span class="preprocessor">#define VISIBLE_BT                  (0x03)      </span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="group__bluetooth.html#gae6f25acc1fd89eb14b634d132186df52">   47</a></span>&#160;<span class="preprocessor">#define VISIBLE_BLE                 (0x04)      </span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#define VISIBLE_ALL                 (VISIBLE_BT | VISIBLE_BLE) </span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="group__bluetooth.html#ga6ba913a21974d9425b2261886b5b931a">   53</a></span>&#160;<span class="preprocessor">#define BT_ON                       (0x01)    </span></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="group__bluetooth.html#ga3a4b0e7831afd44bb4f3a5bb7a154b9a">   54</a></span>&#160;<span class="preprocessor">#define BT_OFF                      (0x00)    </span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="group__bluetooth.html#ga4a145897a8782ba41228476270386903">   56</a></span>&#160;<span class="preprocessor">#define BT_MATCH_OK                 (0x00)    </span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="group__bluetooth.html#gab3229bc2046b62f8c15ab50c38c52726">   57</a></span>&#160;<span class="preprocessor">#define BT_MATCH_ERR                (0x01)    </span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="group__bluetooth.html#gac8c860dee48900e2eccd435e225fd174">   66</a></span>&#160;<span class="preprocessor">#define PAIRING_IDLE                (0x0) </span></div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="group__bluetooth.html#gaed3e0e4f7793d0f8b7c46404d2ad0fa3">   67</a></span>&#160;<span class="preprocessor">#define PAIRING_FAIL                (0x1) </span></div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="group__bluetooth.html#ga9efe08e2386f47715f5fe8f6ee691dc3">   68</a></span>&#160;<span class="preprocessor">#define PAIRING_SUCCESS             (0x2) </span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="group__bluetooth.html#gabff05064a5722fb86f54062e6ea2c530">   69</a></span>&#160;<span class="preprocessor">#define PAIRING_SET_PASSKEY         (0x3) </span></div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="group__bluetooth.html#ga32d1991367e178fe47a2a5e72e3b939d">   70</a></span>&#160;<span class="preprocessor">#define PAIRING_GET_PASSKEY         (0x4) </span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="group__bluetooth.html#gac8a7ac6e31a5720a9f9806577871f365">   71</a></span>&#160;<span class="preprocessor">#define PAIRING_BT_COMFIRM          (0x5) </span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="group__bluetooth.html#ga6d1d613a42240062a8f373bcbbf98e87">   72</a></span>&#160;<span class="preprocessor">#define PAIRING_BLE_COMFIRM         (0x6) </span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">int bt_open(const char *filename, int oflags);</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__bluetooth.html#ga9606b807acb4257335a40d5d78f906d2">bt_close</a>(<span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__bluetooth.html#gaf4df4b161142ed84e8c347fba4d12566">bt_send</a>(<span class="keywordtype">int</span> fd, <span class="keyword">const</span> <span class="keywordtype">void</span> *data, uint32_t data_len);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__bluetooth.html#gacf6c4feae5a8a544775f13d5b50aebf1">bt_recv</a>(<span class="keywordtype">int</span> fd, <span class="keywordtype">void</span> *data, uint32_t data_len);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__bluetooth.html#ga0e86409eeafd362fb3d55f4543128a84">bt_reset</a>(<span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__bluetooth.html#gac9167dbf54197bf888cde5c7558539d8">bt_get_status</a>(<span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__bluetooth.html#ga30c0a40ae79a1fbb44535723e20fb4eb">bt_disconnect</a>(<span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="comment">/*不支持bt_standby_enable和bt_standby_disable*/</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keywordtype">int</span> bt_standby_enable(<span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="keywordtype">int</span> bt_standby_disable(<span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__bluetooth.html#ga35e3b2487bdbf1cadc9eeb03d137409a">bt_get_name</a>(<span class="keywordtype">int</span> fd, <span class="keywordtype">char</span> *name_str, <span class="keywordtype">int</span> str_len);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__bluetooth.html#gac8821cb21c6388c737b3dd2b3f0f52fc">bt_set_name</a>(<span class="keywordtype">int</span> fd, <span class="keyword">const</span> <span class="keywordtype">char</span> *name_str, <span class="keywordtype">int</span> str_len);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment">/*不支持获取pincode*/</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="keywordtype">int</span> bt_get_pincode(<span class="keywordtype">int</span> fd, <span class="keywordtype">void</span> *data, <span class="keywordtype">int</span> len);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment">/*不支持bt_set_pincode*/</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__bluetooth.html#ga5631b29887b566be783f751fd099f6e8">bt_set_pincode</a>(<span class="keywordtype">int</span> fd, <span class="keyword">const</span> <span class="keywordtype">void</span> *data, <span class="keywordtype">int</span> len);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment">/*不支持bt_get_version*/</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__bluetooth.html#ga5009093e7ffb1f5b5894656d1c2d9e78">bt_get_version</a>(<span class="keywordtype">int</span> fd, <span class="keywordtype">void</span> *data, <span class="keywordtype">int</span> len);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment">/*不支持bt_eeprom_version*/</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__bluetooth.html#gad64f2d70a5dc591200303725dff88c67">bt_eeprom_version</a>(<span class="keywordtype">int</span> fd, <span class="keywordtype">void</span> *data, <span class="keywordtype">int</span> len);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__bluetooth.html#ga9484e1ddbd6909e149515beecd9f9280">bt_local_addr</a>(<span class="keywordtype">int</span> fd, <span class="keywordtype">void</span> *data, <span class="keywordtype">int</span> len);</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160; </div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="comment">/*不支持bt_set_local_addr*/</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__bluetooth.html#ga86316c3db696f15ec5abab75624e9d3d">bt_set_local_addr</a>(<span class="keywordtype">int</span> fd, <span class="keyword">const</span> <span class="keywordtype">void</span> *data, <span class="keywordtype">int</span> len);</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__bluetooth.html#gaef258225045ccb19ddd24eb74fb79532">bt_paired_info_get</a>(<span class="keywordtype">int</span> fd, <span class="keywordtype">void</span> *data, <span class="keywordtype">int</span> len);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; </div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__bluetooth.html#ga6d1d23baa8e14714e465a1fd832c9b98">bt_paired_info_erase</a>(<span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__bluetooth.html#gaf470b1f1961082bf5ef8145664a5d645">bt_pairing_mode_set</a>(<span class="keywordtype">int</span> fd, uint8_t mode);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__bluetooth.html#gaea2e16c1f57c9eaefc306a647d958f5f">bt_pairing_mode_get</a>(<span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__bluetooth.html#gafbc0e0f15a220cd8cd760941dcda9aab">bt_entry_passkey</a>(<span class="keywordtype">int</span> fd, <span class="keyword">const</span> <span class="keywordtype">void</span> *data, <span class="keywordtype">int</span> len);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__bluetooth.html#ga2018fb3e1e80df0b0cc23cb5a430d417">bt_entry_passkey_paired</a>(<span class="keywordtype">int</span> fd, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> timeout_sec);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160; </div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="comment">/*不支持bt_set_visible*/</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__bluetooth.html#ga75039a0930f5b7eac9fc5735db1a3490">bt_set_visible</a>(<span class="keywordtype">int</span> fd, uint8_t visible_mode);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="comment">/*不支持bt_set_uart_baud*/</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="keywordtype">int</span> bt_set_uart_baud(<span class="keywordtype">int</span> fd, <span class="keyword">const</span> <span class="keywordtype">char</span> *baud_str);</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160; </div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160; <span class="comment">/*不支持bt_set_cod*/</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__bluetooth.html#gaca3789056b7989ac40ba9114afc8cdaa">bt_set_cod</a>(<span class="keywordtype">int</span> fd, <span class="keyword">const</span> <span class="keywordtype">void</span> *data, <span class="keywordtype">int</span> len);</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="comment">/*不支持bt_enter_sleep*/</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__bluetooth.html#gafbff74a3138b4aa1d0bc75c8114c68e1">bt_enter_sleep</a>(<span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160; </div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="comment">/*不支持bt_set_adv_data*/</span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__bluetooth.html#gae5952736bee1c15e9bd7712a7feed1e8">bt_set_adv_data</a>(<span class="keywordtype">int</span> fd, <span class="keyword">const</span> <span class="keywordtype">void</span> *data, <span class="keywordtype">int</span> len);</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160; </div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="comment">/*不支持bt_get_volatge*/</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__bluetooth.html#gab06f1dd5d41ead6678353238e485073c">bt_get_volatge</a>(<span class="keywordtype">int</span> fd, <span class="keywordtype">void</span> *data, <span class="keywordtype">int</span> len);</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160; </div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;<span class="comment">/*不支持bt_set_voltage_detect*/</span></div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__bluetooth.html#ga36a1e30dad094d23a7b9670af8f96506">bt_set_voltage_detect</a>(<span class="keywordtype">int</span> fd, uint8_t on_off);</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160; </div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__bluetooth.html#ga076b4021f8d28e1c510ae97f7856f7d7">bt_user_confirm</a>(<span class="keywordtype">int</span> fd, <span class="keywordtype">int</span> confirm);</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160; </div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__bluetooth.html#ga0c43be04a7c827ec33c1421094e03246">bt_user_confirm_passkey</a>(<span class="keywordtype">int</span> fd, <span class="keywordtype">void</span> *data, <span class="keywordtype">int</span> len);</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160; </div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__bluetooth.html#ga6973ad4e920fdd6c1c37de6dc63c3a68">bt_change_name</a>(<span class="keywordtype">int</span> fd, <span class="keyword">const</span> <span class="keywordtype">char</span> *name_str, <span class="keywordtype">int</span> str_len);</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160; </div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__bluetooth.html#ga2fa0a3122542fa8b92f879cf96057269">bt_peek_rx_len</a>(<span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160; </div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__bluetooth.html#ga726934a699fbd4875c1ecc4eb23cb8a7">bt_ble_start_pairing</a>(<span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160; </div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__bluetooth.html#ga44bde25689037b8505c451054c8f840a">bt_get_pairing_status</a>(<span class="keywordtype">int</span> fd, uint32_t *status, uint32_t *nvcnt);</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160; </div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160; </div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160; </div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;}</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160; </div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __BT_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="agroup__bluetooth_html_gafbc0e0f15a220cd8cd760941dcda9aab"><div class="ttname"><a href="group__bluetooth.html#gafbc0e0f15a220cd8cd760941dcda9aab">bt_entry_passkey</a></div><div class="ttdeci">int bt_entry_passkey(int fd, const void *data, int len)</div><div class="ttdoc">输入passkey，固定4字节</div></div>
+<div class="ttc" id="agroup__bluetooth_html_ga75039a0930f5b7eac9fc5735db1a3490"><div class="ttname"><a href="group__bluetooth.html#ga75039a0930f5b7eac9fc5735db1a3490">bt_set_visible</a></div><div class="ttdeci">int bt_set_visible(int fd, uint8_t visible_mode)</div><div class="ttdoc">设置蓝牙的可发现和广播状态</div></div>
+<div class="ttc" id="agroup__bluetooth_html_gaea2e16c1f57c9eaefc306a647d958f5f"><div class="ttname"><a href="group__bluetooth.html#gaea2e16c1f57c9eaefc306a647d958f5f">bt_pairing_mode_get</a></div><div class="ttdeci">int bt_pairing_mode_get(int fd)</div><div class="ttdoc">获取配对模式</div></div>
+<div class="ttc" id="agroup__bluetooth_html_ga726934a699fbd4875c1ecc4eb23cb8a7"><div class="ttname"><a href="group__bluetooth.html#ga726934a699fbd4875c1ecc4eb23cb8a7">bt_ble_start_pairing</a></div><div class="ttdeci">int bt_ble_start_pairing(int fd)</div><div class="ttdoc">用于ble justwork/comfirm配对模式开始配对</div></div>
+<div class="ttc" id="agroup__bluetooth_html_ga86316c3db696f15ec5abab75624e9d3d"><div class="ttname"><a href="group__bluetooth.html#ga86316c3db696f15ec5abab75624e9d3d">bt_set_local_addr</a></div><div class="ttdeci">int bt_set_local_addr(int fd, const void *data, int len)</div><div class="ttdoc">设置蓝牙MAC地址</div></div>
+<div class="ttc" id="agroup__bluetooth_html_gafbff74a3138b4aa1d0bc75c8114c68e1"><div class="ttname"><a href="group__bluetooth.html#gafbff74a3138b4aa1d0bc75c8114c68e1">bt_enter_sleep</a></div><div class="ttdeci">int bt_enter_sleep(int fd)</div><div class="ttdoc">让蓝牙进入睡眠模式</div></div>
+<div class="ttc" id="agroup__bluetooth_html_ga44bde25689037b8505c451054c8f840a"><div class="ttname"><a href="group__bluetooth.html#ga44bde25689037b8505c451054c8f840a">bt_get_pairing_status</a></div><div class="ttdeci">int bt_get_pairing_status(int fd, uint32_t *status, uint32_t *nvcnt)</div><div class="ttdoc">get bluetooth status</div></div>
+<div class="ttc" id="agroup__bluetooth_html_ga2fa0a3122542fa8b92f879cf96057269"><div class="ttname"><a href="group__bluetooth.html#ga2fa0a3122542fa8b92f879cf96057269">bt_peek_rx_len</a></div><div class="ttdeci">int bt_peek_rx_len(int fd)</div><div class="ttdoc">查看蓝牙接收缓存有多少数据</div></div>
+<div class="ttc" id="agroup__bluetooth_html_gacf6c4feae5a8a544775f13d5b50aebf1"><div class="ttname"><a href="group__bluetooth.html#gacf6c4feae5a8a544775f13d5b50aebf1">bt_recv</a></div><div class="ttdeci">int bt_recv(int fd, void *data, uint32_t data_len)</div><div class="ttdoc">接收蓝牙数据</div></div>
+<div class="ttc" id="agroup__bluetooth_html_gae5952736bee1c15e9bd7712a7feed1e8"><div class="ttname"><a href="group__bluetooth.html#gae5952736bee1c15e9bd7712a7feed1e8">bt_set_adv_data</a></div><div class="ttdeci">int bt_set_adv_data(int fd, const void *data, int len)</div><div class="ttdoc">设置BLE ADV DATA(低功耗蓝牙广播数据)</div></div>
+<div class="ttc" id="agroup__bluetooth_html_ga30c0a40ae79a1fbb44535723e20fb4eb"><div class="ttname"><a href="group__bluetooth.html#ga30c0a40ae79a1fbb44535723e20fb4eb">bt_disconnect</a></div><div class="ttdeci">int bt_disconnect(int fd)</div><div class="ttdoc">断开蓝牙连接</div></div>
+<div class="ttc" id="agroup__bluetooth_html_ga9606b807acb4257335a40d5d78f906d2"><div class="ttname"><a href="group__bluetooth.html#ga9606b807acb4257335a40d5d78f906d2">bt_close</a></div><div class="ttdeci">int bt_close(int fd)</div><div class="ttdoc">关闭蓝牙设备</div></div>
+<div class="ttc" id="agroup__bluetooth_html_gaf470b1f1961082bf5ef8145664a5d645"><div class="ttname"><a href="group__bluetooth.html#gaf470b1f1961082bf5ef8145664a5d645">bt_pairing_mode_set</a></div><div class="ttdeci">int bt_pairing_mode_set(int fd, uint8_t mode)</div><div class="ttdoc">设置配对模式</div></div>
+<div class="ttc" id="agroup__bluetooth_html_ga076b4021f8d28e1c510ae97f7856f7d7"><div class="ttname"><a href="group__bluetooth.html#ga076b4021f8d28e1c510ae97f7856f7d7">bt_user_confirm</a></div><div class="ttdeci">int bt_user_confirm(int fd, int confirm)</div><div class="ttdoc">确认GKEY是否正确</div></div>
+<div class="ttc" id="agroup__bluetooth_html_gac9167dbf54197bf888cde5c7558539d8"><div class="ttname"><a href="group__bluetooth.html#gac9167dbf54197bf888cde5c7558539d8">bt_get_status</a></div><div class="ttdeci">int bt_get_status(int fd)</div><div class="ttdoc">请求蓝牙状态</div></div>
+<div class="ttc" id="agroup__bluetooth_html_ga35e3b2487bdbf1cadc9eeb03d137409a"><div class="ttname"><a href="group__bluetooth.html#ga35e3b2487bdbf1cadc9eeb03d137409a">bt_get_name</a></div><div class="ttdeci">int bt_get_name(int fd, char *name_str, int str_len)</div><div class="ttdoc">获取蓝牙名称</div></div>
+<div class="ttc" id="agroup__bluetooth_html_gaca3789056b7989ac40ba9114afc8cdaa"><div class="ttname"><a href="group__bluetooth.html#gaca3789056b7989ac40ba9114afc8cdaa">bt_set_cod</a></div><div class="ttdeci">int bt_set_cod(int fd, const void *data, int len)</div><div class="ttdoc">设置蓝牙BT3.0 class of device</div></div>
+<div class="ttc" id="agroup__bluetooth_html_ga2018fb3e1e80df0b0cc23cb5a430d417"><div class="ttname"><a href="group__bluetooth.html#ga2018fb3e1e80df0b0cc23cb5a430d417">bt_entry_passkey_paired</a></div><div class="ttdeci">int bt_entry_passkey_paired(int fd, unsigned long timeout_sec)</div><div class="ttdoc">阻塞等待(timeout_sec)秒,直到进入PASSKEY模式或等待超时</div></div>
+<div class="ttc" id="agroup__bluetooth_html_ga5009093e7ffb1f5b5894656d1c2d9e78"><div class="ttname"><a href="group__bluetooth.html#ga5009093e7ffb1f5b5894656d1c2d9e78">bt_get_version</a></div><div class="ttdeci">int bt_get_version(int fd, void *data, int len)</div><div class="ttdoc">查询蓝牙固件版本号</div></div>
+<div class="ttc" id="agroup__bluetooth_html_ga6d1d23baa8e14714e465a1fd832c9b98"><div class="ttname"><a href="group__bluetooth.html#ga6d1d23baa8e14714e465a1fd832c9b98">bt_paired_info_erase</a></div><div class="ttdeci">int bt_paired_info_erase(int fd)</div><div class="ttdoc">擦除配对信息,擦除后获取的配对信息长度为120字节或170字节，但是数据应该为全0</div></div>
+<div class="ttc" id="agroup__bluetooth_html_gad64f2d70a5dc591200303725dff88c67"><div class="ttname"><a href="group__bluetooth.html#gad64f2d70a5dc591200303725dff88c67">bt_eeprom_version</a></div><div class="ttdeci">int bt_eeprom_version(int fd, void *data, int len)</div><div class="ttdoc">查询蓝牙固件版本号和bt_get_version() 查询结果相同</div></div>
+<div class="ttc" id="agroup__bluetooth_html_ga5631b29887b566be783f751fd099f6e8"><div class="ttname"><a href="group__bluetooth.html#ga5631b29887b566be783f751fd099f6e8">bt_set_pincode</a></div><div class="ttdeci">int bt_set_pincode(int fd, const void *data, int len)</div><div class="ttdoc">设置蓝牙PIN码</div></div>
+<div class="ttc" id="agroup__bluetooth_html_ga6973ad4e920fdd6c1c37de6dc63c3a68"><div class="ttname"><a href="group__bluetooth.html#ga6973ad4e920fdd6c1c37de6dc63c3a68">bt_change_name</a></div><div class="ttdeci">int bt_change_name(int fd, const char *name_str, int str_len)</div><div class="ttdoc">改变蓝牙名称, 每次打开蓝牙后设置生效，不保存，蓝牙关闭或reset后失效</div></div>
+<div class="ttc" id="agroup__bluetooth_html_ga0e86409eeafd362fb3d55f4543128a84"><div class="ttname"><a href="group__bluetooth.html#ga0e86409eeafd362fb3d55f4543128a84">bt_reset</a></div><div class="ttdeci">int bt_reset(int fd)</div><div class="ttdoc">重启蓝牙</div></div>
+<div class="ttc" id="agroup__bluetooth_html_gaef258225045ccb19ddd24eb74fb79532"><div class="ttname"><a href="group__bluetooth.html#gaef258225045ccb19ddd24eb74fb79532">bt_paired_info_get</a></div><div class="ttdeci">int bt_paired_info_get(int fd, void *data, int len)</div><div class="ttdoc">获取配对信息</div></div>
+<div class="ttc" id="agroup__bluetooth_html_gaf4df4b161142ed84e8c347fba4d12566"><div class="ttname"><a href="group__bluetooth.html#gaf4df4b161142ed84e8c347fba4d12566">bt_send</a></div><div class="ttdeci">int bt_send(int fd, const void *data, uint32_t data_len)</div><div class="ttdoc">蓝牙数据发送</div></div>
+<div class="ttc" id="agroup__bluetooth_html_gac8821cb21c6388c737b3dd2b3f0f52fc"><div class="ttname"><a href="group__bluetooth.html#gac8821cb21c6388c737b3dd2b3f0f52fc">bt_set_name</a></div><div class="ttdeci">int bt_set_name(int fd, const char *name_str, int str_len)</div><div class="ttdoc">设置蓝牙名称</div></div>
+<div class="ttc" id="agroup__bluetooth_html_ga0c43be04a7c827ec33c1421094e03246"><div class="ttname"><a href="group__bluetooth.html#ga0c43be04a7c827ec33c1421094e03246">bt_user_confirm_passkey</a></div><div class="ttdeci">int bt_user_confirm_passkey(int fd, void *data, int len)</div><div class="ttdoc">非阻塞获取GKEY</div></div>
+<div class="ttc" id="agroup__bluetooth_html_ga36a1e30dad094d23a7b9670af8f96506"><div class="ttname"><a href="group__bluetooth.html#ga36a1e30dad094d23a7b9670af8f96506">bt_set_voltage_detect</a></div><div class="ttdeci">int bt_set_voltage_detect(int fd, uint8_t on_off)</div><div class="ttdoc">设置模块读取电源电压功能开关</div></div>
+<div class="ttc" id="agroup__bluetooth_html_gab06f1dd5d41ead6678353238e485073c"><div class="ttname"><a href="group__bluetooth.html#gab06f1dd5d41ead6678353238e485073c">bt_get_volatge</a></div><div class="ttdeci">int bt_get_volatge(int fd, void *data, int len)</div><div class="ttdoc">查询模块电源电压</div></div>
+<div class="ttc" id="agroup__bluetooth_html_ga9484e1ddbd6909e149515beecd9f9280"><div class="ttname"><a href="group__bluetooth.html#ga9484e1ddbd6909e149515beecd9f9280">bt_local_addr</a></div><div class="ttdeci">int bt_local_addr(int fd, void *data, int len)</div><div class="ttdoc">获取蓝牙MAC地址</div></div>
+<!-- HTML footer for doxygen 1.8.6-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>bluetooth.h</b></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

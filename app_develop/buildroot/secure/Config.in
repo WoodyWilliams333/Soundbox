@@ -1,0 +1,23 @@
+menu "Secure Processor"
+choice
+	prompt "processor chooose"
+	default BR2_MH190X_PROCESSOR
+config BR2_MH190X_PROCESSOR
+	bool "mh1902x"
+	help
+ 	   choose mh1902x as secure processor
+config BR2_CCORE_PROCESSOR
+	bool "ccore"
+	help
+	  choose cuni360s as secure processor
+endchoice
+
+if BR2_CCORE_PROCESSOR
+source "secure/ccore/Config.in"
+endif
+
+if BR2_MH190X_PROCESSOR
+source "secure/mh1902/Config.in"
+endif
+
+endmenu

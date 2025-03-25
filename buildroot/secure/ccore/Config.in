@@ -1,0 +1,35 @@
+
+
+comment "Setting for ccore"
+
+config BR2_SP_KERNEL_FLASH_OFFSET_ADDR
+	hex  "kernel_offset_addr"
+	default 0x01080000
+	help
+	  set kernel flash offset
+
+config BR2_SP_CHIPFLASH_START_ADDR
+	hex  "chipflash_start_addr"
+	default 0x01001000
+	help
+	  set default chip start offset
+
+config BR2_SP_FIRMWARE_VERSION
+	string "sp firmare version"
+	default "2.0.0"
+	
+config BR2_SP_BOOT_VERSION
+	string "SP boot version"
+	default "1.0.0" 
+
+config BR2_SP_KERNEL_VERSION
+	string "SP kernel version"
+	default "1.0.0" 
+
+config BR2_SP_KERNEL_IMG_NAME
+	string "SP kernel img name"
+	default "ccorek.bin" 
+
+config BR2_SP_BOOT_IMG_NAME
+	string "SP boot img name"
+	default "ccoreb.bin" 

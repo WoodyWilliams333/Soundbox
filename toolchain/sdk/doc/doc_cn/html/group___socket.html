@@ -1,0 +1,1708 @@
+<!-- HTML header for doxygen 1.8.6-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<title>MDP820: 套接字</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="styleSheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<script type="text/javascript" src="version.js"></script>
+<script type="text/javascript" src="language.js"></script>
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="MDP820.jpg"/></td>
+  <td width="100%" style="padding-left: 0.5em;">
+   <div id="projectname" style="display:table-cell;vertical-align:middle;text-align:center">MDP820
+		<span id="projectnumber">
+			<select>
+				<option value ="8.2.3">8.2.3</option>
+			</select>
+		</span>
+   </div>
+   <div id="projectbrief">MDP820-API</div>
+  </td>
+  <td>
+    <span id="projectlang" style="margin-right: 1em;">
+		<select>
+			<!-- <option value ="ch">中文</option> -->
+			<!-- <option value ="en">English</option> -->
+		</select>
+	</span>
+   </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('group___socket.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">套接字</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>此模块用于描述 <b>Socket</b> 相关的接口  
+<a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlinger.html">linger</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于操作延迟选项的结构  <a href="structlinger.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsockaddr.html">sockaddr</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">网络通信地址结构  <a href="structsockaddr.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsockaddr__in.html">sockaddr_in</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">网络通信地址结构  <a href="structsockaddr__in.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ga249394484f9410a2e3f8eba24657feb9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#ga249394484f9410a2e3f8eba24657feb9">SOCK_STREAM</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:ga249394484f9410a2e3f8eba24657feb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4db8b9a846c67404db0b6f014f9a9fdf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#ga4db8b9a846c67404db0b6f014f9a9fdf">SOCK_DGRAM</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:ga4db8b9a846c67404db0b6f014f9a9fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga346f84e37c42f88e91e7304c3d77fde8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#ga346f84e37c42f88e91e7304c3d77fde8">SOCK_RAW</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:ga346f84e37c42f88e91e7304c3d77fde8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaffb5715b9a01723adbf3ad27918575c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#gaffb5715b9a01723adbf3ad27918575c6">SOCK_RDM</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:gaffb5715b9a01723adbf3ad27918575c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4cc92c75bdef586063216b2b8a4df560"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#ga4cc92c75bdef586063216b2b8a4df560">SOCK_SEQPACKET</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:ga4cc92c75bdef586063216b2b8a4df560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9dbc641eb342d3ad19f1162305d268d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#ga9dbc641eb342d3ad19f1162305d268d6">SO_DEBUG</a>&#160;&#160;&#160;0x0001</td></tr>
+<tr class="memdesc:ga9dbc641eb342d3ad19f1162305d268d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">选择套接字标志.  <a href="group___socket.html#ga9dbc641eb342d3ad19f1162305d268d6">更多...</a><br /></td></tr>
+<tr class="separator:ga9dbc641eb342d3ad19f1162305d268d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a86a7abccf8140410bf8a64c571bd6d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#ga4a86a7abccf8140410bf8a64c571bd6d">SO_ACCEPTCONN</a>&#160;&#160;&#160;0x0002</td></tr>
+<tr class="separator:ga4a86a7abccf8140410bf8a64c571bd6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5589f74fada0d0cd47bd6ea8741a58ee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#ga5589f74fada0d0cd47bd6ea8741a58ee">SO_REUSEADDR</a>&#160;&#160;&#160;0x0004</td></tr>
+<tr class="separator:ga5589f74fada0d0cd47bd6ea8741a58ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0691781c519eed3f9a634f8eb55cd258"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#ga0691781c519eed3f9a634f8eb55cd258">SO_KEEPALIVE</a>&#160;&#160;&#160;0x0008</td></tr>
+<tr class="separator:ga0691781c519eed3f9a634f8eb55cd258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a6d9f7ea4bf046c50102c17ba1faf37"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#ga4a6d9f7ea4bf046c50102c17ba1faf37">SO_DONTROUTE</a>&#160;&#160;&#160;0x0010</td></tr>
+<tr class="separator:ga4a6d9f7ea4bf046c50102c17ba1faf37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad05e5d66b4608d73747c4a10b802a737"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#gad05e5d66b4608d73747c4a10b802a737">SO_BROADCAST</a>&#160;&#160;&#160;0x0020</td></tr>
+<tr class="separator:gad05e5d66b4608d73747c4a10b802a737"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f051c5764666e36a27dfa7de1d5299a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#ga9f051c5764666e36a27dfa7de1d5299a">SO_USELOOPBACK</a>&#160;&#160;&#160;0x0040</td></tr>
+<tr class="separator:ga9f051c5764666e36a27dfa7de1d5299a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga552d2cd8ffc1157c016299c5eba95b72"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#ga552d2cd8ffc1157c016299c5eba95b72">SO_LINGER</a>&#160;&#160;&#160;0x0080</td></tr>
+<tr class="separator:ga552d2cd8ffc1157c016299c5eba95b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1ab39f351679dd0e32436f0e6c9890d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#ga1ab39f351679dd0e32436f0e6c9890d4">SO_OOBINLINE</a>&#160;&#160;&#160;0x0100</td></tr>
+<tr class="separator:ga1ab39f351679dd0e32436f0e6c9890d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga36151618368affd148255e77785e365e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#ga36151618368affd148255e77785e365e">SO_REUSEPORT</a>&#160;&#160;&#160;0x0200</td></tr>
+<tr class="separator:ga36151618368affd148255e77785e365e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa373ab1ce686d21374226f003d6b5541"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#gaa373ab1ce686d21374226f003d6b5541">SO_TIMESTAMP</a>&#160;&#160;&#160;0x0400</td></tr>
+<tr class="separator:gaa373ab1ce686d21374226f003d6b5541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0e60152d124904349320c0695e7b87b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#ga0e60152d124904349320c0695e7b87b3">SO_ACCEPTFILTER</a>&#160;&#160;&#160;0x1000</td></tr>
+<tr class="separator:ga0e60152d124904349320c0695e7b87b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf618cbb85161ff3196d3bcdf7565ba64"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#gaf618cbb85161ff3196d3bcdf7565ba64">SO_SNDBUF</a>&#160;&#160;&#160;0x1001</td></tr>
+<tr class="memdesc:gaf618cbb85161ff3196d3bcdf7565ba64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Socket 动作类型.  <a href="group___socket.html#gaf618cbb85161ff3196d3bcdf7565ba64">更多...</a><br /></td></tr>
+<tr class="separator:gaf618cbb85161ff3196d3bcdf7565ba64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0db12e960ac303030400d9fd95391b52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#ga0db12e960ac303030400d9fd95391b52">SO_RCVBUF</a>&#160;&#160;&#160;0x1002</td></tr>
+<tr class="separator:ga0db12e960ac303030400d9fd95391b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5b4707f0d55cfacf9cd25e5554975c8f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#ga5b4707f0d55cfacf9cd25e5554975c8f">SO_SNDLOWAT</a>&#160;&#160;&#160;0x1003</td></tr>
+<tr class="separator:ga5b4707f0d55cfacf9cd25e5554975c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac750f0f8266f391654627fe3068f79c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#gac750f0f8266f391654627fe3068f79c8">SO_RCVLOWAT</a>&#160;&#160;&#160;0x1004</td></tr>
+<tr class="separator:gac750f0f8266f391654627fe3068f79c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab9d2f7ca5c94bd51cdab3e1913b66e2d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#gab9d2f7ca5c94bd51cdab3e1913b66e2d">SO_SNDTIMEO</a>&#160;&#160;&#160;0x1005</td></tr>
+<tr class="separator:gab9d2f7ca5c94bd51cdab3e1913b66e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf2d1ed6a34336a6f3df80fb518325846"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#gaf2d1ed6a34336a6f3df80fb518325846">SO_RCVTIMEO</a>&#160;&#160;&#160;0x1006</td></tr>
+<tr class="separator:gaf2d1ed6a34336a6f3df80fb518325846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga040d4fd00495232970a03425bc00e77a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#ga040d4fd00495232970a03425bc00e77a">SO_ERROR</a>&#160;&#160;&#160;0x1007</td></tr>
+<tr class="separator:ga040d4fd00495232970a03425bc00e77a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ab1e00e94a92737d3a4b407f7fa90f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#ga8ab1e00e94a92737d3a4b407f7fa90f1">SO_TYPE</a>&#160;&#160;&#160;0x1008</td></tr>
+<tr class="separator:ga8ab1e00e94a92737d3a4b407f7fa90f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:ga269c892535714289fb93d7dad5be8f25"><td class="memItemLeft" align="right" valign="top">typedef unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#ga269c892535714289fb93d7dad5be8f25">socklen_t</a></td></tr>
+<tr class="separator:ga269c892535714289fb93d7dad5be8f25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ga3838233b1c3b919aeefae13e880a2c4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#ga3838233b1c3b919aeefae13e880a2c4d">net_FD_ZERO</a> (void *set)</td></tr>
+<tr class="memdesc:ga3838233b1c3b919aeefae13e880a2c4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">将指定的文件描述符集合清空  <a href="group___socket.html#ga3838233b1c3b919aeefae13e880a2c4d">更多...</a><br /></td></tr>
+<tr class="separator:ga3838233b1c3b919aeefae13e880a2c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa2fc7670e95dd2107c9cffe5c54ad8f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#gaa2fc7670e95dd2107c9cffe5c54ad8f2">net_FD_SET</a> (int fd, void *set)</td></tr>
+<tr class="memdesc:gaa2fc7670e95dd2107c9cffe5c54ad8f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">在文件描述符集合中增加一个新的文件描述符  <a href="group___socket.html#gaa2fc7670e95dd2107c9cffe5c54ad8f2">更多...</a><br /></td></tr>
+<tr class="separator:gaa2fc7670e95dd2107c9cffe5c54ad8f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga51bcbee596454171041b14853edd2d43"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#ga51bcbee596454171041b14853edd2d43">net_FD_ISSET</a> (int fd, void *set)</td></tr>
+<tr class="memdesc:ga51bcbee596454171041b14853edd2d43"><td class="mdescLeft">&#160;</td><td class="mdescRight">测试指定的文件描述符是否在该集合中  <a href="group___socket.html#ga51bcbee596454171041b14853edd2d43">更多...</a><br /></td></tr>
+<tr class="separator:ga51bcbee596454171041b14853edd2d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga07a5926a465651bd1beca2544c286a82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#ga07a5926a465651bd1beca2544c286a82">net_FD_CLR</a> (int fd, void *set)</td></tr>
+<tr class="memdesc:ga07a5926a465651bd1beca2544c286a82"><td class="mdescLeft">&#160;</td><td class="mdescRight">在文件描述符集合中删除一个文件描述符  <a href="group___socket.html#ga07a5926a465651bd1beca2544c286a82">更多...</a><br /></td></tr>
+<tr class="separator:ga07a5926a465651bd1beca2544c286a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga12e421f0e102c44695cedda109be181a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#ga12e421f0e102c44695cedda109be181a">net_select</a> (int nfds, void *readfds, void *writefds, void *exceptfds, struct timeval *timeout)</td></tr>
+<tr class="memdesc:ga12e421f0e102c44695cedda109be181a"><td class="mdescLeft">&#160;</td><td class="mdescRight">用来统一监视多个文件描述符  <a href="group___socket.html#ga12e421f0e102c44695cedda109be181a">更多...</a><br /></td></tr>
+<tr class="separator:ga12e421f0e102c44695cedda109be181a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac707efa47870a7d3ab71057788f4076f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#gac707efa47870a7d3ab71057788f4076f">net_socket</a> (int domain, int type, int protocol)</td></tr>
+<tr class="memdesc:gac707efa47870a7d3ab71057788f4076f"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个套接字，同时指定协议和类型  <a href="group___socket.html#gac707efa47870a7d3ab71057788f4076f">更多...</a><br /></td></tr>
+<tr class="separator:gac707efa47870a7d3ab71057788f4076f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga032e42453a1b98b25c1bc4aae2e4ad6f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#ga032e42453a1b98b25c1bc4aae2e4ad6f">net_connect</a> (int fd, const struct <a class="el" href="structsockaddr.html">sockaddr</a> *addr, <a class="el" href="group___socket.html#ga269c892535714289fb93d7dad5be8f25">socklen_t</a> addrlen)</td></tr>
+<tr class="memdesc:ga032e42453a1b98b25c1bc4aae2e4ad6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">客户端向服务器端的监听套接字发送连接请求  <a href="group___socket.html#ga032e42453a1b98b25c1bc4aae2e4ad6f">更多...</a><br /></td></tr>
+<tr class="separator:ga032e42453a1b98b25c1bc4aae2e4ad6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac46bb9c69465ac7084541ee0315148d3"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#gac46bb9c69465ac7084541ee0315148d3">net_recv</a> (int fd, void *buf, size_t len, int flags)</td></tr>
+<tr class="memdesc:gac46bb9c69465ac7084541ee0315148d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">接收数据，一般用在TCP通信中  <a href="group___socket.html#gac46bb9c69465ac7084541ee0315148d3">更多...</a><br /></td></tr>
+<tr class="separator:gac46bb9c69465ac7084541ee0315148d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6daeab643514d41a0260fb89482af8b3"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#ga6daeab643514d41a0260fb89482af8b3">net_send</a> (int fd, const void *buf, size_t len, int flags)</td></tr>
+<tr class="memdesc:ga6daeab643514d41a0260fb89482af8b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送数据，一般用在TCP通信中  <a href="group___socket.html#ga6daeab643514d41a0260fb89482af8b3">更多...</a><br /></td></tr>
+<tr class="separator:ga6daeab643514d41a0260fb89482af8b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2b0582b1927d44dfa951c9749a35698a"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#ga2b0582b1927d44dfa951c9749a35698a">net_recvfrom</a> (int fd, void *buf, size_t len, int flags, struct <a class="el" href="structsockaddr.html">sockaddr</a> *src_addr, <a class="el" href="group___socket.html#ga269c892535714289fb93d7dad5be8f25">socklen_t</a> *addrlen)</td></tr>
+<tr class="memdesc:ga2b0582b1927d44dfa951c9749a35698a"><td class="mdescLeft">&#160;</td><td class="mdescRight">接收数据，一般用在UDP通信中  <a href="group___socket.html#ga2b0582b1927d44dfa951c9749a35698a">更多...</a><br /></td></tr>
+<tr class="separator:ga2b0582b1927d44dfa951c9749a35698a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafd9f9e0789d68946718d8c142380cd71"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#gafd9f9e0789d68946718d8c142380cd71">net_sendto</a> (int fd, const void *buf, size_t len, int flags, const struct <a class="el" href="structsockaddr.html">sockaddr</a> *dest_addr, <a class="el" href="group___socket.html#ga269c892535714289fb93d7dad5be8f25">socklen_t</a> addrlen)</td></tr>
+<tr class="memdesc:gafd9f9e0789d68946718d8c142380cd71"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送数据，一般用在UDP通信中  <a href="group___socket.html#gafd9f9e0789d68946718d8c142380cd71">更多...</a><br /></td></tr>
+<tr class="separator:gafd9f9e0789d68946718d8c142380cd71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1ef41e97b304a75346ea515e03542006"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#ga1ef41e97b304a75346ea515e03542006">net_getsockopt</a> (int sockfd, int level, int optname, void *optval, <a class="el" href="group___socket.html#ga269c892535714289fb93d7dad5be8f25">socklen_t</a> *optlen)</td></tr>
+<tr class="memdesc:ga1ef41e97b304a75346ea515e03542006"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取与某个套接字关联的选项  <a href="group___socket.html#ga1ef41e97b304a75346ea515e03542006">更多...</a><br /></td></tr>
+<tr class="separator:ga1ef41e97b304a75346ea515e03542006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga60f976cf37f1679eba89c139794bc9bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#ga60f976cf37f1679eba89c139794bc9bb">net_setsockopt</a> (int sockfd, int level, int optname, const void *optval, <a class="el" href="group___socket.html#ga269c892535714289fb93d7dad5be8f25">socklen_t</a> optlen)</td></tr>
+<tr class="memdesc:ga60f976cf37f1679eba89c139794bc9bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置与某个套接字关联的选项  <a href="group___socket.html#ga60f976cf37f1679eba89c139794bc9bb">更多...</a><br /></td></tr>
+<tr class="separator:ga60f976cf37f1679eba89c139794bc9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa97f7dc3325b759b2b91931718509986"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#gaa97f7dc3325b759b2b91931718509986">net_getpeername</a> (int fd, struct <a class="el" href="structsockaddr.html">sockaddr</a> *addr, <a class="el" href="group___socket.html#ga269c892535714289fb93d7dad5be8f25">socklen_t</a> *addrlen)</td></tr>
+<tr class="memdesc:gaa97f7dc3325b759b2b91931718509986"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取与某个套接字关联的外地协议地址  <a href="group___socket.html#gaa97f7dc3325b759b2b91931718509986">更多...</a><br /></td></tr>
+<tr class="separator:gaa97f7dc3325b759b2b91931718509986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabae289ec07080cb0059fec887516dce9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#gabae289ec07080cb0059fec887516dce9">net_getsockname</a> (int fd, struct <a class="el" href="structsockaddr.html">sockaddr</a> *addr, <a class="el" href="group___socket.html#ga269c892535714289fb93d7dad5be8f25">socklen_t</a> *addrlen)</td></tr>
+<tr class="memdesc:gabae289ec07080cb0059fec887516dce9"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取与某个套接字关联的本地协议地址  <a href="group___socket.html#gabae289ec07080cb0059fec887516dce9">更多...</a><br /></td></tr>
+<tr class="separator:gabae289ec07080cb0059fec887516dce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadc3c1fc83f38307d85656d1948b257fd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#gadc3c1fc83f38307d85656d1948b257fd">net_bind</a> (int sockfd, const struct <a class="el" href="structsockaddr.html">sockaddr</a> *addr, <a class="el" href="group___socket.html#ga269c892535714289fb93d7dad5be8f25">socklen_t</a> addrlen)</td></tr>
+<tr class="memdesc:gadc3c1fc83f38307d85656d1948b257fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">将保存在相应地址结构中的地址信息与套接字进行绑定  <a href="group___socket.html#gadc3c1fc83f38307d85656d1948b257fd">更多...</a><br /></td></tr>
+<tr class="separator:gadc3c1fc83f38307d85656d1948b257fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaafa182cda8ad533f0672ab1b63c8f1fa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#gaafa182cda8ad533f0672ab1b63c8f1fa">net_listen</a> (int sockfd, int backlog)</td></tr>
+<tr class="memdesc:gaafa182cda8ad533f0672ab1b63c8f1fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">在一个套接字上监听连接  <a href="group___socket.html#gaafa182cda8ad533f0672ab1b63c8f1fa">更多...</a><br /></td></tr>
+<tr class="separator:gaafa182cda8ad533f0672ab1b63c8f1fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa72e0228609d5d9ab497da6a8ccaf79f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#gaa72e0228609d5d9ab497da6a8ccaf79f">net_accept</a> (int sockfd, struct <a class="el" href="structsockaddr.html">sockaddr</a> *addr, <a class="el" href="group___socket.html#ga269c892535714289fb93d7dad5be8f25">socklen_t</a> *addrlen)</td></tr>
+<tr class="memdesc:gaa72e0228609d5d9ab497da6a8ccaf79f"><td class="mdescLeft">&#160;</td><td class="mdescRight">在套接字上接受一个连接  <a href="group___socket.html#gaa72e0228609d5d9ab497da6a8ccaf79f">更多...</a><br /></td></tr>
+<tr class="separator:gaa72e0228609d5d9ab497da6a8ccaf79f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga11c70be6b2e6d71ed50e4e7f47999185"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___socket.html#ga11c70be6b2e6d71ed50e4e7f47999185">net_getaddrinfo</a> (const char *nodename, const char *servname, const struct addrinfo *hints, struct addrinfo **res)</td></tr>
+<tr class="memdesc:ga11c70be6b2e6d71ed50e4e7f47999185"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取主机名IP地址  <a href="group___socket.html#ga11c70be6b2e6d71ed50e4e7f47999185">更多...</a><br /></td></tr>
+<tr class="separator:ga11c70be6b2e6d71ed50e4e7f47999185"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<p>此模块用于描述 <b>Socket</b> 相关的接口 </p>
+<dl class="section user"><dt>文件 socket.h</dt><dd></dd></dl>
+<dl class="section author"><dt>作者</dt><dd>Waylon </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2020-12-26 </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>V1.0</dd></dl>
+<dl class="section remark"><dt>备注</dt><dd>Change History: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Date </th><th class="markdownTableHeadNone">Version </th><th class="markdownTableHeadNone">Author </th><th class="markdownTableHeadNone">Desc  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">2020/12/26 </td><td class="markdownTableBodyNone">1.0.0 </td><td class="markdownTableBodyNone">Waylon </td><td class="markdownTableBodyNone">创建文件  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">2022/04/21 </td><td class="markdownTableBodyNone">1.0.1 </td><td class="markdownTableBodyNone">Wenming </td><td class="markdownTableBodyNone">修改部分中文注释  </td></tr>
+</table>
+</dd></dl>
+<h2 class="groupheader">宏定义说明</h2>
+<a id="ga4a86a7abccf8140410bf8a64c571bd6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4a86a7abccf8140410bf8a64c571bd6d">&#9670;&nbsp;</a></span>SO_ACCEPTCONN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SO_ACCEPTCONN&#160;&#160;&#160;0x0002</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Socket已经有了listen() </p>
+
+</div>
+</div>
+<a id="ga0e60152d124904349320c0695e7b87b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0e60152d124904349320c0695e7b87b3">&#9670;&nbsp;</a></span>SO_ACCEPTFILTER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SO_ACCEPTFILTER&#160;&#160;&#160;0x1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>有一个接受过滤器 </p>
+
+</div>
+</div>
+<a id="gad05e5d66b4608d73747c4a10b802a737"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad05e5d66b4608d73747c4a10b802a737">&#9670;&nbsp;</a></span>SO_BROADCAST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SO_BROADCAST&#160;&#160;&#160;0x0020</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>允许发送广播式MSGS </p>
+
+</div>
+</div>
+<a id="ga9dbc641eb342d3ad19f1162305d268d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9dbc641eb342d3ad19f1162305d268d6">&#9670;&nbsp;</a></span>SO_DEBUG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SO_DEBUG&#160;&#160;&#160;0x0001</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>选择套接字标志. </p>
+<p>打开调试信息记录 </p>
+
+</div>
+</div>
+<a id="ga4a6d9f7ea4bf046c50102c17ba1faf37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4a6d9f7ea4bf046c50102c17ba1faf37">&#9670;&nbsp;</a></span>SO_DONTROUTE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SO_DONTROUTE&#160;&#160;&#160;0x0010</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>只用接口地址 </p>
+
+</div>
+</div>
+<a id="ga040d4fd00495232970a03425bc00e77a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga040d4fd00495232970a03425bc00e77a">&#9670;&nbsp;</a></span>SO_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SO_ERROR&#160;&#160;&#160;0x1007</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取错误状态并清除 </p>
+
+</div>
+</div>
+<a id="ga0691781c519eed3f9a634f8eb55cd258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0691781c519eed3f9a634f8eb55cd258">&#9670;&nbsp;</a></span>SO_KEEPALIVE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SO_KEEPALIVE&#160;&#160;&#160;0x0008</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>保持连接 </p>
+
+</div>
+</div>
+<a id="ga552d2cd8ffc1157c016299c5eba95b72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga552d2cd8ffc1157c016299c5eba95b72">&#9670;&nbsp;</a></span>SO_LINGER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SO_LINGER&#160;&#160;&#160;0x0080</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>如果数据存在，则停留在关闭状态 </p>
+
+</div>
+</div>
+<a id="ga1ab39f351679dd0e32436f0e6c9890d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1ab39f351679dd0e32436f0e6c9890d4">&#9670;&nbsp;</a></span>SO_OOBINLINE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SO_OOBINLINE&#160;&#160;&#160;0x0100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>将接收到的OOB数据整理好 </p>
+
+</div>
+</div>
+<a id="ga0db12e960ac303030400d9fd95391b52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0db12e960ac303030400d9fd95391b52">&#9670;&nbsp;</a></span>SO_RCVBUF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SO_RCVBUF&#160;&#160;&#160;0x1002</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>socket 接收字符标志 </p>
+
+</div>
+</div>
+<a id="gac750f0f8266f391654627fe3068f79c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac750f0f8266f391654627fe3068f79c8">&#9670;&nbsp;</a></span>SO_RCVLOWAT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SO_RCVLOWAT&#160;&#160;&#160;0x1004</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>接收到最低点 </p>
+
+</div>
+</div>
+<a id="gaf2d1ed6a34336a6f3df80fb518325846"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf2d1ed6a34336a6f3df80fb518325846">&#9670;&nbsp;</a></span>SO_RCVTIMEO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SO_RCVTIMEO&#160;&#160;&#160;0x1006</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>接收超时 </p>
+
+</div>
+</div>
+<a id="ga5589f74fada0d0cd47bd6ea8741a58ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5589f74fada0d0cd47bd6ea8741a58ee">&#9670;&nbsp;</a></span>SO_REUSEADDR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SO_REUSEADDR&#160;&#160;&#160;0x0004</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>允许本地地址重用 </p>
+
+</div>
+</div>
+<a id="ga36151618368affd148255e77785e365e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga36151618368affd148255e77785e365e">&#9670;&nbsp;</a></span>SO_REUSEPORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SO_REUSEPORT&#160;&#160;&#160;0x0200</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>允许本地地址和端口重用 </p>
+
+</div>
+</div>
+<a id="gaf618cbb85161ff3196d3bcdf7565ba64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf618cbb85161ff3196d3bcdf7565ba64">&#9670;&nbsp;</a></span>SO_SNDBUF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SO_SNDBUF&#160;&#160;&#160;0x1001</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Socket 动作类型. </p>
+<p>socket 发送字符标志 </p>
+
+</div>
+</div>
+<a id="ga5b4707f0d55cfacf9cd25e5554975c8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5b4707f0d55cfacf9cd25e5554975c8f">&#9670;&nbsp;</a></span>SO_SNDLOWAT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SO_SNDLOWAT&#160;&#160;&#160;0x1003</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>发送最低点 </p>
+
+</div>
+</div>
+<a id="gab9d2f7ca5c94bd51cdab3e1913b66e2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab9d2f7ca5c94bd51cdab3e1913b66e2d">&#9670;&nbsp;</a></span>SO_SNDTIMEO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SO_SNDTIMEO&#160;&#160;&#160;0x1005</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>发送超时 </p>
+
+</div>
+</div>
+<a id="gaa373ab1ce686d21374226f003d6b5541"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa373ab1ce686d21374226f003d6b5541">&#9670;&nbsp;</a></span>SO_TIMESTAMP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SO_TIMESTAMP&#160;&#160;&#160;0x0400</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>接收到dgram流量的时间戳 </p>
+
+</div>
+</div>
+<a id="ga8ab1e00e94a92737d3a4b407f7fa90f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8ab1e00e94a92737d3a4b407f7fa90f1">&#9670;&nbsp;</a></span>SO_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SO_TYPE&#160;&#160;&#160;0x1008</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取套接字类型 </p>
+
+</div>
+</div>
+<a id="ga9f051c5764666e36a27dfa7de1d5299a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9f051c5764666e36a27dfa7de1d5299a">&#9670;&nbsp;</a></span>SO_USELOOPBACK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SO_USELOOPBACK&#160;&#160;&#160;0x0040</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>尽可能绕过硬件 </p>
+
+</div>
+</div>
+<a id="ga4db8b9a846c67404db0b6f014f9a9fdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4db8b9a846c67404db0b6f014f9a9fdf">&#9670;&nbsp;</a></span>SOCK_DGRAM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SOCK_DGRAM&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>DGRAM套接字 </p>
+
+</div>
+</div>
+<a id="ga346f84e37c42f88e91e7304c3d77fde8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga346f84e37c42f88e91e7304c3d77fde8">&#9670;&nbsp;</a></span>SOCK_RAW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SOCK_RAW&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>RAW套接字 </p>
+
+</div>
+</div>
+<a id="gaffb5715b9a01723adbf3ad27918575c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaffb5715b9a01723adbf3ad27918575c6">&#9670;&nbsp;</a></span>SOCK_RDM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SOCK_RDM&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>RDM套接字 </p>
+
+</div>
+</div>
+<a id="ga4cc92c75bdef586063216b2b8a4df560"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4cc92c75bdef586063216b2b8a4df560">&#9670;&nbsp;</a></span>SOCK_SEQPACKET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SOCK_SEQPACKET&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SEQPACKET套接字 </p>
+
+</div>
+</div>
+<a id="ga249394484f9410a2e3f8eba24657feb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga249394484f9410a2e3f8eba24657feb9">&#9670;&nbsp;</a></span>SOCK_STREAM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SOCK_STREAM&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>STREAM套接字 </p>
+
+</div>
+</div>
+<h2 class="groupheader">类型定义说明</h2>
+<a id="ga269c892535714289fb93d7dad5be8f25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga269c892535714289fb93d7dad5be8f25">&#9670;&nbsp;</a></span>socklen_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned long <a class="el" href="group___socket.html#ga269c892535714289fb93d7dad5be8f25">socklen_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>地址结构长度 </p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="gaa72e0228609d5d9ab497da6a8ccaf79f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa72e0228609d5d9ab497da6a8ccaf79f">&#9670;&nbsp;</a></span>net_accept()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int net_accept </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sockfd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structsockaddr.html">sockaddr</a> *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___socket.html#ga269c892535714289fb93d7dad5be8f25">socklen_t</a> *&#160;</td>
+          <td class="paramname"><em>addrlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在套接字上接受一个连接 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sockfd</td><td>- 套接字描述符 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">addr</td><td>- sockaddr地址指针 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">addrlen</td><td>- 地址长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">=0</td><td>- 成功 </td></tr>
+    <tr><td class="paramname">-1</td><td>- 失败，请通过errno获取具体的错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>未实现该接口，总是返回-1 </dd></dl>
+
+</div>
+</div>
+<a id="gadc3c1fc83f38307d85656d1948b257fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadc3c1fc83f38307d85656d1948b257fd">&#9670;&nbsp;</a></span>net_bind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int net_bind </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sockfd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structsockaddr.html">sockaddr</a> *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___socket.html#ga269c892535714289fb93d7dad5be8f25">socklen_t</a>&#160;</td>
+          <td class="paramname"><em>addrlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将保存在相应地址结构中的地址信息与套接字进行绑定 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sockfd</td><td>- 套接字描述符 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>- 绑定的地址 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addrlen</td><td>- 地址长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">=0</td><td>- 成功 </td></tr>
+    <tr><td class="paramname">-1</td><td>- 失败，请通过errno获取具体的错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>未实现该接口，总是返回-1 </dd></dl>
+
+</div>
+</div>
+<a id="ga032e42453a1b98b25c1bc4aae2e4ad6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga032e42453a1b98b25c1bc4aae2e4ad6f">&#9670;&nbsp;</a></span>net_connect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int net_connect </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structsockaddr.html">sockaddr</a> *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___socket.html#ga269c892535714289fb93d7dad5be8f25">socklen_t</a>&#160;</td>
+          <td class="paramname"><em>addrlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>客户端向服务器端的监听套接字发送连接请求 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>- 套接字描述符 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>- 服务器端地址 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addrlen</td><td>- 地址长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">=0</td><td>- 成功 </td></tr>
+    <tr><td class="paramname">-1</td><td>- 失败，请通过errno获取具体的错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga07a5926a465651bd1beca2544c286a82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga07a5926a465651bd1beca2544c286a82">&#9670;&nbsp;</a></span>net_FD_CLR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void net_FD_CLR </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>set</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件描述符集合中删除一个文件描述符 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>- 文件描述符 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">set</td><td>- 文件描述符集合 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga51bcbee596454171041b14853edd2d43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga51bcbee596454171041b14853edd2d43">&#9670;&nbsp;</a></span>net_FD_ISSET()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int net_FD_ISSET </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>set</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>测试指定的文件描述符是否在该集合中 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>- 文件描述符 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">set</td><td>- 文件描述符集合 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">1</td><td>- 文件描述符在该集合中 </td></tr>
+    <tr><td class="paramname">0</td><td>- 文件描述符不在该集合中 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaa2fc7670e95dd2107c9cffe5c54ad8f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa2fc7670e95dd2107c9cffe5c54ad8f2">&#9670;&nbsp;</a></span>net_FD_SET()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void net_FD_SET </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>set</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件描述符集合中增加一个新的文件描述符 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>- 文件描述符 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">set</td><td>- 文件描述符集合 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga3838233b1c3b919aeefae13e880a2c4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3838233b1c3b919aeefae13e880a2c4d">&#9670;&nbsp;</a></span>net_FD_ZERO()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void net_FD_ZERO </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>set</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将指定的文件描述符集合清空 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">set</td><td>- 文件描述符集合 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga11c70be6b2e6d71ed50e4e7f47999185"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga11c70be6b2e6d71ed50e4e7f47999185">&#9670;&nbsp;</a></span>net_getaddrinfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int net_getaddrinfo </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>nodename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>servname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct addrinfo *&#160;</td>
+          <td class="paramname"><em>hints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct addrinfo **&#160;</td>
+          <td class="paramname"><em>res</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取主机名IP地址 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nodename</td><td>- 主机名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">servname</td><td>- 端口名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hints</td><td>- 获取 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">res</td><td>- 返回的结果 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">=0</td><td>- 成功 </td></tr>
+    <tr><td class="paramname">-1</td><td>- 失败，请通过errno获取具体的错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>未实现该接口，总是返回-1 </dd></dl>
+
+</div>
+</div>
+<a id="gaa97f7dc3325b759b2b91931718509986"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa97f7dc3325b759b2b91931718509986">&#9670;&nbsp;</a></span>net_getpeername()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int net_getpeername </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structsockaddr.html">sockaddr</a> *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___socket.html#ga269c892535714289fb93d7dad5be8f25">socklen_t</a> *&#160;</td>
+          <td class="paramname"><em>addrlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取与某个套接字关联的外地协议地址 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>- 套接字描述符 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">addr</td><td>- 保存地址的缓冲区 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">addrlen</td><td>- 地址长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">=0</td><td>- 成功 </td></tr>
+    <tr><td class="paramname">-1</td><td>- 失败，请通过errno获取具体的错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gabae289ec07080cb0059fec887516dce9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabae289ec07080cb0059fec887516dce9">&#9670;&nbsp;</a></span>net_getsockname()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int net_getsockname </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structsockaddr.html">sockaddr</a> *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___socket.html#ga269c892535714289fb93d7dad5be8f25">socklen_t</a> *&#160;</td>
+          <td class="paramname"><em>addrlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取与某个套接字关联的本地协议地址 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>- 套接字描述符 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">addr</td><td>- 保存地址的缓冲区 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">addrlen</td><td>- 地址长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">=0</td><td>- 成功 </td></tr>
+    <tr><td class="paramname">-1</td><td>- 失败，请通过errno获取具体的错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga1ef41e97b304a75346ea515e03542006"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1ef41e97b304a75346ea515e03542006">&#9670;&nbsp;</a></span>net_getsockopt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int net_getsockopt </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sockfd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>optname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>optval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___socket.html#ga269c892535714289fb93d7dad5be8f25">socklen_t</a> *&#160;</td>
+          <td class="paramname"><em>optlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取与某个套接字关联的选项 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sockfd</td><td>- 套接字描述符 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>- 选项所属协议层 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">optname</td><td>- 套接字选项名 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">optval</td><td>- 保存选项值的缓冲区 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">optlen</td><td>- 选项值的长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">=0</td><td>- 成功 </td></tr>
+    <tr><td class="paramname">-1</td><td>- 失败，请通过errno获取具体的错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaafa182cda8ad533f0672ab1b63c8f1fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaafa182cda8ad533f0672ab1b63c8f1fa">&#9670;&nbsp;</a></span>net_listen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int net_listen </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sockfd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>backlog</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在一个套接字上监听连接 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sockfd</td><td>- 套接字描述符 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">backlog</td><td>- 队列中最大接收连接数量 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">=0</td><td>- 成功 </td></tr>
+    <tr><td class="paramname">-1</td><td>- 失败，请通过errno获取具体的错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>未实现该接口，总是返回-1 </dd></dl>
+
+</div>
+</div>
+<a id="gac46bb9c69465ac7084541ee0315148d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac46bb9c69465ac7084541ee0315148d3">&#9670;&nbsp;</a></span>net_recv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ssize_t net_recv </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>接收数据，一般用在TCP通信中 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>- 套接字描述符 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>- 接收数据缓冲区 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- 接收数据长度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>- 一般设置为0 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;0</td><td>- 成功，返回实际收到的字节数 </td></tr>
+    <tr><td class="paramname">=0</td><td>- 连接关闭 </td></tr>
+    <tr><td class="paramname">-1</td><td>- 失败，请通过errno获取具体的错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga2b0582b1927d44dfa951c9749a35698a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2b0582b1927d44dfa951c9749a35698a">&#9670;&nbsp;</a></span>net_recvfrom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ssize_t net_recvfrom </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structsockaddr.html">sockaddr</a> *&#160;</td>
+          <td class="paramname"><em>src_addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___socket.html#ga269c892535714289fb93d7dad5be8f25">socklen_t</a> *&#160;</td>
+          <td class="paramname"><em>addrlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>接收数据，一般用在UDP通信中 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>- 套接字描述符 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>- 接收数据缓冲区 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- 接收数据长度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>- 一般设置为0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">src_addr</td><td>- 发送方的IP地址和端口号信息 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addrlen</td><td>- 地址长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;0</td><td>- 成功，返回实际收到的字节数 </td></tr>
+    <tr><td class="paramname">=0</td><td>- 连接关闭 </td></tr>
+    <tr><td class="paramname">-1</td><td>- 失败，请通过errno获取具体的错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga12e421f0e102c44695cedda109be181a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga12e421f0e102c44695cedda109be181a">&#9670;&nbsp;</a></span>net_select()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int net_select </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nfds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>readfds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>writefds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>exceptfds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct timeval *&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用来统一监视多个文件描述符 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nfds</td><td>- 集合中所有文件描述符的范围，即所有文件描述符的最大值加1 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">readfds</td><td>- 用来检查可读性的一组文件描述符集合 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">writefds</td><td>- 用来检查可写性的一组文件描述符集合 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">exceptfds</td><td>- 用来检查是否有异常条件出现的文件描述符集合 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>- 超时时间 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;0</td><td>- 被监视的文件描述符有变化 </td></tr>
+    <tr><td class="paramname">-1</td><td>- 发生错误 </td></tr>
+    <tr><td class="paramname">=0</td><td>- 超时 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>输入参数readfds、writefds、exceptfds数据结构如下: <div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span>sci_fd_set {</div>
+<div class="line">    <span class="keywordtype">unsigned</span>        fd_count;</div>
+<div class="line">    <span class="keywordtype">long</span>            fd_array[12];</div>
+<div class="line">} sci_fd_set;</div>
+</div><!-- fragment --> </dd></dl>
+
+</div>
+</div>
+<a id="ga6daeab643514d41a0260fb89482af8b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6daeab643514d41a0260fb89482af8b3">&#9670;&nbsp;</a></span>net_send()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ssize_t net_send </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送数据，一般用在TCP通信中 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>- 套接字描述符 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>- 发送缓冲区地址 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- 发送数据的长度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>- 一般设置为0 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;0</td><td>- 成功,返回实际发送的字节数 </td></tr>
+    <tr><td class="paramname">=0</td><td>- 连接关闭 </td></tr>
+    <tr><td class="paramname">-1</td><td>- 失败，请通过errno获取具体的错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gafd9f9e0789d68946718d8c142380cd71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafd9f9e0789d68946718d8c142380cd71">&#9670;&nbsp;</a></span>net_sendto()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ssize_t net_sendto </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structsockaddr.html">sockaddr</a> *&#160;</td>
+          <td class="paramname"><em>dest_addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___socket.html#ga269c892535714289fb93d7dad5be8f25">socklen_t</a>&#160;</td>
+          <td class="paramname"><em>addrlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送数据，一般用在UDP通信中 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>- 套接字描述符 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>- 发送缓冲区地址 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- 发送数据的长度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>- 一般设置为0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dest_addr</td><td>- 接收方套接字的IP地址和端口号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addrlen</td><td>- 地址长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;0</td><td>- 成功,返回实际发送的字节数 </td></tr>
+    <tr><td class="paramname">=0</td><td>- 连接关闭 </td></tr>
+    <tr><td class="paramname">-1</td><td>- 失败，请通过errno获取具体的错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga60f976cf37f1679eba89c139794bc9bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga60f976cf37f1679eba89c139794bc9bb">&#9670;&nbsp;</a></span>net_setsockopt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int net_setsockopt </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sockfd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>optname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>optval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___socket.html#ga269c892535714289fb93d7dad5be8f25">socklen_t</a>&#160;</td>
+          <td class="paramname"><em>optlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置与某个套接字关联的选项 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sockfd</td><td>- 套接字描述符 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>- 选项所属协议层 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">optname</td><td>- 套接字选项名 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">optval</td><td>- 设置选项值的缓冲区 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">optlen</td><td>- 选项值的长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">=0</td><td>- 成功 </td></tr>
+    <tr><td class="paramname">-1</td><td>- 失败，请通过errno获取具体的错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gac707efa47870a7d3ab71057788f4076f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac707efa47870a7d3ab71057788f4076f">&#9670;&nbsp;</a></span>net_socket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int net_socket </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>protocol</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建一个套接字，同时指定协议和类型 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">domain</td><td>- 协议族 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>- 套接字的类型 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">protocol</td><td>- 指定传输协议 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;=0</td><td>- 成功，返回非负套接字描述符 </td></tr>
+    <tr><td class="paramname">-1</td><td>- 失败，请通过errno获取具体的错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>[1] 协议族有AF_INET、AF_INET6、AF_LOCAL、AF_ROUTE等等<br  />
+ [2] 套接字的类型有SOCK_STREAM、SOCK_DGRAM、SOCK_SEQPACKET、SOCK_RAW等等<br  />
+ [3] 传输协议常用的有IPPROTO_TCP、IPPTOTO_UDP，通常设置为0使用默认的值<br  />
+ 目前套接字支持wifi和无线网络，使用前可以先切换网络 </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.6-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

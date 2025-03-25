@@ -1,0 +1,38 @@
+
+menu "Library"
+
+comment "Library"
+
+config BR2_PACKAGE_LIBRARY
+	bool "Build library"
+	default y
+	help
+	  Enable this option if you want to build a library your embedded device
+
+if BR2_PACKAGE_LIBRARY
+
+config BR2_LIBRARY_SOURCE_PATH
+	string
+	default "$(WORKSPACE)/library"
+
+config BR2_LIBRARY_INSTALL_PATH
+	string "library install path"
+	default "$(BASE_DIR)/system/sdk/lib"
+
+config BR2_BUILDCONFIG_CFG_SERIAL_BAUDRATE
+	int "SCPD Serial baudrate"
+	default 1625000
+
+config BR2_BUILDCONFIG_CFG_NONBLOCK_SEARCH_CARD
+	bool "Use nonblock mode to search card"
+	default n
+
+config BR2_BUILDCONFIG_CFG_CRYPTO_RSA_HW
+	bool "Use rsa hardware crypto in wolfssl"
+	default n
+
+source ".config_wrapper/library_wrapper.in"
+
+endif
+
+endmenu

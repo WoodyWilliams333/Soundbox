@@ -1,0 +1,21 @@
+menu "Firmware"
+
+comment "Firmware"
+
+config BR2_FIRMWARE
+	bool "Build firmware"
+	default y
+	help
+	  Enable this option if you want to build firmware for your embedded device
+
+if BR2_FIRMWARE
+
+config BR2_FIRMWARE_INSTALL_PATH
+	string "firmware install path"
+	default "$(BASE_DIR)/system/bin"
+
+source ".config_wrapper/firmware_wrapper.in"
+
+endif
+
+endmenu

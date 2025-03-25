@@ -1,0 +1,327 @@
+<!-- HTML header for doxygen 1.8.6-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<title>MDP820: system.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="styleSheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<script type="text/javascript" src="version.js"></script>
+<script type="text/javascript" src="language.js"></script>
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="MDP820.jpg"/></td>
+  <td width="100%" style="padding-left: 0.5em;">
+   <div id="projectname" style="display:table-cell;vertical-align:middle;text-align:center">MDP820
+		<span id="projectnumber">
+			<select>
+				<option value ="8.2.3">8.2.3</option>
+			</select>
+		</span>
+   </div>
+   <div id="projectbrief">MDP820-API</div>
+  </td>
+  <td>
+    <span id="projectlang" style="margin-right: 1em;">
+		<select>
+			<!-- <option value ="ch">中文</option> -->
+			<!-- <option value ="en">English</option> -->
+		</select>
+	</span>
+   </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('system_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">system.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">// caution, doxygen defgroup header and footer and been both auto generated!!!</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#ifndef __SYSTEM_H__</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#define __SYSTEM_H__</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga70d98404bd321fd8939289051ff1f6c1">   56</a></span>&#160;<span class="preprocessor">#define TUSN_PREFIX                 &quot;TUSN_PREFIX&quot;           </span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga5690bfec09f845222e6aae806a4d42f8">   57</a></span>&#160;<span class="preprocessor">#define HARDWARE_SN                 &quot;SN&quot;                    </span></div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="group__sys__service.html#gafbabe6c3e9c0efab7f8e2b2e137b0be2">   58</a></span>&#160;<span class="preprocessor">#define HARDWARE_PN                 &quot;PN&quot;                    </span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="group__sys__service.html#gaaecfbf90d042f6a2da611935f1c8d7ce">   59</a></span>&#160;<span class="preprocessor">#define HARDWARE_CID                &quot;CID&quot;                   </span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="group__sys__service.html#gac17e828ba7b69d55fd6eff568acb4ad1">   60</a></span>&#160;<span class="preprocessor">#define HARDWARE_BTMAC              &quot;BTMAC&quot;                 </span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga7c770e481dd85c7ffb40e3b3edb0beb5">   61</a></span>&#160;<span class="preprocessor">#define HARDWARE_VERSION            &quot;hwversion&quot;             </span></div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga0da03efb4b5b70a36c8d72b0bb213a50">   62</a></span>&#160;<span class="preprocessor">#define SOFTWARE_VERSION            &quot;swversion&quot;             </span></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="group__sys__service.html#gae3f3b57a94de5941425f51eaae16c404">   63</a></span>&#160;<span class="preprocessor">#define HARDWARE_MACHINE            &quot;machine&quot;               </span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="group__sys__service.html#gaaf9cdab2d69a5224eef50fb18294eff1">   64</a></span>&#160;<span class="preprocessor">#define HARDWARE_BEEP               &quot;beep&quot;                  </span></div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga520ab6fe58c8db8c9225f056ea5c7dc5">   65</a></span>&#160;<span class="preprocessor">#define HARDWARE_MSRSN              &quot;msrsn&quot;                 </span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="group__sys__service.html#gabdd12aa1a4332d050b9b214cdc854721">   66</a></span>&#160;<span class="preprocessor">#define HARDWARE_TERMINAL           &quot;Terminal&quot;              </span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#define HARDWARE_CONFIG             &quot;hwconfig&quot;              </span></div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="group__sys__service.html#gae0d29569baf5b873505f831e9b2d56c4">   68</a></span>&#160;<span class="preprocessor">#define SW_FIRMWARE_VERSION         &quot;firmwarever&quot;           </span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="group__sys__service.html#gaa23199a2ad8fde0aba78faaab2684ba2">   69</a></span>&#160;<span class="preprocessor">#define SW_KERNEL_VERSION           &quot;kernelver&quot;             </span></div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga42e9f464cc7a97062aa58aac31bc48f3">   70</a></span>&#160;<span class="preprocessor">#define SW_SP_VERSION               &quot;spver&quot;                 </span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="group__sys__service.html#gaceb4325404c0af8dc38d476977396fcf">   71</a></span>&#160;<span class="preprocessor">#define SW_BOOT_VERSION             &quot;bootver&quot;               </span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga3e1c072eb177d1b2438b459064f6fa17">   72</a></span>&#160;<span class="preprocessor">#define SW_WIFI_VERSION             &quot;wifiver&quot;               </span></div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga697e54b47cd640ce7f2bd560221b4214">   73</a></span>&#160;<span class="preprocessor">#define KERNEL_COMPILE              &quot;kernelcompile&quot;         </span></div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga5f21cdfa94a348bbe1e989ac1fa88586">   74</a></span>&#160;<span class="preprocessor">#define FIRMWARE_ID                 &quot;firmwareid&quot;            </span></div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="group__sys__service.html#gaf8ede9c99c340e398815abf7bb597d39">   75</a></span>&#160;<span class="preprocessor">#define VENDER_ID                   &quot;venderid&quot;              </span></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="group__sys__service.html#gae86938ac9eef4fe4a6f509e5cbfe288c">   76</a></span>&#160;<span class="preprocessor">#define DEBUG_VER                   &quot;debug_ver&quot;             </span></div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="group__sys__service.html#gaf5f1a27a2c228e5d04366ec5eab5492c">   77</a></span>&#160;<span class="preprocessor">#define SW_IMAGE_VERSION            &quot;imagever&quot;              </span></div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga1d77368be0b165e3a8f67d0bd6562c47">   78</a></span>&#160;<span class="preprocessor">#define HARDWARE_CONFIG             &quot;hwconfig&quot;              </span></div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="group__sys__service.html#gae701bacd015edb37bb2594c9850e9fd4">   79</a></span>&#160;<span class="preprocessor">#define HARDWARE_CPUID              &quot;CPUID&quot;                 </span></div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga18ca66c0668520116792ce22f0205603">   80</a></span>&#160;<span class="preprocessor">#define HARDWARE_WIFI_MAC           &quot;wifi_mac&quot;              </span></div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga6a2d9f8b5870a6c3a4821d57add9aa5b">   81</a></span>&#160;<span class="preprocessor">#define HARDWARE_IMEI               &quot;IMEI&quot;                  </span></div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga506b0b2a2319c10844d55cbd17d35cf3">   82</a></span>&#160;<span class="preprocessor">#define FIRMWARE_CUSTOMER           &quot;customer&quot;              </span></div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga9a6c34a5a3dd8db0996a4d937e7fa84e">   84</a></span>&#160;<span class="preprocessor">#define HARDWARE_BATTERY            &quot;battery&quot;               </span></div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga232283b9d746fafb1c73d0c7ee8810b8">   85</a></span>&#160;<span class="preprocessor">#define HARDWARE_LCD                &quot;lcd&quot;                   </span></div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="group__sys__service.html#gad688a9e6b6fd8a28696556caf16bdb08">   86</a></span>&#160;<span class="preprocessor">#define HARDWARE_TOUCHSCREEN        &quot;touchscreen&quot;           </span></div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga1e684fc2ab9a4f77897706d2155b736e">   87</a></span>&#160;<span class="preprocessor">#define HARDWARE_KEYBOARD           &quot;keyboard&quot;              </span></div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga6ac381c5a871707fd3850fbe6e0a9479">   88</a></span>&#160;<span class="preprocessor">#define HARDWARE_MSR                &quot;msr&quot;                   </span></div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="group__sys__service.html#gab7b320710904087a483f98bfff6c467f">   89</a></span>&#160;<span class="preprocessor">#define HARDWARE_PRINTER            &quot;printer&quot;               </span></div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="group__sys__service.html#gaa45c3e64d8328922d40bf19a9a5c3e79">   90</a></span>&#160;<span class="preprocessor">#define HARDWARE_NFC                &quot;nfc&quot;                   </span></div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga1b5773e5117bca1bd3dce340623d237a">   91</a></span>&#160;<span class="preprocessor">#define HARDWARE_TF                 &quot;tf&quot;                    </span></div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="group__sys__service.html#gadcee04f86b689e40ef75b26555426dab">   92</a></span>&#160;<span class="preprocessor">#define HARDWARE_IC                 &quot;ic&quot;                    </span></div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga2b9d84851fee4c38751ebb0a5e57f5b6">   93</a></span>&#160;<span class="preprocessor">#define HARDWARE_SAM                &quot;sam&quot;                   </span></div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga58f348058f373c08a47c64b229f993e9">   94</a></span>&#160;<span class="preprocessor">#define HARDWARE_2SIM               &quot;2sim&quot;                  </span></div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="group__sys__service.html#gaa9a9534e8cef487fde5558fdece4748f">   95</a></span>&#160;<span class="preprocessor">#define HARDWARE_UART               &quot;uart&quot;                  </span></div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga3bf4c7aec9cb2a7315f03ecb4913d8c8">   96</a></span>&#160;<span class="preprocessor">#define HARDWARE_BARSCANNER         &quot;barscanner&quot;            </span></div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga529eceda5fc343198df5c7f01c8fa30a">   97</a></span>&#160;<span class="preprocessor">#define HARDWARE_WIRELESS           &quot;wireless&quot;              </span></div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga1ba6c41025c060746a7f8d215abdac74">   98</a></span>&#160;<span class="preprocessor">#define HARDWARE_MODEM              &quot;modem&quot;                 </span></div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga4f20aa2d6cfd557cca3c2abf9681068e">   99</a></span>&#160;<span class="preprocessor">#define HARDWARE_LAN                &quot;lan&quot;                   </span></div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga6d2fa044da5271b65f100d6b0c814aba">  100</a></span>&#160;<span class="preprocessor">#define HARDWARE_WIFI               &quot;wifi&quot;                  </span></div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga8c9d798449281e82ee6f493d1a4fe814">  101</a></span>&#160;<span class="preprocessor">#define HARDWARE_BLUETOOTH          &quot;bluetooth&quot;             </span></div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga4d79d57ee34c616900106023199a0623">  102</a></span>&#160;<span class="preprocessor">#define HARDWARE_USBH               &quot;usbh&quot;                  </span></div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga8d8d04b7f0bc5eb391ddb3ea736f7044">  103</a></span>&#160;<span class="preprocessor">#define HARDWARE_USBD               &quot;usbd&quot;                  </span></div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga3d9792afa90708dd3bd69a6f300c9306">  104</a></span>&#160;<span class="preprocessor">#define HARDWARE_USBO               &quot;usbo&quot;                  </span></div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga4ab747adf351684d04964e3bbcdc0343">  105</a></span>&#160;<span class="preprocessor">#define HARDWARE_GPS                &quot;gps&quot;                   </span></div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="group__sys__service.html#gaf86b649b5d7d0775594337f1dea2be37">  106</a></span>&#160;<span class="preprocessor">#define HARDWARE_FINGERPRINT        &quot;fingerprint&quot;           </span></div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="group__sys__service.html#gadd1e84f8bb56d672c0fddb2aecd2058e">  107</a></span>&#160;<span class="preprocessor">#define HARDWARE_NFC_LED            &quot;nfc_led&quot;               </span></div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="group__sys__service.html#gaeda94f7218a7ae2388cfa7fc800e09e4">  108</a></span>&#160;<span class="preprocessor">#define HARDWARE_AUDIO              &quot;audio&quot;                 </span></div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="group__sys__service.html#gaebe100e38c276266ee43f89f9161081d">  109</a></span>&#160;<span class="preprocessor">#define HARDWARE_ESIM               &quot;esim&quot;                  </span></div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="group__sys__service.html#gae6da31b01327d68431125ea3f8a16e58">  110</a></span>&#160;<span class="preprocessor">#define HARDWARE_NTD                &quot;ntd&quot;                   </span></div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga9f1eb9e76077ec977e21bfd1af12bcb0">  111</a></span>&#160;<span class="preprocessor">#define HARDWARE_KEYBOARD_LIGHT     &quot;keyboard_light&quot;        </span></div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="group__sys__service.html#gacf656e8c471eb26e23a145540a592595">  112</a></span>&#160;<span class="preprocessor">#define HARDWARE_VOLUME             &quot;volume&quot;                </span></div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga846e3fde05dc42900b775f6614efc0ac">  114</a></span>&#160;<span class="preprocessor">#define HARDWARE_QRCODE             &quot;QRCode&quot;                </span></div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="group__sys__service.html#gad8a4c41e171293695903a82ca4f74194">  115</a></span>&#160;<span class="preprocessor">#define HARDWARE_CONFIG_SET         &quot;config&quot;                </span></div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga60d0b83f017712eafbb95b38e0b28fa0">  116</a></span>&#160;<span class="preprocessor">#define HARDWARE_BAT_PROPERTY       &quot;Battery Property&quot;      </span></div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga900ec7a6c2b953cbfabda88550986335">  117</a></span>&#160;<span class="preprocessor">#define PRODUCTION_PROCESS_NUM      &quot;Production number&quot;     </span></div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="group__sys__service.html#gaee10e4eb1bc18be5302ce4e4f14b8518">  119</a></span>&#160;<span class="preprocessor">#define HARDWARE_TP                 HARDWARE_TOUCHSCREEN    </span></div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga06e70a944d4773df05173bc7cf3e5fac">  120</a></span>&#160;<span class="preprocessor">#define HARDWARE_LED                HARDWARE_NFC_LED        </span></div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="group__sys__service.html#gaa70fa1c5da5198bf6e7115b12f3960c1">  122</a></span>&#160;<span class="preprocessor">#define HARDWARE_CAMERA             HARDWARE_BARSCANNER     </span></div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga8180429765670a7df76c70a6a6903036">  123</a></span>&#160;<span class="preprocessor">#define HARDWARE_GPRS               HARDWARE_WIRELESS       </span></div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="group__sys__service.html#gab9559bc5f0ea54174d25eef156f089b5">  124</a></span>&#160;<span class="preprocessor">#define HARDWARE_FIRMWAREID         FIRMWARE_ID             </span></div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="group__sys__service.html#ga4a4e0e683e5acc3ca6c300083cbd583d">  125</a></span>&#160;<span class="preprocessor">#define SOFTVARE_RELEASE_VER        DEBUG_VER               </span></div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="group__sys__service.html#gaa14dc39d52ab121ceb570f1a265385e0">  126</a></span>&#160;<span class="preprocessor">#define FIRMWARE_VERSION            SW_IMAGE_VERSION        </span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">int sys_get_tusn(char *tusn, int nbytes);</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__sys__service.html#gaacc08c810259a6555b7a8822b8341ec7">sys_read_ver</a>(<span class="keywordtype">char</span> *ver_info, <span class="keywordtype">int</span> nbytes);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;uint8_t *<a class="code" href="group__sys__service.html#ga0765800f2377cfbb6a79b70a958d3c11">sys_read_chip_uid</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="preprocessor">#if 0 //删除此接口</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__beeper.html#ga0e768e362ff6e2ce11417ab7631bf081">sys_beep</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__sys__service.html#ga0d399ee69d9fdf7cf0298cdc9748c85c">sys_set_power_save</a>(<span class="keywordtype">int</span> mode);</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__sys__service.html#ga2b1ed233a180d3991b4832e9de38e176">sys_reset</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__sys__service.html#ga0f8d9f84fe85a3694c995b10c19a138e">sys_power_off</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__sys__service.html#gafb77f1878c231e8eace4761c7c1225d2">sys_set_power_button</a>(<span class="keywordtype">int</span> enable);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;uint32_t <a class="code" href="group__sys__service.html#gaa81dc7e1fd2c0000cacd6aaf5bd94c68">sys_get_timer_count</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="comment">//void sys_delay_ms(uint32_t count_ms);</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__sys__service.html#ga332ab96839c6303c00bb23a6652c2ee7">sys_msleep</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> ms);</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__sys__service.html#gae550c585a2cd9e2b35cdc9f8cf66f550">sys_set_time</a>(<span class="keyword">const</span> uint8_t *time_str, <span class="keywordtype">int</span> len);</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160; </div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__sys__service.html#gab496d23f0bed8d3485fd51ab522f12e9">sys_get_time</a>(uint8_t *time_str, <span class="keywordtype">int</span> len);</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160; </div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__sys__service.html#ga49af4c87eb291676e6ff13a282e339e9">sys_get_hardware_config</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *module, <span class="keywordtype">char</span> *type, <span class="keywordtype">int</span> *numbers);</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160; </div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__sys__service.html#gaeb015dd979ff91350cf2f2e22875fb1e">sys_get_settting_config</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *section, <span class="keyword">const</span> <span class="keywordtype">char</span> *key, <span class="keywordtype">char</span> *buf, <span class="keywordtype">int</span> buf_len);</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160; </div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__sys__service.html#ga34297b668d3a15cc130e3d3caa9c92c6">sys_set_settting_config</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *section, <span class="keyword">const</span> <span class="keywordtype">char</span> *key, <span class="keyword">const</span> <span class="keywordtype">char</span> *value);</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160; </div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__sys__service.html#gac7e40d5be3ff7aec85feabba89f2c064">sys_save_settting_config</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160; </div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160; </div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;<span class="preprocessor">#if 0</span></div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;<span class="preprocessor">#define LastError()                 \</span></div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;<span class="preprocessor">({                                  \</span></div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;<span class="preprocessor">    int error = 0;                  \</span></div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;<span class="preprocessor">    sysGetLastError(NULL, &amp;error);  \</span></div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;<span class="preprocessor">    error;                          \</span></div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;<span class="preprocessor">})</span></div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160; </div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;<span class="comment">// 增加获取电池的电压值、电量百分比的接口</span></div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160; </div>
+<div class="line"><a name="l00581"></a><span class="lineno"><a class="line" href="structsys__battery__info__t.html">  581</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00582"></a><span class="lineno"><a class="line" href="structsys__battery__info__t.html#a5c40913aa28b1032510291d6de6ebdd5">  582</a></span>&#160;    uint32_t <a class="code" href="structsys__battery__info__t.html#a5c40913aa28b1032510291d6de6ebdd5">status</a>;            </div>
+<div class="line"><a name="l00583"></a><span class="lineno"><a class="line" href="structsys__battery__info__t.html#a9d0dda3dca441803d1f7f69ad3d01026">  583</a></span>&#160;    uint32_t <a class="code" href="structsys__battery__info__t.html#a9d0dda3dca441803d1f7f69ad3d01026">cur_values</a>;        </div>
+<div class="line"><a name="l00584"></a><span class="lineno"><a class="line" href="structsys__battery__info__t.html#aa9bde6e92fba261adada87ab36ed545f">  584</a></span>&#160;    uint32_t <a class="code" href="structsys__battery__info__t.html#aa9bde6e92fba261adada87ab36ed545f">max_values</a>;        </div>
+<div class="line"><a name="l00585"></a><span class="lineno"><a class="line" href="structsys__battery__info__t.html#a58534599bf4a6d3e78a06e555a634ad0">  585</a></span>&#160;    uint32_t <a class="code" href="structsys__battery__info__t.html#a58534599bf4a6d3e78a06e555a634ad0">min_values</a>;        </div>
+<div class="line"><a name="l00586"></a><span class="lineno"><a class="line" href="structsys__battery__info__t.html#a7605a80302161838e7c2a9b0bc163086">  586</a></span>&#160;    uint32_t <a class="code" href="structsys__battery__info__t.html#a7605a80302161838e7c2a9b0bc163086">percent</a>;           </div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;} <a class="code" href="structsys__battery__info__t.html">sys_battery_info_t</a>;</div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160; </div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__sys__service.html#ga73dfcf0561b99cc8d2ebac02f79cf455">sys_get_battery_info</a>(<a class="code" href="structsys__battery__info__t.html">sys_battery_info_t</a> *battery_info);</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160; </div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__sys__service.html#gab3537d77747943cd5a00f173217e2b1f">sys_verify_file</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file_name);</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160; </div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__sys__service.html#gab836038e4666433927d630fc9e393983">get_rtc_crystal</a>(<span class="keywordtype">char</span> *type, <span class="keywordtype">int</span> *len);</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160; </div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__sys__service.html#ga1b2a903d5b272b6629ca88521d2b5d73">sys_enable_system_standby</a>(<span class="keywordtype">int</span> mode);</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160; </div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__sys__service.html#gaadb4edc0ffc2d2c668949eb7b0ae2ea1">sys_get_free_mem</a>(uint32_t *total_heap_mem, uint32_t *available_heap_mem, uint32_t *max_available_heap_mem_blk);</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160; </div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__sys__service.html#gaaec9350ea8aa63817592b81daee07042">sys_send_signal</a>(<span class="keywordtype">void</span> *signal_ptr, uint32_t dest_id);</div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160; </div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;<span class="keywordtype">void</span> *<a class="code" href="group__sys__service.html#gaae88767271c4ae47de7fab80f4b2543c">sys_get_signal</a>(uint32_t thread_id);</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160; </div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;<span class="keywordtype">void</span> *<a class="code" href="group__sys__service.html#ga3f668c1a97c1f9f9204e1fa8bad29ad0">sys_malloc</a>(uint32_t size);</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160; </div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__sys__service.html#ga4ddb10bdf41026f12e8406790af5af97">sys_free</a>(<span class="keywordtype">void</span> *sig);</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160; </div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__sys__service.html#gab349f9a53d9af022b7d03a993dc4ba11">sys_assert</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *expinfo, <span class="keyword">const</span> <span class="keywordtype">char</span> *file, <span class="keywordtype">int</span> line);</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160; </div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__sys__service.html#ga80e53b19354f569fe37fbba553cc0f6f">sys_get_usn</a>(<span class="keywordtype">char</span> *usn, <span class="keywordtype">int</span> len);</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160; </div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__sys__service.html#ga29e98c32ada2fc1bc4ce571255d2adbc">get_barcode_license</a>(uint8_t *license, uint32_t len);</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160; </div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__sys__service.html#ga97721ca0f370043256f3913988feeea6">sys_kbd_backlight_set_status</a>(uint8_t status);</div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160; </div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__sys__service.html#ga8300f523bb50d0248c33a08b6a1e4980">sys_kbd_backlight_get_status</a>(uint8_t *status);</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160; </div>
+<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__sys__service.html#gaffab016984eb322344ab93b19c435b55">sys_update_logo</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *filename);</div>
+<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160; </div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;}</div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160; </div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __SYSTEM_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="astructsys__battery__info__t_html_a7605a80302161838e7c2a9b0bc163086"><div class="ttname"><a href="structsys__battery__info__t.html#a7605a80302161838e7c2a9b0bc163086">sys_battery_info_t::percent</a></div><div class="ttdeci">uint32_t percent</div><div class="ttdef"><b>Definition:</b> system.h:586</div></div>
+<div class="ttc" id="agroup__sys__service_html_gaa81dc7e1fd2c0000cacd6aaf5bd94c68"><div class="ttname"><a href="group__sys__service.html#gaa81dc7e1fd2c0000cacd6aaf5bd94c68">sys_get_timer_count</a></div><div class="ttdeci">uint32_t sys_get_timer_count(void)</div><div class="ttdoc">获取系统启动到当前经过的时间</div></div>
+<div class="ttc" id="astructsys__battery__info__t_html_aa9bde6e92fba261adada87ab36ed545f"><div class="ttname"><a href="structsys__battery__info__t.html#aa9bde6e92fba261adada87ab36ed545f">sys_battery_info_t::max_values</a></div><div class="ttdeci">uint32_t max_values</div><div class="ttdef"><b>Definition:</b> system.h:584</div></div>
+<div class="ttc" id="agroup__sys__service_html_gaadb4edc0ffc2d2c668949eb7b0ae2ea1"><div class="ttname"><a href="group__sys__service.html#gaadb4edc0ffc2d2c668949eb7b0ae2ea1">sys_get_free_mem</a></div><div class="ttdeci">int sys_get_free_mem(uint32_t *total_heap_mem, uint32_t *available_heap_mem, uint32_t *max_available_heap_mem_blk)</div><div class="ttdoc">获取内存信息</div></div>
+<div class="ttc" id="agroup__sys__service_html_ga73dfcf0561b99cc8d2ebac02f79cf455"><div class="ttname"><a href="group__sys__service.html#ga73dfcf0561b99cc8d2ebac02f79cf455">sys_get_battery_info</a></div><div class="ttdeci">int sys_get_battery_info(sys_battery_info_t *battery_info)</div><div class="ttdoc">获取系统电池信息</div></div>
+<div class="ttc" id="agroup__sys__service_html_ga80e53b19354f569fe37fbba553cc0f6f"><div class="ttname"><a href="group__sys__service.html#ga80e53b19354f569fe37fbba553cc0f6f">sys_get_usn</a></div><div class="ttdeci">int sys_get_usn(char *usn, int len)</div><div class="ttdoc">读取设备唯一编号</div></div>
+<div class="ttc" id="astructsys__battery__info__t_html_a5c40913aa28b1032510291d6de6ebdd5"><div class="ttname"><a href="structsys__battery__info__t.html#a5c40913aa28b1032510291d6de6ebdd5">sys_battery_info_t::status</a></div><div class="ttdeci">uint32_t status</div><div class="ttdef"><b>Definition:</b> system.h:582</div></div>
+<div class="ttc" id="agroup__sys__service_html_gab496d23f0bed8d3485fd51ab522f12e9"><div class="ttname"><a href="group__sys__service.html#gab496d23f0bed8d3485fd51ab522f12e9">sys_get_time</a></div><div class="ttdeci">int sys_get_time(uint8_t *time_str, int len)</div><div class="ttdoc">读取当前系统日期和时间</div></div>
+<div class="ttc" id="agroup__sys__service_html_gac7e40d5be3ff7aec85feabba89f2c064"><div class="ttname"><a href="group__sys__service.html#gac7e40d5be3ff7aec85feabba89f2c064">sys_save_settting_config</a></div><div class="ttdeci">int sys_save_settting_config(void)</div><div class="ttdoc">保存系统配置信息</div></div>
+<div class="ttc" id="agroup__sys__service_html_ga4ddb10bdf41026f12e8406790af5af97"><div class="ttname"><a href="group__sys__service.html#ga4ddb10bdf41026f12e8406790af5af97">sys_free</a></div><div class="ttdeci">int sys_free(void *sig)</div><div class="ttdoc">释放动态分配的内存</div></div>
+<div class="ttc" id="agroup__sys__service_html_gab349f9a53d9af022b7d03a993dc4ba11"><div class="ttname"><a href="group__sys__service.html#gab349f9a53d9af022b7d03a993dc4ba11">sys_assert</a></div><div class="ttdeci">void sys_assert(const char *expinfo, const char *file, int line)</div><div class="ttdoc">断言</div></div>
+<div class="ttc" id="agroup__sys__service_html_ga29e98c32ada2fc1bc4ce571255d2adbc"><div class="ttname"><a href="group__sys__service.html#ga29e98c32ada2fc1bc4ce571255d2adbc">get_barcode_license</a></div><div class="ttdeci">int get_barcode_license(uint8_t *license, uint32_t len)</div><div class="ttdoc">读取授权码</div></div>
+<div class="ttc" id="agroup__sys__service_html_ga2b1ed233a180d3991b4832e9de38e176"><div class="ttname"><a href="group__sys__service.html#ga2b1ed233a180d3991b4832e9de38e176">sys_reset</a></div><div class="ttdeci">void sys_reset(void)</div><div class="ttdoc">系统重启</div></div>
+<div class="ttc" id="astructsys__battery__info__t_html_a58534599bf4a6d3e78a06e555a634ad0"><div class="ttname"><a href="structsys__battery__info__t.html#a58534599bf4a6d3e78a06e555a634ad0">sys_battery_info_t::min_values</a></div><div class="ttdeci">uint32_t min_values</div><div class="ttdef"><b>Definition:</b> system.h:585</div></div>
+<div class="ttc" id="agroup__sys__service_html_gaaec9350ea8aa63817592b81daee07042"><div class="ttname"><a href="group__sys__service.html#gaaec9350ea8aa63817592b81daee07042">sys_send_signal</a></div><div class="ttdeci">int sys_send_signal(void *signal_ptr, uint32_t dest_id)</div><div class="ttdoc">发送消息给其它线程</div></div>
+<div class="ttc" id="agroup__sys__service_html_ga332ab96839c6303c00bb23a6652c2ee7"><div class="ttname"><a href="group__sys__service.html#ga332ab96839c6303c00bb23a6652c2ee7">sys_msleep</a></div><div class="ttdeci">void sys_msleep(unsigned long ms)</div><div class="ttdoc">延时ms个毫秒</div></div>
+<div class="ttc" id="agroup__sys__service_html_ga3f668c1a97c1f9f9204e1fa8bad29ad0"><div class="ttname"><a href="group__sys__service.html#ga3f668c1a97c1f9f9204e1fa8bad29ad0">sys_malloc</a></div><div class="ttdeci">void * sys_malloc(uint32_t size)</div><div class="ttdoc">动态分配连续的指定大小的内存块</div></div>
+<div class="ttc" id="agroup__sys__service_html_gaffab016984eb322344ab93b19c435b55"><div class="ttname"><a href="group__sys__service.html#gaffab016984eb322344ab93b19c435b55">sys_update_logo</a></div><div class="ttdeci">int sys_update_logo(const char *filename)</div><div class="ttdoc">更新系统logo</div></div>
+<div class="ttc" id="agroup__sys__service_html_ga1b2a903d5b272b6629ca88521d2b5d73"><div class="ttname"><a href="group__sys__service.html#ga1b2a903d5b272b6629ca88521d2b5d73">sys_enable_system_standby</a></div><div class="ttdeci">void sys_enable_system_standby(int mode)</div><div class="ttdoc">使能/禁止 系统的standby模式</div></div>
+<div class="ttc" id="astructsys__battery__info__t_html_a9d0dda3dca441803d1f7f69ad3d01026"><div class="ttname"><a href="structsys__battery__info__t.html#a9d0dda3dca441803d1f7f69ad3d01026">sys_battery_info_t::cur_values</a></div><div class="ttdeci">uint32_t cur_values</div><div class="ttdef"><b>Definition:</b> system.h:583</div></div>
+<div class="ttc" id="agroup__sys__service_html_ga34297b668d3a15cc130e3d3caa9c92c6"><div class="ttname"><a href="group__sys__service.html#ga34297b668d3a15cc130e3d3caa9c92c6">sys_set_settting_config</a></div><div class="ttdeci">int sys_set_settting_config(const char *section, const char *key, const char *value)</div><div class="ttdoc">设置系统配置信息</div></div>
+<div class="ttc" id="agroup__sys__service_html_ga97721ca0f370043256f3913988feeea6"><div class="ttname"><a href="group__sys__service.html#ga97721ca0f370043256f3913988feeea6">sys_kbd_backlight_set_status</a></div><div class="ttdeci">int sys_kbd_backlight_set_status(uint8_t status)</div><div class="ttdoc">设置键盘背光灯状态</div></div>
+<div class="ttc" id="agroup__sys__service_html_ga49af4c87eb291676e6ff13a282e339e9"><div class="ttname"><a href="group__sys__service.html#ga49af4c87eb291676e6ff13a282e339e9">sys_get_hardware_config</a></div><div class="ttdeci">int sys_get_hardware_config(const char *module, char *type, int *numbers)</div><div class="ttdoc">获取本机硬件模块配置信息</div></div>
+<div class="ttc" id="agroup__sys__service_html_ga0f8d9f84fe85a3694c995b10c19a138e"><div class="ttname"><a href="group__sys__service.html#ga0f8d9f84fe85a3694c995b10c19a138e">sys_power_off</a></div><div class="ttdeci">void sys_power_off(void)</div><div class="ttdoc">系统关机</div></div>
+<div class="ttc" id="agroup__sys__service_html_gab836038e4666433927d630fc9e393983"><div class="ttname"><a href="group__sys__service.html#gab836038e4666433927d630fc9e393983">get_rtc_crystal</a></div><div class="ttdeci">int get_rtc_crystal(char *type, int *len)</div><div class="ttdoc">获取sp内部RTC晶振频率状态</div></div>
+<div class="ttc" id="agroup__sys__service_html_gafb77f1878c231e8eace4761c7c1225d2"><div class="ttname"><a href="group__sys__service.html#gafb77f1878c231e8eace4761c7c1225d2">sys_set_power_button</a></div><div class="ttdeci">void sys_set_power_button(int enable)</div><div class="ttdoc">设置电源键是否关机功能</div></div>
+<div class="ttc" id="astructsys__battery__info__t_html"><div class="ttname"><a href="structsys__battery__info__t.html">sys_battery_info_t</a></div><div class="ttdoc">系统电压信息结构体</div><div class="ttdef"><b>Definition:</b> system.h:581</div></div>
+<div class="ttc" id="agroup__sys__service_html_gae550c585a2cd9e2b35cdc9f8cf66f550"><div class="ttname"><a href="group__sys__service.html#gae550c585a2cd9e2b35cdc9f8cf66f550">sys_set_time</a></div><div class="ttdeci">int sys_set_time(const uint8_t *time_str, int len)</div><div class="ttdoc">设置系统日期和时间，星期值将自动算出并设置</div></div>
+<div class="ttc" id="agroup__sys__service_html_gaae88767271c4ae47de7fab80f4b2543c"><div class="ttname"><a href="group__sys__service.html#gaae88767271c4ae47de7fab80f4b2543c">sys_get_signal</a></div><div class="ttdeci">void * sys_get_signal(uint32_t thread_id)</div><div class="ttdoc">线程中读取其它线程发过来的消息，若无消息，则该函数阻塞</div></div>
+<div class="ttc" id="agroup__sys__service_html_gab3537d77747943cd5a00f173217e2b1f"><div class="ttname"><a href="group__sys__service.html#gab3537d77747943cd5a00f173217e2b1f">sys_verify_file</a></div><div class="ttdeci">int sys_verify_file(const char *file_name)</div><div class="ttdoc">校验应用bin文件的签名</div></div>
+<div class="ttc" id="agroup__sys__service_html_gaacc08c810259a6555b7a8822b8341ec7"><div class="ttname"><a href="group__sys__service.html#gaacc08c810259a6555b7a8822b8341ec7">sys_read_ver</a></div><div class="ttdeci">int sys_read_ver(char *ver_info, int nbytes)</div><div class="ttdoc">获取 firmware 版本</div></div>
+<div class="ttc" id="agroup__sys__service_html_ga0765800f2377cfbb6a79b70a958d3c11"><div class="ttname"><a href="group__sys__service.html#ga0765800f2377cfbb6a79b70a958d3c11">sys_read_chip_uid</a></div><div class="ttdeci">uint8_t * sys_read_chip_uid(void)</div><div class="ttdoc">读取芯片唯一ID号(chip unique id)</div></div>
+<div class="ttc" id="agroup__sys__service_html_ga8300f523bb50d0248c33a08b6a1e4980"><div class="ttname"><a href="group__sys__service.html#ga8300f523bb50d0248c33a08b6a1e4980">sys_kbd_backlight_get_status</a></div><div class="ttdeci">int sys_kbd_backlight_get_status(uint8_t *status)</div><div class="ttdoc">获取键盘背光灯状态</div></div>
+<div class="ttc" id="agroup__sys__service_html_gaeb015dd979ff91350cf2f2e22875fb1e"><div class="ttname"><a href="group__sys__service.html#gaeb015dd979ff91350cf2f2e22875fb1e">sys_get_settting_config</a></div><div class="ttdeci">int sys_get_settting_config(const char *section, const char *key, char *buf, int buf_len)</div><div class="ttdoc">获取系统配置信息</div></div>
+<div class="ttc" id="agroup__sys__service_html_ga0d399ee69d9fdf7cf0298cdc9748c85c"><div class="ttname"><a href="group__sys__service.html#ga0d399ee69d9fdf7cf0298cdc9748c85c">sys_set_power_save</a></div><div class="ttdeci">int sys_set_power_save(int mode)</div><div class="ttdoc">设置自动灭屏，设置休眠模式</div></div>
+<div class="ttc" id="agroup__beeper_html_ga0e768e362ff6e2ce11417ab7631bf081"><div class="ttname"><a href="group__beeper.html#ga0e768e362ff6e2ce11417ab7631bf081">sys_beep</a></div><div class="ttdeci">void sys_beep(unsigned int frequency, unsigned int keepms)</div><div class="ttdoc">系统蜂鸣器声音</div></div>
+<!-- HTML footer for doxygen 1.8.6-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>system.h</b></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

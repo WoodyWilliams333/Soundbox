@@ -1,0 +1,22 @@
+
+menu "User Application"
+
+comment "User Application"
+
+config BR2_PACKAGE_USRAPP
+	bool "Build user level application"
+	default y
+	help
+	  Enable this option if you want to build user's application for your embedded device
+
+if BR2_PACKAGE_USRAPP
+
+config BR2_USRAPP_SOURCE_PATH
+	string
+	default "$(WORKSPACE)/usrapp"
+
+source ".config_wrapper/usrapp_wrapper.in"
+
+endif
+
+endmenu

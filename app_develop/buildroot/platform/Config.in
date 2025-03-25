@@ -1,0 +1,139 @@
+menu "Product Options"
+
+config BR2_PRODUCT_NAME
+        string "Product Name"
+        default "c2"
+
+choice
+	prompt "Build for Customer"
+	default BR2_CUSTOMER_NORMAL
+	
+config BR2_CUSTOMER_NORMAL
+	bool "normal"
+	help
+	  Build for developer.
+
+config BR2_CUSTOMER_UPTS
+	bool "upts"
+	help
+	  Build for UPTS
+
+config BR2_CUSTOMER_AMP
+	bool "amp"
+	help
+	  Build for amp
+
+endchoice
+
+config BR2_BUILDCONFIG_CFG_PCI_COMPLY
+	bool
+	default y
+	depends on BR2_CUSTOMER_PCI || BR2_CUSTOMER_UPTS
+	help
+		Configuration for PCI
+
+config BR2_BUILDCONFIG_CFG_UPTS_COMPLY
+	bool
+	default y
+	depends on BR2_CUSTOMER_UPTS
+	help 
+		Configuration for UPTS
+
+config BR2_BUILDCONFIG_CFG_VERIFY_DEVELOPMENT
+	bool
+	default y
+	depends on BR2_FIRMWARE_TYPE_DEVELOP
+	help
+		Do not verify the signature of app in development version
+
+config BR2_CUSTOMER_TYPE
+	string 
+	default "normal" if BR2_CUSTOMER_NORMAL
+	default "amp"    if BR2_CUSTOMER_AMP
+	default "upts"   if BR2_CUSTOMER_UPTS
+
+choice
+	prompt "firmware type"
+	default BR2_FIRMWARE_TYPE_RELEASE
+	help
+	  Select firmware type, Release, Develop, PCI...
+
+config BR2_FIRMWARE_TYPE_RELEASE
+	bool "Release"
+	help
+	  Compile firmware with Signature/Authentication.
+	  This version used for final release.
+	  
+config BR2_FIRMWARE_TYPE_PCI
+	bool "PCI"
+	help
+	  Compile firmware with Signature/Authentication and with many secure policy.
+	  This version used for PCI certification.
+	  
+config BR2_FIRMWARE_TYPE_DEVELOP
+	bool "Develop"
+	help
+	  Compile firmware without Signature/Authentication.
+	  This version used for development stage.
+	
+endchoice
+
+config BR2_FIRMWARE_TYPE
+	string
+	default "dev"	if BR2_FIRMWARE_TYPE_DEVELOP
+	default "rel"	if BR2_FIRMWARE_TYPE_RELEASE
+	default "pci"	if BR2_FIRMWARE_TYPE_PCI
+
+config BR2_FIRMWARE_SUFFIX
+	string
+	default "Develop"	if BR2_FIRMWARE_TYPE_DEVELOP
+	default "Secure"	if BR2_FIRMWARE_TYPE_RELEASE
+	default "Secure"	if BR2_FIRMWARE_TYPE_PCI
+	
+config BR2_PCI_COMPLY
+	bool
+	default y if BR2_FIRMWARE_TYPE_PCI
+	default n if BR2_FIRMWARE_TYPE_RELEASE
+	default n if BR2_FIRMWARE_TYPE_DEVELOP
+	
+config BR2_OUTPUT_PATH
+	string
+	default "$(BR2_PRODUCT_NAME)_$(BR2_CUSTOMER_TYPE)_$(BR2_FIRMWARE_TYPE)"
+
+config BR2_IMAGE_NAME
+	string "image name" 
+	default "$(BR2_PRODUCT_NAME)$(BR2_CUSTOMER_TYPE).img"
+
+config BR2_IMAGE_VERSION
+	string "Image version"
+	default "1.0.1"
+	
+config BR2_UPTS_VERSION
+	string "UPTS version"
+	default "010001"	
+
+config BR2_MS_SIGNATURE_IP
+	string "Signature IP for MS"
+	default "10.1.23.2"
+	
+config BR2_MS_SIGNATURE_PORT
+	string "Signature Port for MS"
+	default "9210"
+
+config BR2_MF_SIGNATURE_IP
+	string "Signature IP for MF"
+	default "10.1.23.2"
+
+config BR2_MF_SIGNATURE_PORT
+	string "Signature Port for MF"
+	default "9210"	if BR2_CUSTOMER_NORMAL
+	default "7000"	if BR2_CUSTOMER_AMP
+	
+config BR2_PREBUILT_PACKAGE_URL
+        string "prebuilt package URL"
+        default "http://10.1.40.23/build/c2"
+        help
+              prebuilt axf file URL.
+
+endmenu
+

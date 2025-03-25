@@ -1,0 +1,53 @@
+
+
+comment ""
+comment "Toolchain for mh1902"
+
+config BR2_SP_MH1902_TOOLCHAIN_URL
+	string "Broadcom 5810 Toolchain"
+	default "http://10.1.40.23/pub/toolchain/gcc/newlib-arm-unknown-bare-gnueabi-x86.tar.bz2"
+	help
+	  Enable this option if you want to build sp.
+
+config BR2_SP_MH1902_TOOLCHAIN_INSTALL_PATH
+        string "toolchain bcm5810 install PATH"
+        default "$(WORKSPACE)/toolchain/newlib-arm-unknown-bare-gnueabi"
+        help
+            local path of the custom toolchain tarball to install.
+	
+config BR2_SP_MH1902_TOOLCHAIN_PREFIX
+	string "MH1902 Toolchain prefix for cross compile"
+	default "bin/arm-elf-"
+	help
+	  Enable this option if you want to build sp.
+
+menu "misc option"
+config BR2_SP_KERNEL_FLASH_OFFSET_ADDR
+	hex  "kernel_offset_addr"
+	default 0x01080000
+	help
+	  set kernel flash offset
+config BR2_SP_CHIPFLASH_START_ADDR
+	hex  "chipflash_start_addr"
+	default 0x01001000
+	help
+	  set default chip start offset
+config BR2_SP_FIRMWARE_VERSION
+	string "sp firmare version"
+	default "2.0.0"
+config BR2_SP_BOOT_VERSION
+	string "SP boot version"
+	default "1.0.0" 
+
+config BR2_SP_KERNEL_VERSION
+	string "SP kernel version"
+	default "1.0.0" 
+
+config BR2_SP_KERNEL_IMG_NAME
+	string "SP kernel img name"
+	default "sp_mh_kernel.bin" 
+
+config BR2_SP_BOOT_IMG_NAME
+	string "SP kernel img name"
+	default "sp_mh_boot.bin" 
+endmenu

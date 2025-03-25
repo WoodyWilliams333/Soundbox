@@ -1,0 +1,26 @@
+
+menu "System Tools"
+
+comment "System Tools"
+
+config BR2_PACKAGE_TOOLS
+	bool "Build system tools"
+	default y
+	help
+	  Enable this option if you want to build system tools for host(X86 system)
+
+if BR2_PACKAGE_TOOLS
+
+config BR2_TOOLS_SOURCE_PATH
+	string
+	default "$(WORKSPACE)/host"
+
+config BR2_TOOLS_INSTALL_PATH
+	string "system tools install path"
+	default "$(WORKSPACE)/toolchain/tools"
+
+source ".config_wrapper/tools_wrapper.in"
+
+endif
+
+endmenu

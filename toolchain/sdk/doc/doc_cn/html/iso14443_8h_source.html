@@ -1,0 +1,361 @@
+<!-- HTML header for doxygen 1.8.6-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<title>MDP820: iso14443.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="styleSheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<script type="text/javascript" src="version.js"></script>
+<script type="text/javascript" src="language.js"></script>
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="MDP820.jpg"/></td>
+  <td width="100%" style="padding-left: 0.5em;">
+   <div id="projectname" style="display:table-cell;vertical-align:middle;text-align:center">MDP820
+		<span id="projectnumber">
+			<select>
+				<option value ="8.2.3">8.2.3</option>
+			</select>
+		</span>
+   </div>
+   <div id="projectbrief">MDP820-API</div>
+  </td>
+  <td>
+    <span id="projectlang" style="margin-right: 1em;">
+		<select>
+			<!-- <option value ="ch">中文</option> -->
+			<!-- <option value ="en">English</option> -->
+		</select>
+	</span>
+   </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('iso14443_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">iso14443.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#ifndef ISO14443_H_</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#define ISO14443_H_</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#if defined(__KERNEL__)</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="group__nfc.html#gab97346e2852be315da0d1796cee9b760">MIF_TYPE_A</a>      = 0x00,                 </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="group__nfc.html#gaf97e8dc468459dcf957ca737a9f3f25c">MIF_TYPE_B</a>,                             </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="group__nfc.html#ga79a796462a40b943ab9ea1a1ed2264e1">MIF_TYPE_C1</a>,                            </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="group__nfc.html#gadde2b8477c607115235eac6bac29b735">MIF_TYPE_C2</a>,                            </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="group__nfc.html#ga97eb3345beb3fba7ae37fd0b979afcd8">MIF_TYPE_UNKNOWN</a>,                       </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group__nfc.html#gab97346e2852be315da0d1796cee9b760">   55</a></span>&#160;<span class="preprocessor">#define MIF_TYPE_A              0x00    </span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="group__nfc.html#gaf97e8dc468459dcf957ca737a9f3f25c">   56</a></span>&#160;<span class="preprocessor">#define MIF_TYPE_B              0x01    </span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="group__nfc.html#ga79a796462a40b943ab9ea1a1ed2264e1">   57</a></span>&#160;<span class="preprocessor">#define MIF_TYPE_C1             0x02    </span></div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="group__nfc.html#gadde2b8477c607115235eac6bac29b735">   58</a></span>&#160;<span class="preprocessor">#define MIF_TYPE_C2             0x03    </span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="group__nfc.html#ga97eb3345beb3fba7ae37fd0b979afcd8">   59</a></span>&#160;<span class="preprocessor">#define MIF_TYPE_UNKNOWN        0x04    </span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#ifdef CFG_EMV_L1_TEST</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">/* @brief 仅用于对非接EMV-L1认证</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    uint32_t    nfc_wait_tp_time;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    uint32_t    FWT_ATQB;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    uint32_t    FDT_a_picc_min;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    uint32_t    FDT_pcd_min;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}nfc_time_param_t;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#ga7c44afa406ff1b99277fa013d1f7fc1c">mif_open</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *filename);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">//#define nfc_open mif_open 定义别名，两者都可以使用</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">//int mif_get_sp_fd(void); //可以删除</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#gade54d3f006ab5406bf05d2426ed12b20">mif_close</a>(<span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#ga1da6633321ca34239f7d5f1d9e8412d7">nfc_open</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *filename);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#ga29d301a8de2de2388183dec821c2452a">nfc_close</a>(<span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="structmif__timeout.html">  156</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structmif__timeout.html">mif_timeout</a> {</div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="structmif__timeout.html#a29aca5c1ed3ac48995bec2bda7577321">  157</a></span>&#160;    uint32_t <a class="code" href="structmif__timeout.html#a29aca5c1ed3ac48995bec2bda7577321">WaitTime_PollTypeA</a>;    </div>
+<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="structmif__timeout.html#a6efc679925595c746cf6cdfd70a3affc">  158</a></span>&#160;    uint32_t <a class="code" href="structmif__timeout.html#a6efc679925595c746cf6cdfd70a3affc">WaitTime_PollTypeB</a>;    </div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="structmif__timeout.html#a91d4c10a23765a327cdda4b48143b937">  159</a></span>&#160;    uint32_t <a class="code" href="structmif__timeout.html#a91d4c10a23765a327cdda4b48143b937">WaitTime_Mifare</a>;       </div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="structmif__timeout.html#a6ed3da1b3ab6ff1582b38338e989400a">  160</a></span>&#160;    uint32_t <a class="code" href="structmif__timeout.html#a6ed3da1b3ab6ff1582b38338e989400a">WaitTime_RATS</a>;         </div>
+<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="structmif__timeout.html#ad87750474bea3db5fc8f4a9d1a6f2d1a">  161</a></span>&#160;    uint32_t <a class="code" href="structmif__timeout.html#ad87750474bea3db5fc8f4a9d1a6f2d1a">WaitTime_CardResponse</a>; </div>
+<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="structmif__timeout.html#acde4a4bd8c610ff4f063b94bc5bf3e70">  162</a></span>&#160;    uint32_t <a class="code" href="structmif__timeout.html#acde4a4bd8c610ff4f063b94bc5bf3e70">WaitTime_CompleteCmd</a>;  </div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="structmif__timeout.html#a2bd05baf7d5f84e114660e852d6624df">  163</a></span>&#160;    uint32_t <a class="code" href="structmif__timeout.html#a2bd05baf7d5f84e114660e852d6624df">WaitTime_DelayBefore</a>;  </div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="structmif__timeout.html#a04dae3ff0433a3f014b7c5a266ba0fd1">  164</a></span>&#160;    uint32_t <a class="code" href="structmif__timeout.html#a04dae3ff0433a3f014b7c5a266ba0fd1">WaitTime_IdleRF</a>;       </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;};</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="keywordtype">int</span> mif_set_timeout(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structmif__timeout.html">mif_timeout</a> *ptime);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="keywordtype">int</span> mif_get_timeout(<span class="keyword">struct</span> <a class="code" href="structmif__timeout.html">mif_timeout</a> *ptime);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="keywordtype">int</span> iso14443_delay_etu(<span class="keywordtype">int</span> fd, uint32_t numofetu);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#gaae6db38432a86bf7aed232a69bafdab8">iso14443_reset_picc</a>(<span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#gaaae1032523205cbbce0d3faf122479b4">mif_select_carrier_type</a>(<span class="keywordtype">int</span> fd, int32_t type);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#ga21c887e8552ad14d77396043f8f67a8f">iso14443_ReqA</a>(<span class="keywordtype">int</span> fd, <span class="keywordtype">void</span> *atqa);</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#gad5bfcd59f0f24dbe670f4f665991eecb">iso14443_WupA</a>(<span class="keywordtype">int</span> fd, <span class="keywordtype">void</span> *atqa);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#ga3524991ef50abc86c8e678252fdd562f">iso14443_Anticollision</a>(<span class="keywordtype">int</span> fd, uint8_t sel, <span class="keywordtype">void</span> *uid);</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#gadac73214837aa6d293999a623061d7ca">iso14443_Select</a>(<span class="keywordtype">int</span> fd, uint8_t sel, <span class="keyword">const</span> <span class="keywordtype">void</span> *uid, uint8_t *sak);</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160; </div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#ga0efd53b1a636b2695cf2a1e504b6b948">iso14443_get_typeA_uid</a>(<span class="keywordtype">int</span> fd, uint8_t *uidlen, <span class="keywordtype">void</span> *uid);</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160; </div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;uint8_t <a class="code" href="group__nfc.html#ga7497efadec5a30402f3c83f46bc7cbb4">iso14443_get_cardtype</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160; </div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#ga0da2013d0eaa468ccbf5ca474c531de8">iso14443_HaltA</a>(<span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160; </div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#gad29a5acd6ed6811507586593e67daf06">iso14443_RATS</a>(<span class="keywordtype">int</span> fd, uint8_t cid, uint8_t fsdi, uint8_t *atslen, <span class="keywordtype">void</span> *ats);</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160; </div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#ga35bea36ad2d38a9937024660d0fd63d6">iso14443_PPS</a>(<span class="keywordtype">int</span> fd, uint8_t cid, uint8_t br);</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160; </div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#ga4d5d8b375c696b54e322e7e1468974e5">iso14443_ReqB</a>(<span class="keywordtype">int</span> fd, uint8_t afi, uint8_t slotnum, uint8_t *lenofatqb, <span class="keywordtype">void</span> *atqb);</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160; </div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#ga6ada177dc1a98333fb562739d66032b2">iso14443_WupB</a>(<span class="keywordtype">int</span> fd, uint8_t afi, uint8_t slotnum, uint8_t *lenofatqb, <span class="keywordtype">void</span> *atqb);</div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160; </div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#gaba1bb1402888854bd913488ac5d35a16">iso14443_SlotMarker</a>(<span class="keywordtype">int</span> fd, uint8_t slot, uint8_t *lenofatqb, <span class="keywordtype">void</span> *atqb);</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160; </div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#ga319e103c5827a731885e505a83191726">iso14443_AttriB</a>(<span class="keywordtype">int</span> fd, uint8_t cid, uint8_t fsdi, <span class="keyword">const</span> <span class="keywordtype">void</span> *uid, uint8_t br, uint8_t *len, <span class="keywordtype">void</span> *info);</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160; </div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#gac5f2afd5094388ebe612ccf9dd529542">iso14443_tcl_AttriB</a>(<span class="keywordtype">int</span> fd, uint8_t cid, uint8_t fsdi, <span class="keyword">const</span> <span class="keywordtype">void</span> *uid, uint8_t br, uint8_t *len, <span class="keywordtype">void</span> *info);</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160; </div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#ga153d529625149d62f431cfcaa794dd45">iso14443_HaltB</a>(<span class="keywordtype">int</span> fd, <span class="keyword">const</span> <span class="keywordtype">void</span> *uid);</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160; </div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;<span class="comment">// contactless card type definition</span></div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160; </div>
+<div class="line"><a name="l00765"></a><span class="lineno"><a class="line" href="group__nfc.html#ga2ac4bc8a35c9405df002a114cfd18dc0">  765</a></span>&#160;<span class="preprocessor">#define MIF_M1_S50          0x00    </span></div>
+<div class="line"><a name="l00766"></a><span class="lineno"><a class="line" href="group__nfc.html#gaf14241866b3ad8f82c80e1961de7c50b">  766</a></span>&#160;<span class="preprocessor">#define MIF_M1_S70          0x01    </span></div>
+<div class="line"><a name="l00767"></a><span class="lineno"><a class="line" href="group__nfc.html#ga5ff0e4125f1d0939ee66fb7aa65e6678">  767</a></span>&#160;<span class="preprocessor">#define MIF_ULTRALIGHT      0x02    </span></div>
+<div class="line"><a name="l00768"></a><span class="lineno"><a class="line" href="group__nfc.html#gae1cdd1296d701234875dd6f3cd8cf513">  768</a></span>&#160;<span class="preprocessor">#define MIF_DESFIRE         0x03    </span></div>
+<div class="line"><a name="l00769"></a><span class="lineno"><a class="line" href="group__nfc.html#ga7aae193e5e7890f61f985f192a93c4f2">  769</a></span>&#160;<span class="preprocessor">#define MIF_PRO             0x04    </span></div>
+<div class="line"><a name="l00770"></a><span class="lineno"><a class="line" href="group__nfc.html#ga214e700a150d39e88a42295c551e6a50">  770</a></span>&#160;<span class="preprocessor">#define MIF_PRO_S50         0x05    </span></div>
+<div class="line"><a name="l00771"></a><span class="lineno"><a class="line" href="group__nfc.html#ga4a374ce56c5a8c2f50c368f55751a5ec">  771</a></span>&#160;<span class="preprocessor">#define MIF_PRO_S70         0x06    </span></div>
+<div class="line"><a name="l00772"></a><span class="lineno"><a class="line" href="group__nfc.html#ga532acce5ab136844a13ebdf55e6d838f">  772</a></span>&#160;<span class="preprocessor">#define MIF_TYPEB           0x07    </span></div>
+<div class="line"><a name="l00773"></a><span class="lineno"><a class="line" href="group__nfc.html#ga2e9ea216f09922904e4f3f1e19ff8931">  773</a></span>&#160;<span class="preprocessor">#define MIF_TYPEB_TCL       0x08    </span></div>
+<div class="line"><a name="l00774"></a><span class="lineno"><a class="line" href="group__nfc.html#gaf62fc33d1523722a8a68245be5503dca">  774</a></span>&#160;<span class="preprocessor">#define MIF_FELICA          0x09    </span></div>
+<div class="line"><a name="l00775"></a><span class="lineno"><a class="line" href="group__nfc.html#ga11b1c459840c4d5c7b7d6b3c776f183c">  775</a></span>&#160;<span class="preprocessor">#define MIF_UNKNOWEN_TYPEA  0x0A    </span></div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;<span class="preprocessor">int iso14443_tcl_poll(int fd, int mode, uint8_t *cardinfo_len, void *cardinfo);</span></div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160; </div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#gac440bfd63bd5cab01dd55a44f814908a">iso14443_tcl_active</a>(<span class="keywordtype">int</span> fd, uint8_t cid, uint8_t br, uint8_t fsdi, uint8_t *info_len, <span class="keywordtype">void</span> *info);</div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160; </div>
+<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#ga43e6c18d7f5fd5e55895cb8f192c3861">iso14443_tcl_exchange</a>(<span class="keywordtype">int</span> fd, uint32_t sendlen, <span class="keyword">const</span> <span class="keywordtype">void</span> *senddata, uint32_t *recvlen, <span class="keywordtype">void</span> *recvdata);</div>
+<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160; </div>
+<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#ga82d9c8a3bc2342a78756ffff18c87774">iso14443_tcl_deactive</a>(<span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160; </div>
+<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#gae17acb053dfb21c1e4e34a66a3ffbade">iso14443_no_tcl_exchange</a>(<span class="keywordtype">int</span> fd, uint32_t sendlen, <span class="keyword">const</span> <span class="keywordtype">void</span> *senddata, uint32_t *recvlen, <span class="keywordtype">void</span> *recvdata, uint32_t timeout);</div>
+<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160; </div>
+<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#gaa14671850403492a92aa1d17700bebdb">iso14443_check_multi_card</a>(<span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160; </div>
+<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#ga4d46602b4984b85640c8dc6405a4920d">felica_exchange</a>(<span class="keywordtype">int</span> fd, uint32_t sendlen, <span class="keyword">const</span> <span class="keywordtype">void</span> *senddata, uint32_t *recvlen, <span class="keywordtype">void</span> *recvdata, uint32_t timeout);</div>
+<div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160; </div>
+<div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;<span class="keyword">enum</span> {</div>
+<div class="line"><a name="l01029"></a><span class="lineno"><a class="line" href="group__nfc.html#ggadf764cbdea00d65edcd07bb9953ad2b7a472d0c81e41fd1337571bdee808a84b3"> 1029</a></span>&#160;    <a class="code" href="group__nfc.html#ggadf764cbdea00d65edcd07bb9953ad2b7a472d0c81e41fd1337571bdee808a84b3">NFC_OP_NULL</a>         = 0x00, </div>
+<div class="line"><a name="l01030"></a><span class="lineno"><a class="line" href="group__nfc.html#ggadf764cbdea00d65edcd07bb9953ad2b7af21deac8d4e93a128920df1d76e9d4e8"> 1030</a></span>&#160;    <a class="code" href="group__nfc.html#ggadf764cbdea00d65edcd07bb9953ad2b7af21deac8d4e93a128920df1d76e9d4e8">NFC_OP_POLL</a>,                </div>
+<div class="line"><a name="l01031"></a><span class="lineno"><a class="line" href="group__nfc.html#ggadf764cbdea00d65edcd07bb9953ad2b7a74b324b37149f717f9d82ef668a0b4d9"> 1031</a></span>&#160;    <a class="code" href="group__nfc.html#ggadf764cbdea00d65edcd07bb9953ad2b7a74b324b37149f717f9d82ef668a0b4d9">NFC_OP_ANTICOLL</a>,            </div>
+<div class="line"><a name="l01032"></a><span class="lineno"><a class="line" href="group__nfc.html#ggadf764cbdea00d65edcd07bb9953ad2b7aa2b433386dd84a2b60c9e342a242cd55"> 1032</a></span>&#160;    <a class="code" href="group__nfc.html#ggadf764cbdea00d65edcd07bb9953ad2b7aa2b433386dd84a2b60c9e342a242cd55">NFC_OP_REMOVE</a>,              </div>
+<div class="line"><a name="l01033"></a><span class="lineno"><a class="line" href="group__nfc.html#ggadf764cbdea00d65edcd07bb9953ad2b7a13f5acf68997003b81b6891cef83e7c7"> 1033</a></span>&#160;    <a class="code" href="group__nfc.html#ggadf764cbdea00d65edcd07bb9953ad2b7a13f5acf68997003b81b6891cef83e7c7">NFC_OP_EXCHANGE_APDU</a>,       </div>
+<div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160;};</div>
+<div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160; </div>
+<div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#ga378e590e452772c9c36e6e4404505813">emv_contactless_active_picc</a>(<span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160; </div>
+<div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#ga90ab168ed6e33973a15ecfebc161ee1d">emv_contactless_deactive_picc</a>(<span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160; </div>
+<div class="line"><a name="l01133"></a><span class="lineno"> 1133</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#ga63a1d4b4000f182d47f41b245e00e18e">emv_contactless_deactive_picc_nonblock</a>(<span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l01134"></a><span class="lineno"> 1134</span>&#160; </div>
+<div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#gad3725ee7a1eb4012f40b984ed0b58bf4">emv_contactless_obtain_status</a>(<span class="keywordtype">int</span> fd, <span class="keywordtype">int</span> *status);</div>
+<div class="line"><a name="l01167"></a><span class="lineno"> 1167</span>&#160; </div>
+<div class="line"><a name="l01199"></a><span class="lineno"> 1199</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#gaec38cd6fdccd7b921311d06cd05e1cd3">emv_contactless_get_lasterror</a>(<span class="keywordtype">int</span> fd, <span class="keywordtype">int</span> *error);</div>
+<div class="line"><a name="l01200"></a><span class="lineno"> 1200</span>&#160; </div>
+<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#ga4f7c366d26456bd8e8951f54b24e165d">emv_contactless_exchange_apdu</a>(<span class="keywordtype">int</span> fd, uint32_t sendlen, <span class="keyword">const</span> <span class="keywordtype">void</span> *senddata,</div>
+<div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;                                  uint32_t *recvlen, <span class="keywordtype">void</span> *recvdata);</div>
+<div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160; </div>
+<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#ga06ee2adc54aee47a4f8c83a67a62d4f9">emv_contactless_exchange_apdu_nonblock_send</a>(<span class="keywordtype">int</span> fd, uint32_t sendlen, <span class="keyword">const</span> <span class="keywordtype">void</span> *senddata);</div>
+<div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160; </div>
+<div class="line"><a name="l01291"></a><span class="lineno"> 1291</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#gac83536e189414a6b05c98ab9dcca9436">emv_contactless_exchange_apdu_nonblock_response</a>(<span class="keywordtype">int</span> fd, <span class="keywordtype">int</span> *error, <span class="keywordtype">int</span> *status, <span class="keywordtype">int</span> *finish, uint32_t *recvlen, <span class="keywordtype">void</span> *recvdata);</div>
+<div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160; </div>
+<div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#gaceab23448e681f13eb05eed02be632b7">emv_contactless_exchange_apdu_nonblock_abort</a>(<span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160; </div>
+<div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;<span class="keywordtype">int</span> nfc_get_reg_param(<span class="keywordtype">int</span> fd, <span class="keywordtype">void</span> *buf, <span class="keywordtype">int</span> *nr_reg);</div>
+<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;<span class="keywordtype">int</span> nfc_set_reg_param(<span class="keywordtype">int</span> fd, <span class="keyword">const</span> <span class="keywordtype">void</span> *buf, <span class="keywordtype">int</span> nr_reg);</div>
+<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;<span class="preprocessor">#if 0</span></div>
+<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;<span class="keywordtype">int</span> nfc_start_status_notify(<span class="keywordtype">int</span> fd, <span class="keywordtype">int</span> *status);</div>
+<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;<span class="keywordtype">int</span> nfc_wait_status_changed(<span class="keywordtype">int</span> fd, <span class="keywordtype">int</span> *status, <span class="keywordtype">int</span> timeout);</div>
+<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;<span class="keywordtype">int</span> nfc_stop_status_notify(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160; </div>
+<div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#gab07846abaeab411355e9d1b568b8919f">nfc_reset_iso144443</a>(<span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160; </div>
+<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__nfc.html#ga2aa3689beeeed4643d8c15db9693478f">nfc_carrier_control</a>(<span class="keywordtype">int</span> fd, uint8_t onoff);</div>
+<div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160; </div>
+<div class="line"><a name="l01353"></a><span class="lineno"><a class="line" href="group__nfc.html#gabae7521a9e96da8d55d4d72bf1c80210"> 1353</a></span>&#160;<span class="preprocessor">#define CARRIER_OFF              0x00       </span></div>
+<div class="line"><a name="l01354"></a><span class="lineno"><a class="line" href="group__nfc.html#ga3ed4a6d7a7434da9678c4d6145aada94"> 1354</a></span>&#160;<span class="preprocessor">#define CARRIER_ON               0x01       </span></div>
+<div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;<span class="preprocessor">#ifdef CFG_EMV_L1_TEST</span></div>
+<div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160; </div>
+<div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;<span class="keywordtype">int</span> emv_L1_transac_a_test(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;<span class="keywordtype">int</span> emv_L1_transac_b_test(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;<span class="keywordtype">int</span> emv_set_exit_flag(<span class="keywordtype">int</span> flag);</div>
+<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;<span class="keywordtype">int</span> emv_L1_digital_test(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;<span class="keywordtype">int</span> emv_set_cmd_flag(<span class="keywordtype">int</span> flag);</div>
+<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160; </div>
+<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;<span class="keywordtype">int</span> nfc_set_time_param(<span class="keywordtype">int</span> fd, nfc_time_param_t *time_param);</div>
+<div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;<span class="keywordtype">int</span> nfc_get_time_param(<span class="keywordtype">int</span> fd, nfc_time_param_t *time_param);</div>
+<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;<span class="keywordtype">int</span> nfc_time_optimize_ctl(<span class="keywordtype">int</span> fd, <span class="keywordtype">int</span> on_off);</div>
+<div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;<span class="keywordtype">int</span> nfc_time_optimize_status(<span class="keywordtype">int</span> fd, <span class="keywordtype">int</span> *on_off);</div>
+<div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160; </div>
+<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;}</div>
+<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160; </div>
+<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CONTACTLESS_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="astructmif__timeout_html_acde4a4bd8c610ff4f063b94bc5bf3e70"><div class="ttname"><a href="structmif__timeout.html#acde4a4bd8c610ff4f063b94bc5bf3e70">mif_timeout::WaitTime_CompleteCmd</a></div><div class="ttdeci">uint32_t WaitTime_CompleteCmd</div><div class="ttdef"><b>Definition:</b> iso14443.h:162</div></div>
+<div class="ttc" id="agroup__nfc_html_gad29a5acd6ed6811507586593e67daf06"><div class="ttname"><a href="group__nfc.html#gad29a5acd6ed6811507586593e67daf06">iso14443_RATS</a></div><div class="ttdeci">int iso14443_RATS(int fd, uint8_t cid, uint8_t fsdi, uint8_t *atslen, void *ats)</div><div class="ttdoc">发送RATS指令给卡片 [Type A]</div></div>
+<div class="ttc" id="agroup__nfc_html_ga4f7c366d26456bd8e8951f54b24e165d"><div class="ttname"><a href="group__nfc.html#ga4f7c366d26456bd8e8951f54b24e165d">emv_contactless_exchange_apdu</a></div><div class="ttdeci">int emv_contactless_exchange_apdu(int fd, uint32_t sendlen, const void *senddata, uint32_t *recvlen, void *recvdata)</div><div class="ttdoc">PCD与PICC交换APDU数据</div></div>
+<div class="ttc" id="astructmif__timeout_html_a2bd05baf7d5f84e114660e852d6624df"><div class="ttname"><a href="structmif__timeout.html#a2bd05baf7d5f84e114660e852d6624df">mif_timeout::WaitTime_DelayBefore</a></div><div class="ttdeci">uint32_t WaitTime_DelayBefore</div><div class="ttdef"><b>Definition:</b> iso14443.h:163</div></div>
+<div class="ttc" id="agroup__nfc_html_ga90ab168ed6e33973a15ecfebc161ee1d"><div class="ttname"><a href="group__nfc.html#ga90ab168ed6e33973a15ecfebc161ee1d">emv_contactless_deactive_picc</a></div><div class="ttdeci">int emv_contactless_deactive_picc(int fd)</div><div class="ttdoc">移开卡片，检测到卡片移开后关闭电场</div></div>
+<div class="ttc" id="agroup__nfc_html_ga4d5d8b375c696b54e322e7e1468974e5"><div class="ttname"><a href="group__nfc.html#ga4d5d8b375c696b54e322e7e1468974e5">iso14443_ReqB</a></div><div class="ttdeci">int iso14443_ReqB(int fd, uint8_t afi, uint8_t slotnum, uint8_t *lenofatqb, void *atqb)</div><div class="ttdoc">给卡片发送REQB指令 [Type B]</div></div>
+<div class="ttc" id="agroup__nfc_html_gac440bfd63bd5cab01dd55a44f814908a"><div class="ttname"><a href="group__nfc.html#gac440bfd63bd5cab01dd55a44f814908a">iso14443_tcl_active</a></div><div class="ttdeci">int iso14443_tcl_active(int fd, uint8_t cid, uint8_t br, uint8_t fsdi, uint8_t *info_len, void *info)</div><div class="ttdoc">激活感应区内的T=CL卡</div></div>
+<div class="ttc" id="agroup__nfc_html_ga2aa3689beeeed4643d8c15db9693478f"><div class="ttname"><a href="group__nfc.html#ga2aa3689beeeed4643d8c15db9693478f">nfc_carrier_control</a></div><div class="ttdeci">int nfc_carrier_control(int fd, uint8_t onoff)</div><div class="ttdoc">打开/关闭场强</div></div>
+<div class="ttc" id="astructmif__timeout_html_a29aca5c1ed3ac48995bec2bda7577321"><div class="ttname"><a href="structmif__timeout.html#a29aca5c1ed3ac48995bec2bda7577321">mif_timeout::WaitTime_PollTypeA</a></div><div class="ttdeci">uint32_t WaitTime_PollTypeA</div><div class="ttdef"><b>Definition:</b> iso14443.h:157</div></div>
+<div class="ttc" id="agroup__nfc_html_gadac73214837aa6d293999a623061d7ca"><div class="ttname"><a href="group__nfc.html#gadac73214837aa6d293999a623061d7ca">iso14443_Select</a></div><div class="ttdeci">int iso14443_Select(int fd, uint8_t sel, const void *uid, uint8_t *sak)</div><div class="ttdoc">给卡片发送select指令 [Type A]</div></div>
+<div class="ttc" id="agroup__nfc_html_ga63a1d4b4000f182d47f41b245e00e18e"><div class="ttname"><a href="group__nfc.html#ga63a1d4b4000f182d47f41b245e00e18e">emv_contactless_deactive_picc_nonblock</a></div><div class="ttdeci">int emv_contactless_deactive_picc_nonblock(int fd)</div><div class="ttdoc">移开卡片，检测到卡片移开后关闭电场</div></div>
+<div class="ttc" id="agroup__nfc_html_ga97eb3345beb3fba7ae37fd0b979afcd8"><div class="ttname"><a href="group__nfc.html#ga97eb3345beb3fba7ae37fd0b979afcd8">MIF_TYPE_UNKNOWN</a></div><div class="ttdeci">#define MIF_TYPE_UNKNOWN</div><div class="ttdef"><b>Definition:</b> iso14443.h:59</div></div>
+<div class="ttc" id="agroup__nfc_html_gac5f2afd5094388ebe612ccf9dd529542"><div class="ttname"><a href="group__nfc.html#gac5f2afd5094388ebe612ccf9dd529542">iso14443_tcl_AttriB</a></div><div class="ttdeci">int iso14443_tcl_AttriB(int fd, uint8_t cid, uint8_t fsdi, const void *uid, uint8_t br, uint8_t *len, void *info)</div><div class="ttdoc">PICC选择命令，设置T=CL [Type B]</div></div>
+<div class="ttc" id="agroup__nfc_html_gad5bfcd59f0f24dbe670f4f665991eecb"><div class="ttname"><a href="group__nfc.html#gad5bfcd59f0f24dbe670f4f665991eecb">iso14443_WupA</a></div><div class="ttdeci">int iso14443_WupA(int fd, void *atqa)</div><div class="ttdoc">给卡片发送WUPA指令</div></div>
+<div class="ttc" id="agroup__nfc_html_ga06ee2adc54aee47a4f8c83a67a62d4f9"><div class="ttname"><a href="group__nfc.html#ga06ee2adc54aee47a4f8c83a67a62d4f9">emv_contactless_exchange_apdu_nonblock_send</a></div><div class="ttdeci">int emv_contactless_exchange_apdu_nonblock_send(int fd, uint32_t sendlen, const void *senddata)</div><div class="ttdoc">从PCD发送数据到PICC非阻塞，发送后立即返回</div></div>
+<div class="ttc" id="agroup__nfc_html_gadde2b8477c607115235eac6bac29b735"><div class="ttname"><a href="group__nfc.html#gadde2b8477c607115235eac6bac29b735">MIF_TYPE_C2</a></div><div class="ttdeci">#define MIF_TYPE_C2</div><div class="ttdef"><b>Definition:</b> iso14443.h:58</div></div>
+<div class="ttc" id="astructmif__timeout_html_a6efc679925595c746cf6cdfd70a3affc"><div class="ttname"><a href="structmif__timeout.html#a6efc679925595c746cf6cdfd70a3affc">mif_timeout::WaitTime_PollTypeB</a></div><div class="ttdeci">uint32_t WaitTime_PollTypeB</div><div class="ttdef"><b>Definition:</b> iso14443.h:158</div></div>
+<div class="ttc" id="astructmif__timeout_html_a91d4c10a23765a327cdda4b48143b937"><div class="ttname"><a href="structmif__timeout.html#a91d4c10a23765a327cdda4b48143b937">mif_timeout::WaitTime_Mifare</a></div><div class="ttdeci">uint32_t WaitTime_Mifare</div><div class="ttdef"><b>Definition:</b> iso14443.h:159</div></div>
+<div class="ttc" id="agroup__nfc_html_gaceab23448e681f13eb05eed02be632b7"><div class="ttname"><a href="group__nfc.html#gaceab23448e681f13eb05eed02be632b7">emv_contactless_exchange_apdu_nonblock_abort</a></div><div class="ttdeci">int emv_contactless_exchange_apdu_nonblock_abort(int fd)</div><div class="ttdoc">只有在使用API“emv_contactless_exchange_apdu_nonblock_send”发送数据时，终止当前交换</div></div>
+<div class="ttc" id="agroup__nfc_html_ga7497efadec5a30402f3c83f46bc7cbb4"><div class="ttname"><a href="group__nfc.html#ga7497efadec5a30402f3c83f46bc7cbb4">iso14443_get_cardtype</a></div><div class="ttdeci">uint8_t iso14443_get_cardtype(void)</div><div class="ttdoc">获取卡片的类型</div></div>
+<div class="ttc" id="agroup__nfc_html_ggadf764cbdea00d65edcd07bb9953ad2b7a13f5acf68997003b81b6891cef83e7c7"><div class="ttname"><a href="group__nfc.html#ggadf764cbdea00d65edcd07bb9953ad2b7a13f5acf68997003b81b6891cef83e7c7">NFC_OP_EXCHANGE_APDU</a></div><div class="ttdeci">@ NFC_OP_EXCHANGE_APDU</div><div class="ttdef"><b>Definition:</b> iso14443.h:1033</div></div>
+<div class="ttc" id="astructmif__timeout_html"><div class="ttname"><a href="structmif__timeout.html">mif_timeout</a></div><div class="ttdoc">关于MIF超时的结构体成员解析</div><div class="ttdef"><b>Definition:</b> iso14443.h:156</div></div>
+<div class="ttc" id="agroup__nfc_html_ggadf764cbdea00d65edcd07bb9953ad2b7a74b324b37149f717f9d82ef668a0b4d9"><div class="ttname"><a href="group__nfc.html#ggadf764cbdea00d65edcd07bb9953ad2b7a74b324b37149f717f9d82ef668a0b4d9">NFC_OP_ANTICOLL</a></div><div class="ttdeci">@ NFC_OP_ANTICOLL</div><div class="ttdef"><b>Definition:</b> iso14443.h:1031</div></div>
+<div class="ttc" id="agroup__nfc_html_ga0efd53b1a636b2695cf2a1e504b6b948"><div class="ttname"><a href="group__nfc.html#ga0efd53b1a636b2695cf2a1e504b6b948">iso14443_get_typeA_uid</a></div><div class="ttdeci">int iso14443_get_typeA_uid(int fd, uint8_t *uidlen, void *uid)</div><div class="ttdoc">获取当前A类卡片的uid</div></div>
+<div class="ttc" id="agroup__nfc_html_ggadf764cbdea00d65edcd07bb9953ad2b7a472d0c81e41fd1337571bdee808a84b3"><div class="ttname"><a href="group__nfc.html#ggadf764cbdea00d65edcd07bb9953ad2b7a472d0c81e41fd1337571bdee808a84b3">NFC_OP_NULL</a></div><div class="ttdeci">@ NFC_OP_NULL</div><div class="ttdef"><b>Definition:</b> iso14443.h:1029</div></div>
+<div class="ttc" id="agroup__nfc_html_ga0da2013d0eaa468ccbf5ca474c531de8"><div class="ttname"><a href="group__nfc.html#ga0da2013d0eaa468ccbf5ca474c531de8">iso14443_HaltA</a></div><div class="ttdeci">int iso14443_HaltA(int fd)</div><div class="ttdoc">给卡片发送HALT指令 [Type A]</div></div>
+<div class="ttc" id="agroup__nfc_html_gaaae1032523205cbbce0d3faf122479b4"><div class="ttname"><a href="group__nfc.html#gaaae1032523205cbbce0d3faf122479b4">mif_select_carrier_type</a></div><div class="ttdeci">int mif_select_carrier_type(int fd, int32_t type)</div><div class="ttdoc">配置非接读卡器硬件接口类型</div></div>
+<div class="ttc" id="agroup__nfc_html_ggadf764cbdea00d65edcd07bb9953ad2b7af21deac8d4e93a128920df1d76e9d4e8"><div class="ttname"><a href="group__nfc.html#ggadf764cbdea00d65edcd07bb9953ad2b7af21deac8d4e93a128920df1d76e9d4e8">NFC_OP_POLL</a></div><div class="ttdeci">@ NFC_OP_POLL</div><div class="ttdef"><b>Definition:</b> iso14443.h:1030</div></div>
+<div class="ttc" id="agroup__nfc_html_gad3725ee7a1eb4012f40b984ed0b58bf4"><div class="ttname"><a href="group__nfc.html#gad3725ee7a1eb4012f40b984ed0b58bf4">emv_contactless_obtain_status</a></div><div class="ttdeci">int emv_contactless_obtain_status(int fd, int *status)</div><div class="ttdoc">获取当前操作状态.</div></div>
+<div class="ttc" id="agroup__nfc_html_gaa14671850403492a92aa1d17700bebdb"><div class="ttname"><a href="group__nfc.html#gaa14671850403492a92aa1d17700bebdb">iso14443_check_multi_card</a></div><div class="ttdeci">int iso14443_check_multi_card(int fd)</div><div class="ttdoc">检查射频场是否有多个卡</div></div>
+<div class="ttc" id="agroup__nfc_html_ga153d529625149d62f431cfcaa794dd45"><div class="ttname"><a href="group__nfc.html#ga153d529625149d62f431cfcaa794dd45">iso14443_HaltB</a></div><div class="ttdeci">int iso14443_HaltB(int fd, const void *uid)</div><div class="ttdoc">给卡片发送HALTB指令 [Type B]</div></div>
+<div class="ttc" id="agroup__nfc_html_gaae6db38432a86bf7aed232a69bafdab8"><div class="ttname"><a href="group__nfc.html#gaae6db38432a86bf7aed232a69bafdab8">iso14443_reset_picc</a></div><div class="ttdeci">int iso14443_reset_picc(int fd)</div><div class="ttdoc">复位非接卡片</div></div>
+<div class="ttc" id="astructmif__timeout_html_a04dae3ff0433a3f014b7c5a266ba0fd1"><div class="ttname"><a href="structmif__timeout.html#a04dae3ff0433a3f014b7c5a266ba0fd1">mif_timeout::WaitTime_IdleRF</a></div><div class="ttdeci">uint32_t WaitTime_IdleRF</div><div class="ttdef"><b>Definition:</b> iso14443.h:164</div></div>
+<div class="ttc" id="agroup__nfc_html_ga378e590e452772c9c36e6e4404505813"><div class="ttname"><a href="group__nfc.html#ga378e590e452772c9c36e6e4404505813">emv_contactless_active_picc</a></div><div class="ttdeci">int emv_contactless_active_picc(int fd)</div><div class="ttdoc">打开电磁场，检测感应区内IC卡</div></div>
+<div class="ttc" id="agroup__nfc_html_gac83536e189414a6b05c98ab9dcca9436"><div class="ttname"><a href="group__nfc.html#gac83536e189414a6b05c98ab9dcca9436">emv_contactless_exchange_apdu_nonblock_response</a></div><div class="ttdeci">int emv_contactless_exchange_apdu_nonblock_response(int fd, int *error, int *status, int *finish, uint32_t *recvlen, void *recvdata)</div><div class="ttdoc">从PICC获取数据</div></div>
+<div class="ttc" id="agroup__nfc_html_gaf97e8dc468459dcf957ca737a9f3f25c"><div class="ttname"><a href="group__nfc.html#gaf97e8dc468459dcf957ca737a9f3f25c">MIF_TYPE_B</a></div><div class="ttdeci">#define MIF_TYPE_B</div><div class="ttdef"><b>Definition:</b> iso14443.h:56</div></div>
+<div class="ttc" id="agroup__nfc_html_gade54d3f006ab5406bf05d2426ed12b20"><div class="ttname"><a href="group__nfc.html#gade54d3f006ab5406bf05d2426ed12b20">mif_close</a></div><div class="ttdeci">int mif_close(int fd)</div><div class="ttdoc">关闭非接读卡器设备</div></div>
+<div class="ttc" id="agroup__nfc_html_ga43e6c18d7f5fd5e55895cb8f192c3861"><div class="ttname"><a href="group__nfc.html#ga43e6c18d7f5fd5e55895cb8f192c3861">iso14443_tcl_exchange</a></div><div class="ttdeci">int iso14443_tcl_exchange(int fd, uint32_t sendlen, const void *senddata, uint32_t *recvlen, void *recvdata)</div><div class="ttdoc">在PCD和PICC之间交换T=CL数据包</div></div>
+<div class="ttc" id="agroup__nfc_html_ga4d46602b4984b85640c8dc6405a4920d"><div class="ttname"><a href="group__nfc.html#ga4d46602b4984b85640c8dc6405a4920d">felica_exchange</a></div><div class="ttdeci">int felica_exchange(int fd, uint32_t sendlen, const void *senddata, uint32_t *recvlen, void *recvdata, uint32_t timeout)</div><div class="ttdoc">在PCD和索尼FeliCa之间交换数据</div></div>
+<div class="ttc" id="astructmif__timeout_html_a6ed3da1b3ab6ff1582b38338e989400a"><div class="ttname"><a href="structmif__timeout.html#a6ed3da1b3ab6ff1582b38338e989400a">mif_timeout::WaitTime_RATS</a></div><div class="ttdeci">uint32_t WaitTime_RATS</div><div class="ttdef"><b>Definition:</b> iso14443.h:160</div></div>
+<div class="ttc" id="agroup__nfc_html_gaec38cd6fdccd7b921311d06cd05e1cd3"><div class="ttname"><a href="group__nfc.html#gaec38cd6fdccd7b921311d06cd05e1cd3">emv_contactless_get_lasterror</a></div><div class="ttdeci">int emv_contactless_get_lasterror(int fd, int *error)</div><div class="ttdoc">获取轮询期间的最后错误代码，防冲突，激活，交换，取消激活。</div></div>
+<div class="ttc" id="astructmif__timeout_html_ad87750474bea3db5fc8f4a9d1a6f2d1a"><div class="ttname"><a href="structmif__timeout.html#ad87750474bea3db5fc8f4a9d1a6f2d1a">mif_timeout::WaitTime_CardResponse</a></div><div class="ttdeci">uint32_t WaitTime_CardResponse</div><div class="ttdef"><b>Definition:</b> iso14443.h:161</div></div>
+<div class="ttc" id="agroup__nfc_html_ga3524991ef50abc86c8e678252fdd562f"><div class="ttname"><a href="group__nfc.html#ga3524991ef50abc86c8e678252fdd562f">iso14443_Anticollision</a></div><div class="ttdeci">int iso14443_Anticollision(int fd, uint8_t sel, void *uid)</div><div class="ttdoc">给卡片发送防冲突指令</div></div>
+<div class="ttc" id="agroup__nfc_html_ga7c44afa406ff1b99277fa013d1f7fc1c"><div class="ttname"><a href="group__nfc.html#ga7c44afa406ff1b99277fa013d1f7fc1c">mif_open</a></div><div class="ttdeci">int mif_open(const char *filename)</div><div class="ttdoc">打开非接读卡器设备，并返回设备文件描述符</div></div>
+<div class="ttc" id="agroup__nfc_html_gae17acb053dfb21c1e4e34a66a3ffbade"><div class="ttname"><a href="group__nfc.html#gae17acb053dfb21c1e4e34a66a3ffbade">iso14443_no_tcl_exchange</a></div><div class="ttdeci">int iso14443_no_tcl_exchange(int fd, uint32_t sendlen, const void *senddata, uint32_t *recvlen, void *recvdata, uint32_t timeout)</div><div class="ttdoc">PCD和PICC之间的数据交换，不组织在ISO14443 T=CL数据包中</div></div>
+<div class="ttc" id="agroup__nfc_html_gab97346e2852be315da0d1796cee9b760"><div class="ttname"><a href="group__nfc.html#gab97346e2852be315da0d1796cee9b760">MIF_TYPE_A</a></div><div class="ttdeci">#define MIF_TYPE_A</div><div class="ttdef"><b>Definition:</b> iso14443.h:55</div></div>
+<div class="ttc" id="agroup__nfc_html_ga82d9c8a3bc2342a78756ffff18c87774"><div class="ttname"><a href="group__nfc.html#ga82d9c8a3bc2342a78756ffff18c87774">iso14443_tcl_deactive</a></div><div class="ttdeci">int iso14443_tcl_deactive(int fd)</div><div class="ttdoc">复位射频场所有卡，使其进入IDLE状态</div></div>
+<div class="ttc" id="agroup__nfc_html_ggadf764cbdea00d65edcd07bb9953ad2b7aa2b433386dd84a2b60c9e342a242cd55"><div class="ttname"><a href="group__nfc.html#ggadf764cbdea00d65edcd07bb9953ad2b7aa2b433386dd84a2b60c9e342a242cd55">NFC_OP_REMOVE</a></div><div class="ttdeci">@ NFC_OP_REMOVE</div><div class="ttdef"><b>Definition:</b> iso14443.h:1032</div></div>
+<div class="ttc" id="agroup__nfc_html_ga35bea36ad2d38a9937024660d0fd63d6"><div class="ttname"><a href="group__nfc.html#ga35bea36ad2d38a9937024660d0fd63d6">iso14443_PPS</a></div><div class="ttdeci">int iso14443_PPS(int fd, uint8_t cid, uint8_t br)</div><div class="ttdoc">发送PPSE指令给卡片 [Type A]</div></div>
+<div class="ttc" id="agroup__nfc_html_ga29d301a8de2de2388183dec821c2452a"><div class="ttname"><a href="group__nfc.html#ga29d301a8de2de2388183dec821c2452a">nfc_close</a></div><div class="ttdeci">int nfc_close(int fd)</div><div class="ttdoc">关闭非接读卡器设备</div></div>
+<div class="ttc" id="agroup__nfc_html_gaba1bb1402888854bd913488ac5d35a16"><div class="ttname"><a href="group__nfc.html#gaba1bb1402888854bd913488ac5d35a16">iso14443_SlotMarker</a></div><div class="ttdeci">int iso14443_SlotMarker(int fd, uint8_t slot, uint8_t *lenofatqb, void *atqb)</div><div class="ttdoc">位置标记命令 [Type B]</div></div>
+<div class="ttc" id="agroup__nfc_html_ga1da6633321ca34239f7d5f1d9e8412d7"><div class="ttname"><a href="group__nfc.html#ga1da6633321ca34239f7d5f1d9e8412d7">nfc_open</a></div><div class="ttdeci">int nfc_open(const char *filename)</div><div class="ttdoc">打开非接读卡器设备，并返回设备文件描述符</div></div>
+<div class="ttc" id="agroup__nfc_html_ga319e103c5827a731885e505a83191726"><div class="ttname"><a href="group__nfc.html#ga319e103c5827a731885e505a83191726">iso14443_AttriB</a></div><div class="ttdeci">int iso14443_AttriB(int fd, uint8_t cid, uint8_t fsdi, const void *uid, uint8_t br, uint8_t *len, void *info)</div><div class="ttdoc">给卡片发送ATTRIB指令</div></div>
+<div class="ttc" id="agroup__nfc_html_ga21c887e8552ad14d77396043f8f67a8f"><div class="ttname"><a href="group__nfc.html#ga21c887e8552ad14d77396043f8f67a8f">iso14443_ReqA</a></div><div class="ttdeci">int iso14443_ReqA(int fd, void *atqa)</div><div class="ttdoc">给卡片发送REQA指令</div></div>
+<div class="ttc" id="agroup__nfc_html_ga79a796462a40b943ab9ea1a1ed2264e1"><div class="ttname"><a href="group__nfc.html#ga79a796462a40b943ab9ea1a1ed2264e1">MIF_TYPE_C1</a></div><div class="ttdeci">#define MIF_TYPE_C1</div><div class="ttdef"><b>Definition:</b> iso14443.h:57</div></div>
+<div class="ttc" id="agroup__nfc_html_gab07846abaeab411355e9d1b568b8919f"><div class="ttname"><a href="group__nfc.html#gab07846abaeab411355e9d1b568b8919f">nfc_reset_iso144443</a></div><div class="ttdeci">int nfc_reset_iso144443(int fd)</div><div class="ttdoc">将非接读卡器复位为ISO14443模式</div></div>
+<div class="ttc" id="agroup__nfc_html_ga6ada177dc1a98333fb562739d66032b2"><div class="ttname"><a href="group__nfc.html#ga6ada177dc1a98333fb562739d66032b2">iso14443_WupB</a></div><div class="ttdeci">int iso14443_WupB(int fd, uint8_t afi, uint8_t slotnum, uint8_t *lenofatqb, void *atqb)</div><div class="ttdoc">给卡片发送WUPB指令 [Type B]</div></div>
+<!-- HTML footer for doxygen 1.8.6-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>iso14443.h</b></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

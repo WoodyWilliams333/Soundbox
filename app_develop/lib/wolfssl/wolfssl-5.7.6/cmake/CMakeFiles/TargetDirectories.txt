@@ -1,0 +1,16 @@
+/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/wolfssl.dir
+/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/client.dir
+/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/server.dir
+/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/echoclient.dir
+/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/echoserver.dir
+/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/tls_bench.dir
+/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/unit_test.dir
+/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/wolfcrypttest.dir
+/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/wolfcryptbench.dir
+/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/test.dir
+/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/edit_cache.dir
+/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/rebuild_cache.dir
+/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/list_install_components.dir
+/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/install.dir
+/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/install/local.dir
+/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/install/strip.dir

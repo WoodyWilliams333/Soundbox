@@ -1,0 +1,23 @@
+#!/bin/bash
+
+SIGNTOOL=$1
+HOSTPORT=$2
+ASKEY=$3
+TARGET=$4
+
+CUR_YEAR=`date +'%Y'`
+EXP_YEAR=`expr $CUR_YEAR + 20`
+MONTH=`date +'%m'`
+DAY=`date +'%d'`
+CURRENT_TIME=$CUR_YEAR$MONTH$DAY
+EXPIRED_TIME=$EXP_YEAR$MONTH$DAY
+
+$SIGNTOOL -q -l -c $HOSTPORT -k $ASKEY -o $ASKEY.pem
+$SIGNTOOL -q -g -c $HOSTPORT -t ukey -V "NEW POS TECHNOLOGY LIMITED" -d $CURRENT_TIME -e $EXPIRED_TIME -f $ASKEY.pem -o $ASKEY.puk
+cat $TARGET $ASKEY.puk > $TARGET.tmp
+$SIGNTOOL -q -g -m "SIG:0002" -k $ASKEY -t app -d $CURRENT_TIME -e $EXPIRED_TIME -c $HOSTPORT -f $TARGET.tmp -o $TARGET.bin
+
+mv $TARGET $TARGET.bak
+mv $TARGET.bin $TARGET
+
+rm $ASKEY.pem $ASKEY.puk $TARGET.tmp

@@ -1,0 +1,1 @@
+/usr/bin/cc -Wall -Wextra -Wno-unused -Werror  CMakeFiles/server.dir/examples/server/server.c.o -o examples/server/server  -Wl,-rpath,/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake libwolfssl.so.43.0.0 -lm 

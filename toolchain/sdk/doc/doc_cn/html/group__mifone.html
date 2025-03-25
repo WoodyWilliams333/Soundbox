@@ -1,0 +1,816 @@
+<!-- HTML header for doxygen 1.8.6-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<title>MDP820: mifone</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="styleSheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<script type="text/javascript" src="version.js"></script>
+<script type="text/javascript" src="language.js"></script>
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="MDP820.jpg"/></td>
+  <td width="100%" style="padding-left: 0.5em;">
+   <div id="projectname" style="display:table-cell;vertical-align:middle;text-align:center">MDP820
+		<span id="projectnumber">
+			<select>
+				<option value ="8.2.3">8.2.3</option>
+			</select>
+		</span>
+   </div>
+   <div id="projectbrief">MDP820-API</div>
+  </td>
+  <td>
+    <span id="projectlang" style="margin-right: 1em;">
+		<select>
+			<!-- <option value ="ch">中文</option> -->
+			<!-- <option value ="en">English</option> -->
+		</select>
+	</span>
+   </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('group__mifone.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">mifone</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>此模块用于描述 mifone 模块相关的接口  
+<a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:gaa4f60db508855a1c0d2997a26065a72a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mifone.html#gaa4f60db508855a1c0d2997a26065a72a">mifare_one_poll</a> (int fd, uint8_t mode, void *uid, uint8_t *cardtype)</td></tr>
+<tr class="memdesc:gaa4f60db508855a1c0d2997a26065a72a"><td class="mdescLeft">&#160;</td><td class="mdescRight">检测感应区内是否存在mifare one卡，若有则激活  <a href="group__mifone.html#gaa4f60db508855a1c0d2997a26065a72a">更多...</a><br /></td></tr>
+<tr class="separator:gaa4f60db508855a1c0d2997a26065a72a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1aea82d7e4c55638b39ae19ed54dd53a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mifone.html#ga1aea82d7e4c55638b39ae19ed54dd53a">mifare_one_halt</a> (int fd)</td></tr>
+<tr class="memdesc:ga1aea82d7e4c55638b39ae19ed54dd53a"><td class="mdescLeft">&#160;</td><td class="mdescRight">复位感应区内的mifare one卡  <a href="group__mifone.html#ga1aea82d7e4c55638b39ae19ed54dd53a">更多...</a><br /></td></tr>
+<tr class="separator:ga1aea82d7e4c55638b39ae19ed54dd53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c6539d9f30f8626a1e6298d794c39ab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mifone.html#ga8c6539d9f30f8626a1e6298d794c39ab">mifare_one_authenticate</a> (int fd, uint8_t blockno, uint8_t keytype, const void *key, const void *uid)</td></tr>
+<tr class="memdesc:ga8c6539d9f30f8626a1e6298d794c39ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取mifare ultralight卡的某页内容，一次读取4个页内容  <a href="group__mifone.html#ga8c6539d9f30f8626a1e6298d794c39ab">更多...</a><br /></td></tr>
+<tr class="separator:ga8c6539d9f30f8626a1e6298d794c39ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaad64ece282b5ff23fce44bbd6ed0e60d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mifone.html#gaad64ece282b5ff23fce44bbd6ed0e60d">mifare_one_read_block</a> (int fd, uint8_t blockno, void *blockdata)</td></tr>
+<tr class="memdesc:gaad64ece282b5ff23fce44bbd6ed0e60d"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取mifare one卡的某个数据块内容  <a href="group__mifone.html#gaad64ece282b5ff23fce44bbd6ed0e60d">更多...</a><br /></td></tr>
+<tr class="separator:gaad64ece282b5ff23fce44bbd6ed0e60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga327b470c51457d895fcc3a108aed1f57"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mifone.html#ga327b470c51457d895fcc3a108aed1f57">mifare_one_write_block</a> (int fd, uint8_t blockno, const void *blockdata)</td></tr>
+<tr class="memdesc:ga327b470c51457d895fcc3a108aed1f57"><td class="mdescLeft">&#160;</td><td class="mdescRight">更改mifare one卡的某个数据块内容  <a href="group__mifone.html#ga327b470c51457d895fcc3a108aed1f57">更多...</a><br /></td></tr>
+<tr class="separator:ga327b470c51457d895fcc3a108aed1f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac9adacbf3405e04e455023ec1a036989"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mifone.html#gac9adacbf3405e04e455023ec1a036989">mifare_one_set_value</a> (int fd, uint8_t blockno, uint32_t value)</td></tr>
+<tr class="memdesc:gac9adacbf3405e04e455023ec1a036989"><td class="mdescLeft">&#160;</td><td class="mdescRight">将mifare one卡的某个数据块设置成数值块，并赋初值  <a href="group__mifone.html#gac9adacbf3405e04e455023ec1a036989">更多...</a><br /></td></tr>
+<tr class="separator:gac9adacbf3405e04e455023ec1a036989"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga527fb5803fd60c8ecca32b614fa1535a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mifone.html#ga527fb5803fd60c8ecca32b614fa1535a">mifare_one_increment</a> (int fd, uint8_t blockno, uint32_t value)</td></tr>
+<tr class="memdesc:ga527fb5803fd60c8ecca32b614fa1535a"><td class="mdescLeft">&#160;</td><td class="mdescRight">数值块增值操作  <a href="group__mifone.html#ga527fb5803fd60c8ecca32b614fa1535a">更多...</a><br /></td></tr>
+<tr class="separator:ga527fb5803fd60c8ecca32b614fa1535a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga17be252d63d34295cca5e5d127bf5c01"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mifone.html#ga17be252d63d34295cca5e5d127bf5c01">mifare_one_decrement</a> (int fd, uint8_t blockno, uint32_t value)</td></tr>
+<tr class="memdesc:ga17be252d63d34295cca5e5d127bf5c01"><td class="mdescLeft">&#160;</td><td class="mdescRight">数值块减值操作  <a href="group__mifone.html#ga17be252d63d34295cca5e5d127bf5c01">更多...</a><br /></td></tr>
+<tr class="separator:ga17be252d63d34295cca5e5d127bf5c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5d3c008019203e09d80d25e669140620"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mifone.html#ga5d3c008019203e09d80d25e669140620">mifare_one_restore</a> (int fd, uint8_t blockno)</td></tr>
+<tr class="memdesc:ga5d3c008019203e09d80d25e669140620"><td class="mdescLeft">&#160;</td><td class="mdescRight">数值块转存操作  <a href="group__mifone.html#ga5d3c008019203e09d80d25e669140620">更多...</a><br /></td></tr>
+<tr class="separator:ga5d3c008019203e09d80d25e669140620"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0d99219b8e6412663adf26a1ab47e23c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mifone.html#ga0d99219b8e6412663adf26a1ab47e23c">mifare_one_transfer</a> (int fd, uint8_t blockno)</td></tr>
+<tr class="memdesc:ga0d99219b8e6412663adf26a1ab47e23c"><td class="mdescLeft">&#160;</td><td class="mdescRight">保存数值块操作结果  <a href="group__mifone.html#ga0d99219b8e6412663adf26a1ab47e23c">更多...</a><br /></td></tr>
+<tr class="separator:ga0d99219b8e6412663adf26a1ab47e23c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e6aee7cdca3b6eecfee64976757fab3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mifone.html#ga4e6aee7cdca3b6eecfee64976757fab3">mifare_one_get_value</a> (int fd, uint8_t blockno, uint32_t *value)</td></tr>
+<tr class="memdesc:ga4e6aee7cdca3b6eecfee64976757fab3"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取数值块的值大小  <a href="group__mifone.html#ga4e6aee7cdca3b6eecfee64976757fab3">更多...</a><br /></td></tr>
+<tr class="separator:ga4e6aee7cdca3b6eecfee64976757fab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<p>此模块用于描述 mifone 模块相关的接口 </p>
+<p>源文件：<a href="mifone_8h_source.html">mifone.h</a> </p>
+<h2 class="groupheader">函数说明</h2>
+<a id="ga8c6539d9f30f8626a1e6298d794c39ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8c6539d9f30f8626a1e6298d794c39ab">&#9670;&nbsp;</a></span>mifare_one_authenticate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mifare_one_authenticate </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>blockno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>keytype</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>uid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取mifare ultralight卡的某页内容，一次读取4个页内容 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>mif_open函数返回所打开设备的文件号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blockno</td><td>要认证的数据块号，对于S50卡，取值范围为0~63；对于S70卡，取值范围为0~255 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">keytype</td><td>要认证的密钥类型，取值如下： <br  />
+ 'A'：认证 A 密钥 <br  />
+ 'B'：认证 B 密钥 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>6字节长度的密钥信息 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uid</td><td>4字节的UID信息 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>密码验证操作成功 </td></tr>
+    <tr><td class="paramname">-1</td><td>操作失败，请通过errno获取具体的错误码： <br  />
+ EACCES ：感应区内不是mifare one卡 <br  />
+ EPERM ：验证失败 <br  />
+ EPROTO ：卡片返回数据不符合mifare one协议 <br  />
+ EINVAL ：参数错误 <br  />
+ ECOMM ：卡片返回的数据奇偶错或者CRC校验错 <br  />
+ EIO ：读卡芯片错误 <br  />
+ ETIME ：超时返回 <br  />
+ 其他值 ：其它错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga17be252d63d34295cca5e5d127bf5c01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga17be252d63d34295cca5e5d127bf5c01">&#9670;&nbsp;</a></span>mifare_one_decrement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mifare_one_decrement </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>blockno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>数值块减值操作 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>mif_open函数返回所打开设备的文件号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blockno</td><td>要读取的数据块号。对于S50卡，取值范围为0~63；对于S70卡，取值范围为0~255 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>要减掉的值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>减值操作成功 </td></tr>
+    <tr><td class="paramname">-1</td><td>操作失败，请通过errno获取具体的错误码： <br  />
+ EACCES ：感应区内不是 mifare one 卡 <br  />
+ EPERM ：验证失败 <br  />
+ EPROTO ：卡片返回数据不符合 mifare one 协议 <br  />
+ EINVAL ：参数错误 <br  />
+ ECOMM ：卡片返回的数据奇偶错或者 CRC 校验错 <br  />
+ EIO ：读卡芯片错误 <br  />
+ ETIME ：超时返回 <br  />
+ EBADE ：卡片返回的数据长度错误 <br  />
+ ENOSYS ：该块不是数值块 <br  />
+ 其他值 ：其它错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga4e6aee7cdca3b6eecfee64976757fab3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4e6aee7cdca3b6eecfee64976757fab3">&#9670;&nbsp;</a></span>mifare_one_get_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mifare_one_get_value </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>blockno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取数值块的值大小 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>mif_open函数返回所打开设备的文件号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blockno</td><td>要读取的数据块号。对于S50卡，取值范围为0~63；对于S70卡，取值范围为0~255 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">value</td><td>卡片返回的值内容 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>保存数值块操作结果成功 </td></tr>
+    <tr><td class="paramname">-1</td><td>操作失败，请通过errno获取具体的错误码： <br  />
+ EACCES ：感应区内不是 mifare one 卡 <br  />
+ EPERM ：验证失败 <br  />
+ EPROTO ：卡片返回数据不符合 mifare one 协议 <br  />
+ EINVAL ：参数错误 <br  />
+ ECOMM ：卡片返回的数据奇偶错或者 CRC 校验错 <br  />
+ EIO ：读卡芯片错误 <br  />
+ ETIME ：超时返回 <br  />
+ EBADE ：卡片返回的数据长度错误 <br  />
+ ENOSYS ：该块不是数值块 <br  />
+ 其他值 ：其它错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga1aea82d7e4c55638b39ae19ed54dd53a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1aea82d7e4c55638b39ae19ed54dd53a">&#9670;&nbsp;</a></span>mifare_one_halt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mifare_one_halt </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>复位感应区内的mifare one卡 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>mif_open函数返回所打开设备的文件号 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>复位操作成功 </td></tr>
+    <tr><td class="paramname">-1</td><td>操作失败，请通过errno获取具体的错误码： <br  />
+ EIO ：读卡芯片错误 <br  />
+ 其它值 ：其它错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga527fb5803fd60c8ecca32b614fa1535a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga527fb5803fd60c8ecca32b614fa1535a">&#9670;&nbsp;</a></span>mifare_one_increment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mifare_one_increment </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>blockno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>数值块增值操作 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>mif_open函数返回所打开设备的文件号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blockno</td><td>要读取的数据块号。对于S50卡，取值范围为0~63；对于S70卡，取值范围为0~255 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>要增加的值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>增值操作成功 </td></tr>
+    <tr><td class="paramname">-1</td><td>操作失败，请通过errno获取具体的错误码： <br  />
+ EACCES ：感应区内不是 mifare one 卡 <br  />
+ EPERM ：验证失败 <br  />
+ EPROTO ：卡片返回数据不符合 mifare one 协议 <br  />
+ EINVAL ：参数错误 <br  />
+ ECOMM ：卡片返回的数据奇偶错或者 CRC 校验错 <br  />
+ EIO ：读卡芯片错误 <br  />
+ ETIME ：超时返回 <br  />
+ EBADE ：卡片返回的数据长度错误 <br  />
+ ENOSYS ：该块不是数值块 <br  />
+ 其他值 ：其它错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaa4f60db508855a1c0d2997a26065a72a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa4f60db508855a1c0d2997a26065a72a">&#9670;&nbsp;</a></span>mifare_one_poll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mifare_one_poll </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>uid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>cardtype</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>检测感应区内是否存在mifare one卡，若有则激活 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>mif_open函数返回所打开设备的文件号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>轮询模式，取值如下： 0：仅轮询所有处于IDLE状态的卡片 1：轮询所有处于IDLE或者HALT状态的卡片 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">uid</td><td>卡片返回的5字节UID信息，4字节UID+BCC </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">cardtype</td><td>返回的mifare one卡片类型，可能取值如下： <br  />
+ MIF_M1_S50 ：mifare one S50 卡 <br  />
+ MIF_M1_S70 ：mifare one S70 卡 <br  />
+ MIF_PRO_S50 ：兼容T=CL协议和S50协议的TypeA卡 <br  />
+ MIF_PRO_S70 ：兼容T=CL协议和S70协议的TypeA卡 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>寻卡操作成功 </td></tr>
+    <tr><td class="paramname">-1</td><td>操作失败，请通过errno获取具体的错误码： <br  />
+ ENODATA ：感应区内无 mifare one 卡 <br  />
+ EMULTIHOP ：感应区内有多卡 <br  />
+ EPROTO ：卡片返回数据不符合 ISO14443 协议 <br  />
+ EBADE ：卡片返回的数据长度不正确 <br  />
+ EINVAL ：参数错误 <br  />
+ ECOMM ：卡片返回的数据奇偶错或者 CRC 校验错 <br  />
+ EIO ：读卡芯片错误 <br  />
+ ETIME ：超时返回 <br  />
+ 其他值 ：其它错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaad64ece282b5ff23fce44bbd6ed0e60d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaad64ece282b5ff23fce44bbd6ed0e60d">&#9670;&nbsp;</a></span>mifare_one_read_block()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mifare_one_read_block </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>blockno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>blockdata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取mifare one卡的某个数据块内容 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>mif_open函数返回所打开设备的文件号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blockno</td><td>要读取的数据块号，对于S50卡，取值范围为 0~63；对于S70卡，取值范围为0~255 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">blockdata</td><td>读出来的数据块内容，16字节 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>读数据块操作成功 </td></tr>
+    <tr><td class="paramname">-1</td><td>操作失败，请通过errno获取具体的错误码： <br  />
+ EACCES ：感应区内不是 mifare one 卡 <br  />
+ EPERM ：验证失败 <br  />
+ EPROTO ：卡片返回数据不符合 mifare one 协议 <br  />
+ EINVAL ：参数错误 <br  />
+ ECOMM ：卡片返回的数据奇偶错或者 CRC 校验错 <br  />
+ EIO ：读卡芯片错误 <br  />
+ ETIME ：超时返回 <br  />
+ EBADE ：卡片返回的数据长度错误 <br  />
+ 其他值 ：其它错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga5d3c008019203e09d80d25e669140620"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5d3c008019203e09d80d25e669140620">&#9670;&nbsp;</a></span>mifare_one_restore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mifare_one_restore </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>blockno</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>数值块转存操作 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>mif_open函数返回所打开设备的文件号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blockno</td><td>要读取的数据块号。对于S50卡，取值范围为0~63；对于S70卡，取值范围为0~255 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>转存操作成功 </td></tr>
+    <tr><td class="paramname">-1</td><td>操作失败，请通过errno获取具体的错误码： <br  />
+ EACCES ：感应区内不是mifare one卡 <br  />
+ EPERM ：验证失败 <br  />
+ EPROTO ：卡片返回数据不符合mifare one协议 <br  />
+ EINVAL ：参数错误 <br  />
+ ECOMM ：卡片返回的数据奇偶错或者CRC校验错 <br  />
+ EIO ：读卡芯片错误 <br  />
+ ETIME ：超时返回 <br  />
+ EBADE ：卡片返回的数据长度错误 <br  />
+ ENOSYS ：该块不是数值块 <br  />
+ 其他值 ：其它错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gac9adacbf3405e04e455023ec1a036989"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac9adacbf3405e04e455023ec1a036989">&#9670;&nbsp;</a></span>mifare_one_set_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mifare_one_set_value </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>blockno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将mifare one卡的某个数据块设置成数值块，并赋初值 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>mif_open函数返回所打开设备的文件号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blockno</td><td>要读取的数据块号。对于S50卡，取值范围为0~63；对于S70卡，取值范围为0~255 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>要填入的初始值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>初始化数值块操作成功 </td></tr>
+    <tr><td class="paramname">-1</td><td>操作失败，请通过errno获取具体的错误码： <br  />
+ EACCES ：感应区内不是mifare one卡 <br  />
+ EPERM ：验证失败 <br  />
+ EPROTO ：卡片返回数据不符合mifare one协议 <br  />
+ EINVAL ：参数错误 <br  />
+ ECOMM ：卡片返回的数据奇偶错或者CRC校验错 <br  />
+ EIO ：读卡芯片错误 <br  />
+ ETIME ：超时返回 <br  />
+ EBADE ：卡片返回的数据长度错误 <br  />
+ 其他值 ：其它错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga0d99219b8e6412663adf26a1ab47e23c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0d99219b8e6412663adf26a1ab47e23c">&#9670;&nbsp;</a></span>mifare_one_transfer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mifare_one_transfer </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>blockno</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>保存数值块操作结果 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>mif_open函数返回所打开设备的文件号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blockno</td><td>要读取的数据块号。对于S50卡，取值范围为0~63；对于S70卡，取值范围为0~255 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>保存数值块操作结果成功 </td></tr>
+    <tr><td class="paramname">-1</td><td>操作失败，请通过errno获取具体的错误码： <br  />
+ EACCES ：感应区内不是mifare one卡 <br  />
+ EPERM ：验证失败 <br  />
+ EPROTO ：卡片返回数据不符合mifare one协议 <br  />
+ EINVAL ：参数错误 <br  />
+ ECOMM ：卡片返回的数据奇偶错或者CRC校验错 <br  />
+ EIO ：读卡芯片错误 <br  />
+ ETIME ：超时返回 <br  />
+ EBADE ：卡片返回的数据长度错误 <br  />
+ ENOSYS ：该块不是数值块 <br  />
+ 其他值 ：其它错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga327b470c51457d895fcc3a108aed1f57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga327b470c51457d895fcc3a108aed1f57">&#9670;&nbsp;</a></span>mifare_one_write_block()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mifare_one_write_block </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>blockno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>blockdata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>更改mifare one卡的某个数据块内容 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>mif_open函数返回所打开设备的文件号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blockno</td><td>要读取的数据块号。对于S50卡，取值范围为0~63；对于S70卡，取值范围为0~255 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blockdata</td><td>要写入的数据块内容，16字节 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>写数据块操作成功 </td></tr>
+    <tr><td class="paramname">-1</td><td>操作失败，请通过errno获取具体的错误码： <br  />
+ EACCES ：感应区内不是mifare one卡 <br  />
+ EPERM ：验证失败 <br  />
+ EPROTO ：卡片返回数据不符合mifare one协议 <br  />
+ EINVAL ：参数错误 <br  />
+ ECOMM ：卡片返回的数据奇偶错或者CRC校验错 <br  />
+ EIO ：读卡芯片错误 <br  />
+ ETIME ：超时返回 <br  />
+ EBADE ：卡片返回的数据长度错误 <br  />
+ 其他值 ：其它错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.6-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+
+menu "System Application"
+
+comment "System Application"
+
+config BR2_PACKAGE_SYSAPP
+	bool "Build system application"
+	default y
+	help
+	  Enable this option if you want to build system application for your embedded device
+
+if BR2_PACKAGE_SYSAPP
+
+config BR2_SYSAPP_SOURCE_PATH
+	string
+	default "$(WORKSPACE)/sysapp"
+
+config BR2_BUILDCONFIG_CONFIG_SP_BEEP
+	bool "Beep the sp beeper"
+
+config BR2_BUILDCONFIG_CONFIG_VENDOR_CRYPT
+	bool "decrypt/encrypt by calling rpc_ped_vendor_dencrypt"
+
+config BR2_BUILDCONFIG_CONFIG_DOWNLOAD_NOT_REBOOT
+	bool "switch download not reboot"
+
+config BR2_BUILDCONFIG_CONFIG_SELF_CHECK
+	bool "Enable self check every 23 hours"
+
+comment "Application List"
+
+source ".config_wrapper/sysapp_wrapper.in"
+
+endif
+
+endmenu

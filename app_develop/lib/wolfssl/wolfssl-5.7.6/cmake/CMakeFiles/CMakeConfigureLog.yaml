@@ -1,0 +1,1441 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:37 (project)"
+    message: |
+      The system is: Linux - 5.15.167.4-microsoft-standard-WSL2 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:37 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/3.26.5/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1102 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:37 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      cc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-2)
+      Copyright (C) 2021 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:37 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-KeYdV6"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-KeYdV6"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-KeYdV6
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e2192/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e2192.dir/build.make CMakeFiles/cmTC_e2192.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-KeYdV6'
+        Building C object CMakeFiles/cmTC_e2192.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_e2192.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-host-pie --enable-host-bind-now --enable-languages=c,c++,fortran,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugs.almalinux.org/ --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --without-isl --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_64=x86-64-v2 --with-arch_32=x86-64 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.5.0 20240719 (Red Hat 11.5.0-2) (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e2192.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_e2192.dir/'
+         /usr/libexec/gcc/x86_64-redhat-linux/11/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_e2192.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64-v2 -version -o /tmp/ccLMopfa.s
+        GNU C17 (GCC) version 11.5.0 20240719 (Red Hat 11.5.0-2) (x86_64-redhat-linux)
+        	compiled by GNU C version 11.5.0 20240719 (Red Hat 11.5.0-2), GMP version 6.2.0, MPFR version 4.1.0-p9, MPC version 1.2.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-redhat-linux/11/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        GNU C17 (GCC) version 11.5.0 20240719 (Red Hat 11.5.0-2) (x86_64-redhat-linux)
+        	compiled by GNU C version 11.5.0 20240719 (Red Hat 11.5.0-2), GMP version 6.2.0, MPFR version 4.1.0-p9, MPC version 1.2.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: d39fe259e58de52c57e2b31d51487dcc
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e2192.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_e2192.dir/'
+         as -v --64 -o CMakeFiles/cmTC_e2192.dir/CMakeCCompilerABI.c.o /tmp/ccLMopfa.s
+        GNU assembler version 2.35.2 (x86_64-redhat-linux) using BFD version version 2.35.2-54.el9
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e2192.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_e2192.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_e2192
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e2192.dir/link.txt --verbose=1
+        /usr/bin/cc  -v CMakeFiles/cmTC_e2192.dir/CMakeCCompilerABI.c.o -o cmTC_e2192 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-host-pie --enable-host-bind-now --enable-languages=c,c++,fortran,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugs.almalinux.org/ --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --without-isl --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_64=x86-64-v2 --with-arch_32=x86-64 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.5.0 20240719 (Red Hat 11.5.0-2) (GCC) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e2192' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'cmTC_e2192.'
+         /usr/libexec/gcc/x86_64-redhat-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cco5Ba2j.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_e2192 /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../.. CMakeFiles/cmTC_e2192.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-redhat-linux/11/crtend.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e2192' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'cmTC_e2192.'
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-KeYdV6'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:37 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-redhat-linux/11/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/11/include] ==> [/usr/lib/gcc/x86_64-redhat-linux/11/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-redhat-linux/11/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:37 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-KeYdV6]
+        ignore line: []
+        ignore line: [Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e2192/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e2192.dir/build.make CMakeFiles/cmTC_e2192.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-KeYdV6']
+        ignore line: [Building C object CMakeFiles/cmTC_e2192.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_e2192.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-host-pie --enable-host-bind-now --enable-languages=c c++ fortran lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugs.almalinux.org/ --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --without-isl --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_64=x86-64-v2 --with-arch_32=x86-64 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.5.0 20240719 (Red Hat 11.5.0-2) (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e2192.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_e2192.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/11/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_e2192.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64-v2 -version -o /tmp/ccLMopfa.s]
+        ignore line: [GNU C17 (GCC) version 11.5.0 20240719 (Red Hat 11.5.0-2) (x86_64-redhat-linux)]
+        ignore line: [	compiled by GNU C version 11.5.0 20240719 (Red Hat 11.5.0-2)  GMP version 6.2.0  MPFR version 4.1.0-p9  MPC version 1.2.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (GCC) version 11.5.0 20240719 (Red Hat 11.5.0-2) (x86_64-redhat-linux)]
+        ignore line: [	compiled by GNU C version 11.5.0 20240719 (Red Hat 11.5.0-2)  GMP version 6.2.0  MPFR version 4.1.0-p9  MPC version 1.2.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: d39fe259e58de52c57e2b31d51487dcc]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e2192.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_e2192.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_e2192.dir/CMakeCCompilerABI.c.o /tmp/ccLMopfa.s]
+        ignore line: [GNU assembler version 2.35.2 (x86_64-redhat-linux) using BFD version version 2.35.2-54.el9]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e2192.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_e2192.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_e2192]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e2192.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_e2192.dir/CMakeCCompilerABI.c.o -o cmTC_e2192 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-host-pie --enable-host-bind-now --enable-languages=c c++ fortran lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugs.almalinux.org/ --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --without-isl --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_64=x86-64-v2 --with-arch_32=x86-64 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.5.0 20240719 (Red Hat 11.5.0-2) (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e2192' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'cmTC_e2192.']
+        link line: [ /usr/libexec/gcc/x86_64-redhat-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cco5Ba2j.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_e2192 /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../.. CMakeFiles/cmTC_e2192.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-redhat-linux/11/crtend.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-redhat-linux/11/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cco5Ba2j.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--no-add-needed] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_e2192] ==> ignore
+          arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/11] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/11/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../..]
+          arg [CMakeFiles/cmTC_e2192.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-redhat-linux/11/crtend.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/crtend.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11] ==> [/usr/lib/gcc/x86_64-redhat-linux/11]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o;/usr/lib/gcc/x86_64-redhat-linux/11/crtend.o;/usr/lib64/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-redhat-linux/11;/usr/lib64;/lib64;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "CMakeLists.txt:91 (check_include_file)"
+    checks:
+      - "Looking for arpa/inet.h"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-cCfePG"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-cCfePG"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_ARPA_INET_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-cCfePG
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4b7b6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4b7b6.dir/build.make CMakeFiles/cmTC_4b7b6.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-cCfePG'
+        Building C object CMakeFiles/cmTC_4b7b6.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_4b7b6.dir/CheckIncludeFile.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-cCfePG/CheckIncludeFile.c
+        Linking C executable cmTC_4b7b6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4b7b6.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_4b7b6.dir/CheckIncludeFile.c.o -o cmTC_4b7b6 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-cCfePG'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "CMakeLists.txt:92 (check_include_file)"
+    checks:
+      - "Looking for fcntl.h"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-cJos9l"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-cJos9l"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_FCNTL_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-cJos9l
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_94919/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_94919.dir/build.make CMakeFiles/cmTC_94919.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-cJos9l'
+        Building C object CMakeFiles/cmTC_94919.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_94919.dir/CheckIncludeFile.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-cJos9l/CheckIncludeFile.c
+        Linking C executable cmTC_94919
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94919.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_94919.dir/CheckIncludeFile.c.o -o cmTC_94919 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-cJos9l'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "CMakeLists.txt:93 (check_include_file)"
+    checks:
+      - "Looking for limits.h"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-89FoLu"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-89FoLu"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_LIMITS_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-89FoLu
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ff878/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ff878.dir/build.make CMakeFiles/cmTC_ff878.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-89FoLu'
+        Building C object CMakeFiles/cmTC_ff878.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_ff878.dir/CheckIncludeFile.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-89FoLu/CheckIncludeFile.c
+        Linking C executable cmTC_ff878
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ff878.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_ff878.dir/CheckIncludeFile.c.o -o cmTC_ff878 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-89FoLu'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "CMakeLists.txt:94 (check_include_file)"
+    checks:
+      - "Looking for netdb.h"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-d9WmjX"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-d9WmjX"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_NETDB_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-d9WmjX
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e0fed/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e0fed.dir/build.make CMakeFiles/cmTC_e0fed.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-d9WmjX'
+        Building C object CMakeFiles/cmTC_e0fed.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_e0fed.dir/CheckIncludeFile.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-d9WmjX/CheckIncludeFile.c
+        Linking C executable cmTC_e0fed
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e0fed.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_e0fed.dir/CheckIncludeFile.c.o -o cmTC_e0fed 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-d9WmjX'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "CMakeLists.txt:95 (check_include_file)"
+    checks:
+      - "Looking for netinet/in.h"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-Tl3wcN"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-Tl3wcN"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_NETINET_IN_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-Tl3wcN
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_239e8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_239e8.dir/build.make CMakeFiles/cmTC_239e8.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-Tl3wcN'
+        Building C object CMakeFiles/cmTC_239e8.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_239e8.dir/CheckIncludeFile.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-Tl3wcN/CheckIncludeFile.c
+        Linking C executable cmTC_239e8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_239e8.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_239e8.dir/CheckIncludeFile.c.o -o cmTC_239e8 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-Tl3wcN'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "CMakeLists.txt:96 (check_include_file)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-r4dgub"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-r4dgub"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-r4dgub
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f8a86/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f8a86.dir/build.make CMakeFiles/cmTC_f8a86.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-r4dgub'
+        Building C object CMakeFiles/cmTC_f8a86.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_f8a86.dir/CheckIncludeFile.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-r4dgub/CheckIncludeFile.c
+        Linking C executable cmTC_f8a86
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f8a86.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_f8a86.dir/CheckIncludeFile.c.o -o cmTC_f8a86 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-r4dgub'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "CMakeLists.txt:97 (check_include_file)"
+    checks:
+      - "Looking for time.h"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-yuqFgA"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-yuqFgA"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_TIME_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-yuqFgA
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d6412/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d6412.dir/build.make CMakeFiles/cmTC_d6412.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-yuqFgA'
+        Building C object CMakeFiles/cmTC_d6412.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_d6412.dir/CheckIncludeFile.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-yuqFgA/CheckIncludeFile.c
+        Linking C executable cmTC_d6412
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d6412.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_d6412.dir/CheckIncludeFile.c.o -o cmTC_d6412 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-yuqFgA'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "CMakeLists.txt:98 (check_include_file)"
+    checks:
+      - "Looking for sys/ioctl.h"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-K9RgaX"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-K9RgaX"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_SYS_IOCTL_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-K9RgaX
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_50ec2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_50ec2.dir/build.make CMakeFiles/cmTC_50ec2.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-K9RgaX'
+        Building C object CMakeFiles/cmTC_50ec2.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_50ec2.dir/CheckIncludeFile.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-K9RgaX/CheckIncludeFile.c
+        Linking C executable cmTC_50ec2
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_50ec2.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_50ec2.dir/CheckIncludeFile.c.o -o cmTC_50ec2 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-K9RgaX'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "CMakeLists.txt:99 (check_include_file)"
+    checks:
+      - "Looking for sys/socket.h"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-B96S84"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-B96S84"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_SYS_SOCKET_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-B96S84
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f4453/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f4453.dir/build.make CMakeFiles/cmTC_f4453.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-B96S84'
+        Building C object CMakeFiles/cmTC_f4453.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_f4453.dir/CheckIncludeFile.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-B96S84/CheckIncludeFile.c
+        Linking C executable cmTC_f4453
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4453.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_f4453.dir/CheckIncludeFile.c.o -o cmTC_f4453 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-B96S84'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "CMakeLists.txt:100 (check_include_file)"
+    checks:
+      - "Looking for sys/time.h"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-NWeP04"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-NWeP04"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_SYS_TIME_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-NWeP04
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4371a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4371a.dir/build.make CMakeFiles/cmTC_4371a.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-NWeP04'
+        Building C object CMakeFiles/cmTC_4371a.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_4371a.dir/CheckIncludeFile.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-NWeP04/CheckIncludeFile.c
+        Linking C executable cmTC_4371a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4371a.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_4371a.dir/CheckIncludeFile.c.o -o cmTC_4371a 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-NWeP04'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "CMakeLists.txt:101 (check_include_file)"
+    checks:
+      - "Looking for errno.h"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-94NfXE"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-94NfXE"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_ERRNO_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-94NfXE
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cb691/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cb691.dir/build.make CMakeFiles/cmTC_cb691.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-94NfXE'
+        Building C object CMakeFiles/cmTC_cb691.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_cb691.dir/CheckIncludeFile.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-94NfXE/CheckIncludeFile.c
+        Linking C executable cmTC_cb691
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cb691.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_cb691.dir/CheckIncludeFile.c.o -o cmTC_cb691 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-94NfXE'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "CMakeLists.txt:102 (check_include_file)"
+    checks:
+      - "Looking for dlfcn.h"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-QnAKG2"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-QnAKG2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_DLFCN_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-QnAKG2
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5984d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5984d.dir/build.make CMakeFiles/cmTC_5984d.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-QnAKG2'
+        Building C object CMakeFiles/cmTC_5984d.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_5984d.dir/CheckIncludeFile.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-QnAKG2/CheckIncludeFile.c
+        Linking C executable cmTC_5984d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5984d.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_5984d.dir/CheckIncludeFile.c.o -o cmTC_5984d 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-QnAKG2'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "CMakeLists.txt:103 (check_include_file)"
+    checks:
+      - "Looking for inttypes.h"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-AusBWK"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-AusBWK"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_INTTYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-AusBWK
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b9f2e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b9f2e.dir/build.make CMakeFiles/cmTC_b9f2e.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-AusBWK'
+        Building C object CMakeFiles/cmTC_b9f2e.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_b9f2e.dir/CheckIncludeFile.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-AusBWK/CheckIncludeFile.c
+        Linking C executable cmTC_b9f2e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b9f2e.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_b9f2e.dir/CheckIncludeFile.c.o -o cmTC_b9f2e 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-AusBWK'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "CMakeLists.txt:104 (check_include_file)"
+    checks:
+      - "Looking for memory.h"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-HKap4t"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-HKap4t"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_MEMORY_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-HKap4t
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fce08/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fce08.dir/build.make CMakeFiles/cmTC_fce08.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-HKap4t'
+        Building C object CMakeFiles/cmTC_fce08.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_fce08.dir/CheckIncludeFile.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-HKap4t/CheckIncludeFile.c
+        Linking C executable cmTC_fce08
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fce08.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_fce08.dir/CheckIncludeFile.c.o -o cmTC_fce08 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-HKap4t'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "CMakeLists.txt:105 (check_include_file)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-FijrdB"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-FijrdB"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-FijrdB
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e7095/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e7095.dir/build.make CMakeFiles/cmTC_e7095.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-FijrdB'
+        Building C object CMakeFiles/cmTC_e7095.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_e7095.dir/CheckIncludeFile.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-FijrdB/CheckIncludeFile.c
+        Linking C executable cmTC_e7095
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e7095.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_e7095.dir/CheckIncludeFile.c.o -o cmTC_e7095 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-FijrdB'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "CMakeLists.txt:106 (check_include_file)"
+    checks:
+      - "Looking for stdlib.h"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-9MAlMq"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-9MAlMq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_STDLIB_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-9MAlMq
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_77bff/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_77bff.dir/build.make CMakeFiles/cmTC_77bff.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-9MAlMq'
+        Building C object CMakeFiles/cmTC_77bff.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_77bff.dir/CheckIncludeFile.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-9MAlMq/CheckIncludeFile.c
+        Linking C executable cmTC_77bff
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77bff.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_77bff.dir/CheckIncludeFile.c.o -o cmTC_77bff 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-9MAlMq'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "CMakeLists.txt:107 (check_include_file)"
+    checks:
+      - "Looking for string.h"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-C63yRD"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-C63yRD"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_STRING_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-C63yRD
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ca8b4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ca8b4.dir/build.make CMakeFiles/cmTC_ca8b4.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-C63yRD'
+        Building C object CMakeFiles/cmTC_ca8b4.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_ca8b4.dir/CheckIncludeFile.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-C63yRD/CheckIncludeFile.c
+        Linking C executable cmTC_ca8b4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca8b4.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_ca8b4.dir/CheckIncludeFile.c.o -o cmTC_ca8b4 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-C63yRD'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "CMakeLists.txt:108 (check_include_file)"
+    checks:
+      - "Looking for strings.h"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-mtr6Us"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-mtr6Us"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_STRINGS_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-mtr6Us
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_05c4a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_05c4a.dir/build.make CMakeFiles/cmTC_05c4a.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-mtr6Us'
+        Building C object CMakeFiles/cmTC_05c4a.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_05c4a.dir/CheckIncludeFile.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-mtr6Us/CheckIncludeFile.c
+        Linking C executable cmTC_05c4a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_05c4a.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_05c4a.dir/CheckIncludeFile.c.o -o cmTC_05c4a 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-mtr6Us'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "CMakeLists.txt:109 (check_include_file)"
+    checks:
+      - "Looking for sys/stat.h"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-h1thzf"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-h1thzf"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_SYS_STAT_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-h1thzf
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4e295/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4e295.dir/build.make CMakeFiles/cmTC_4e295.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-h1thzf'
+        Building C object CMakeFiles/cmTC_4e295.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_4e295.dir/CheckIncludeFile.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-h1thzf/CheckIncludeFile.c
+        Linking C executable cmTC_4e295
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e295.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_4e295.dir/CheckIncludeFile.c.o -o cmTC_4e295 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-h1thzf'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "CMakeLists.txt:110 (check_include_file)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-D90yDH"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-D90yDH"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-D90yDH
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6f606/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6f606.dir/build.make CMakeFiles/cmTC_6f606.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-D90yDH'
+        Building C object CMakeFiles/cmTC_6f606.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_6f606.dir/CheckIncludeFile.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-D90yDH/CheckIncludeFile.c
+        Linking C executable cmTC_6f606
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6f606.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_6f606.dir/CheckIncludeFile.c.o -o cmTC_6f606 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-D90yDH'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "CMakeLists.txt:111 (check_include_file)"
+    checks:
+      - "Looking for unistd.h"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-pvJeKr"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-pvJeKr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_UNISTD_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-pvJeKr
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5bc75/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5bc75.dir/build.make CMakeFiles/cmTC_5bc75.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-pvJeKr'
+        Building C object CMakeFiles/cmTC_5bc75.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_5bc75.dir/CheckIncludeFile.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-pvJeKr/CheckIncludeFile.c
+        Linking C executable cmTC_5bc75
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5bc75.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_5bc75.dir/CheckIncludeFile.c.o -o cmTC_5bc75 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-pvJeKr'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:91 (try_compile)"
+      - "CMakeLists.txt:118 (check_function_exists)"
+    checks:
+      - "Looking for gethostbyname"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-IX7uAy"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-IX7uAy"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_GETHOSTBYNAME"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-IX7uAy
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_23142/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_23142.dir/build.make CMakeFiles/cmTC_23142.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-IX7uAy'
+        Building C object CMakeFiles/cmTC_23142.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -o CMakeFiles/cmTC_23142.dir/CheckFunctionExists.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-IX7uAy/CheckFunctionExists.c
+        Linking C executable cmTC_23142
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_23142.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname CMakeFiles/cmTC_23142.dir/CheckFunctionExists.c.o -o cmTC_23142 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-IX7uAy'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:91 (try_compile)"
+      - "CMakeLists.txt:119 (check_function_exists)"
+    checks:
+      - "Looking for getaddrinfo"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-GFpJEX"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-GFpJEX"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_GETADDRINFO"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-GFpJEX
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6e24e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6e24e.dir/build.make CMakeFiles/cmTC_6e24e.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-GFpJEX'
+        Building C object CMakeFiles/cmTC_6e24e.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getaddrinfo -o CMakeFiles/cmTC_6e24e.dir/CheckFunctionExists.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-GFpJEX/CheckFunctionExists.c
+        Linking C executable cmTC_6e24e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e24e.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=getaddrinfo CMakeFiles/cmTC_6e24e.dir/CheckFunctionExists.c.o -o cmTC_6e24e 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-GFpJEX'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:91 (try_compile)"
+      - "CMakeLists.txt:120 (check_function_exists)"
+    checks:
+      - "Looking for gettimeofday"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-EvnTxP"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-EvnTxP"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_GETTIMEOFDAY"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-EvnTxP
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ac763/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ac763.dir/build.make CMakeFiles/cmTC_ac763.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-EvnTxP'
+        Building C object CMakeFiles/cmTC_ac763.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gettimeofday -o CMakeFiles/cmTC_ac763.dir/CheckFunctionExists.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-EvnTxP/CheckFunctionExists.c
+        Linking C executable cmTC_ac763
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac763.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gettimeofday CMakeFiles/cmTC_ac763.dir/CheckFunctionExists.c.o -o cmTC_ac763 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-EvnTxP'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:91 (try_compile)"
+      - "CMakeLists.txt:121 (check_function_exists)"
+    checks:
+      - "Looking for gmtime_r"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-4NYZJg"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-4NYZJg"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_GMTIME_R"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-4NYZJg
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f3ee8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f3ee8.dir/build.make CMakeFiles/cmTC_f3ee8.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-4NYZJg'
+        Building C object CMakeFiles/cmTC_f3ee8.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gmtime_r -o CMakeFiles/cmTC_f3ee8.dir/CheckFunctionExists.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-4NYZJg/CheckFunctionExists.c
+        Linking C executable cmTC_f3ee8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3ee8.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gmtime_r CMakeFiles/cmTC_f3ee8.dir/CheckFunctionExists.c.o -o cmTC_f3ee8 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-4NYZJg'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:91 (try_compile)"
+      - "CMakeLists.txt:122 (check_function_exists)"
+    checks:
+      - "Looking for inet_ntoa"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-8UoR8x"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-8UoR8x"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_INET_NTOA"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-8UoR8x
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cc852/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cc852.dir/build.make CMakeFiles/cmTC_cc852.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-8UoR8x'
+        Building C object CMakeFiles/cmTC_cc852.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=inet_ntoa -o CMakeFiles/cmTC_cc852.dir/CheckFunctionExists.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-8UoR8x/CheckFunctionExists.c
+        Linking C executable cmTC_cc852
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc852.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=inet_ntoa CMakeFiles/cmTC_cc852.dir/CheckFunctionExists.c.o -o cmTC_cc852 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-8UoR8x'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:91 (try_compile)"
+      - "CMakeLists.txt:123 (check_function_exists)"
+    checks:
+      - "Looking for memset"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-DQo3dy"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-DQo3dy"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_MEMSET"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-DQo3dy
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_703b2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_703b2.dir/build.make CMakeFiles/cmTC_703b2.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-DQo3dy'
+        Building C object CMakeFiles/cmTC_703b2.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=memset -o CMakeFiles/cmTC_703b2.dir/CheckFunctionExists.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-DQo3dy/CheckFunctionExists.c
+        <command-line>: warning: conflicting types for built-in function ‘memset’; expected ‘void *(void *, int,  long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+        /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-DQo3dy/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+            7 |   CHECK_FUNCTION_EXISTS(void);
+              |   ^~~~~~~~~~~~~~~~~~~~~
+        /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-DQo3dy/CheckFunctionExists.c:1:1: note: ‘memset’ is declared in header ‘<string.h>’
+          +++ |+#include <string.h>
+            1 | #ifdef CHECK_FUNCTION_EXISTS
+        Linking C executable cmTC_703b2
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_703b2.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=memset CMakeFiles/cmTC_703b2.dir/CheckFunctionExists.c.o -o cmTC_703b2 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-DQo3dy'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:91 (try_compile)"
+      - "CMakeLists.txt:124 (check_function_exists)"
+    checks:
+      - "Looking for socket"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-YJoFes"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-YJoFes"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_SOCKET"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-YJoFes
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4395f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4395f.dir/build.make CMakeFiles/cmTC_4395f.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-YJoFes'
+        Building C object CMakeFiles/cmTC_4395f.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=socket -o CMakeFiles/cmTC_4395f.dir/CheckFunctionExists.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-YJoFes/CheckFunctionExists.c
+        Linking C executable cmTC_4395f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4395f.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=socket CMakeFiles/cmTC_4395f.dir/CheckFunctionExists.c.o -o cmTC_4395f 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-YJoFes'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:91 (try_compile)"
+      - "CMakeLists.txt:125 (check_function_exists)"
+    checks:
+      - "Looking for strftime"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-mzX2cb"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-mzX2cb"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_STRFTIME"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-mzX2cb
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a8e1d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a8e1d.dir/build.make CMakeFiles/cmTC_a8e1d.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-mzX2cb'
+        Building C object CMakeFiles/cmTC_a8e1d.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strftime -o CMakeFiles/cmTC_a8e1d.dir/CheckFunctionExists.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-mzX2cb/CheckFunctionExists.c
+        <command-line>: warning: conflicting types for built-in function ‘strftime’; expected ‘long unsigned int(char *, long unsigned int,  const char *, const void *)’ [-Wbuiltin-declaration-mismatch]
+        /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-mzX2cb/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+            7 |   CHECK_FUNCTION_EXISTS(void);
+              |   ^~~~~~~~~~~~~~~~~~~~~
+        /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-mzX2cb/CheckFunctionExists.c:1:1: note: ‘strftime’ is declared in header ‘<time.h>’
+          +++ |+#include <time.h>
+            1 | #ifdef CHECK_FUNCTION_EXISTS
+        Linking C executable cmTC_a8e1d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8e1d.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strftime CMakeFiles/cmTC_a8e1d.dir/CheckFunctionExists.c.o -o cmTC_a8e1d 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-mzX2cb'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:91 (try_compile)"
+      - "CMakeLists.txt:126 (check_function_exists)"
+    checks:
+      - "Looking for __atomic_fetch_add"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-mWXMI5"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-mWXMI5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_C___ATOMIC"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-mWXMI5
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_95086/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_95086.dir/build.make CMakeFiles/cmTC_95086.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-mWXMI5'
+        Building C object CMakeFiles/cmTC_95086.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=__atomic_fetch_add -o CMakeFiles/cmTC_95086.dir/CheckFunctionExists.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-mWXMI5/CheckFunctionExists.c
+        <command-line>: warning: conflicting types for built-in function ‘__atomic_fetch_add’; expected ‘void()’ [-Wbuiltin-declaration-mismatch]
+        <command-line>: note: in definition of macro ‘CHECK_FUNCTION_EXISTS’
+        Linking C executable cmTC_95086
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95086.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=__atomic_fetch_add CMakeFiles/cmTC_95086.dir/CheckFunctionExists.c.o -o cmTC_95086 
+        /usr/bin/ld: CMakeFiles/cmTC_95086.dir/CheckFunctionExists.c.o: in function `main':
+        CheckFunctionExists.c:(.text+0x10): undefined reference to `__atomic_fetch_add'
+        collect2: error: ld returned 1 exit status
+        gmake[1]: *** [CMakeFiles/cmTC_95086.dir/build.make:99: cmTC_95086] Error 1
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-mWXMI5'
+        gmake: *** [Makefile:127: cmTC_95086/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckTypeSize.cmake:148 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckTypeSize.cmake:273 (__check_type_size_impl)"
+      - "CMakeLists.txt:130 (check_type_size)"
+    checks:
+      - "Check size of __uint128_t"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-huW5OI"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-huW5OI"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE___UINT128_T"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-huW5OI
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_12b71/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_12b71.dir/build.make CMakeFiles/cmTC_12b71.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-huW5OI'
+        Building C object CMakeFiles/cmTC_12b71.dir/__UINT128_T.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_12b71.dir/__UINT128_T.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-huW5OI/__UINT128_T.c
+        Linking C executable cmTC_12b71
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12b71.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_12b71.dir/__UINT128_T.c.o -o cmTC_12b71 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-huW5OI'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckTypeSize.cmake:148 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckTypeSize.cmake:273 (__check_type_size_impl)"
+      - "CMakeLists.txt:131 (check_type_size)"
+    checks:
+      - "Check size of long long"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-PAARaL"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-PAARaL"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_SIZEOF_LONG_LONG"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-PAARaL
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_dce3a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_dce3a.dir/build.make CMakeFiles/cmTC_dce3a.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-PAARaL'
+        Building C object CMakeFiles/cmTC_dce3a.dir/SIZEOF_LONG_LONG.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_dce3a.dir/SIZEOF_LONG_LONG.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-PAARaL/SIZEOF_LONG_LONG.c
+        Linking C executable cmTC_dce3a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dce3a.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_dce3a.dir/SIZEOF_LONG_LONG.c.o -o cmTC_dce3a 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-PAARaL'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckTypeSize.cmake:148 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckTypeSize.cmake:273 (__check_type_size_impl)"
+      - "CMakeLists.txt:132 (check_type_size)"
+    checks:
+      - "Check size of long"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-P7YdRc"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-P7YdRc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_SIZEOF_LONG"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-P7YdRc
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_77dd8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_77dd8.dir/build.make CMakeFiles/cmTC_77dd8.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-P7YdRc'
+        Building C object CMakeFiles/cmTC_77dd8.dir/SIZEOF_LONG.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_77dd8.dir/SIZEOF_LONG.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-P7YdRc/SIZEOF_LONG.c
+        Linking C executable cmTC_77dd8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77dd8.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_77dd8.dir/SIZEOF_LONG.c.o -o cmTC_77dd8 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-P7YdRc'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckTypeSize.cmake:148 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckTypeSize.cmake:273 (__check_type_size_impl)"
+      - "CMakeLists.txt:133 (check_type_size)"
+    checks:
+      - "Check size of time_t"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-xrDb5z"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-xrDb5z"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_SIZEOF_TIME_T"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-xrDb5z
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c56a4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c56a4.dir/build.make CMakeFiles/cmTC_c56a4.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-xrDb5z'
+        Building C object CMakeFiles/cmTC_c56a4.dir/SIZEOF_TIME_T.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_c56a4.dir/SIZEOF_TIME_T.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-xrDb5z/SIZEOF_TIME_T.c
+        Linking C executable cmTC_c56a4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c56a4.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_c56a4.dir/SIZEOF_TIME_T.c.o -o cmTC_c56a4 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-xrDb5z'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckTypeSize.cmake:148 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckTypeSize.cmake:273 (__check_type_size_impl)"
+      - "CMakeLists.txt:134 (check_type_size)"
+    checks:
+      - "Check size of uintptr_t"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-HN8obd"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-HN8obd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "HAVE_HAVE_UINTPTR_T"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-HN8obd
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_761da/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_761da.dir/build.make CMakeFiles/cmTC_761da.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-HN8obd'
+        Building C object CMakeFiles/cmTC_761da.dir/HAVE_UINTPTR_T.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_761da.dir/HAVE_UINTPTR_T.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-HN8obd/HAVE_UINTPTR_T.c
+        Linking C executable cmTC_761da
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_761da.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_761da.dir/HAVE_UINTPTR_T.c.o -o cmTC_761da 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-HN8obd'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:168 (check_c_source_compiles)"
+    checks:
+      - "Performing Test THREAD_LS_ON"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-zTRSZe"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-zTRSZe"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "THREAD_LS_ON"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-zTRSZe
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_531fd/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_531fd.dir/build.make CMakeFiles/cmTC_531fd.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-zTRSZe'
+        Building C object CMakeFiles/cmTC_531fd.dir/src.c.o
+        /usr/bin/cc -DTHREAD_LS_ON   -o CMakeFiles/cmTC_531fd.dir/src.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-zTRSZe/src.c
+        Linking C executable cmTC_531fd
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_531fd.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_531fd.dir/src.c.o -o cmTC_531fd 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-zTRSZe'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "CMakeLists.txt:185 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-aaK18H"
+      binary: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-aaK18H"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/modules/"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-aaK18H
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_52152/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_52152.dir/build.make CMakeFiles/cmTC_52152.dir/build
+        gmake[1]: Entering directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-aaK18H'
+        Building C object CMakeFiles/cmTC_52152.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_52152.dir/src.c.o -c /home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-aaK18H/src.c
+        Linking C executable cmTC_52152
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52152.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_52152.dir/src.c.o -o cmTC_52152 
+        gmake[1]: Leaving directory '/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake/CMakeFiles/CMakeScratch/TryCompile-aaK18H'
+        
+      exitCode: 0
+...

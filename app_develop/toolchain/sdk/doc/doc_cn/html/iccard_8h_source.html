@@ -1,0 +1,171 @@
+<!-- HTML header for doxygen 1.8.6-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<title>MDP820: iccard.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="styleSheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<script type="text/javascript" src="version.js"></script>
+<script type="text/javascript" src="language.js"></script>
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="MDP820.jpg"/></td>
+  <td width="100%" style="padding-left: 0.5em;">
+   <div id="projectname" style="display:table-cell;vertical-align:middle;text-align:center">MDP820
+		<span id="projectnumber">
+			<select>
+				<option value ="8.2.3">8.2.3</option>
+			</select>
+		</span>
+   </div>
+   <div id="projectbrief">MDP820-API</div>
+  </td>
+  <td>
+    <span id="projectlang" style="margin-right: 1em;">
+		<select>
+			<!-- <option value ="ch">中文</option> -->
+			<!-- <option value ="en">English</option> -->
+		</select>
+	</span>
+   </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('iccard_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">iccard.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#ifndef __ICCARD_H__</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#define __ICCARD_H__</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="group__iccard.html#ga54c48e7a32eeaf34214a229102a6a38f">   45</a></span>&#160;<span class="preprocessor">#define CVCC_1_8_VOLT       1   </span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="group__iccard.html#ga2d2779dd1a593bf987cc5c9e07461085">   46</a></span>&#160;<span class="preprocessor">#define CVCC_3_VOLT         2   </span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="group__iccard.html#gab5b33edcdd883adca952d0887accc6c1">   47</a></span>&#160;<span class="preprocessor">#define CVCC_5_VOLT         3   </span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="group__iccard.html#ga876aaf99bf41c93fb63e00dc77838487">   49</a></span>&#160;<span class="preprocessor">#define EMV_MODE            0   </span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group__iccard.html#ga92333b9718f4375142527f18d5a6f992">   50</a></span>&#160;<span class="preprocessor">#define ISO_MODE            1   </span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="group__iccard.html#gade3821cc2cdc8db739e9670f13c161a3">   51</a></span>&#160;<span class="preprocessor">#define ISO_19200           2   </span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="group__iccard.html#ga5f0c9741cf99dbd539a45cafcc7b76a8">   52</a></span>&#160;<span class="preprocessor">#define ISO_38400           3   </span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#define ISO_SPEED_NORMAL   0</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#define ISO_SPEED_HIGH   (3&lt;&lt;30)</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__iccard.html#gac72f7ce065811d873b92f9a808e68e00">iccard_open_cardslot</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *filename);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__iccard.html#ga756c9445e1911a836de33a5771ca23d3">iccard_close_cardslot</a>(<span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__iccard.html#ga35934946546c1c02de707a882dd88aeb">iccard_check_card_in_slot</a>(<span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__iccard.html#ga9efd246119858f41d549c56dd6fa1d61">iccard_power_up</a>(<span class="keywordtype">int</span> fd, <span class="keywordtype">int</span> vcc, <span class="keywordtype">int</span> mode, <span class="keywordtype">int</span> *len, <span class="keywordtype">void</span> *atr);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__iccard.html#gab1029d45f94140e8a881072b863d6f5e">iccard_exchange_apdu</a>(<span class="keywordtype">int</span> fd, uint32_t sendlen, <span class="keyword">const</span> <span class="keywordtype">void</span> *senddata, uint32_t *recvlen, <span class="keywordtype">void</span> *recvdata);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__iccard.html#gab58b1c423011a3f2d4c2ec94268a4e4b">iccard_power_down</a>(<span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="preprocessor">#if 0 //这个接口功能与ped获取卡座号的接口有重合，可以删除</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="keywordtype">int</span> iccard_get_slotnum(<span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;}</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; </div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __ICCARD_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="agroup__iccard_html_gab1029d45f94140e8a881072b863d6f5e"><div class="ttname"><a href="group__iccard.html#gab1029d45f94140e8a881072b863d6f5e">iccard_exchange_apdu</a></div><div class="ttdeci">int iccard_exchange_apdu(int fd, uint32_t sendlen, const void *senddata, uint32_t *recvlen, void *recvdata)</div><div class="ttdoc">在读卡器和iccard之间交换apdu包（读卡器和IC卡进行交互信息）</div></div>
+<div class="ttc" id="agroup__iccard_html_gab58b1c423011a3f2d4c2ec94268a4e4b"><div class="ttname"><a href="group__iccard.html#gab58b1c423011a3f2d4c2ec94268a4e4b">iccard_power_down</a></div><div class="ttdeci">int iccard_power_down(int fd)</div><div class="ttdoc">IC卡下电</div></div>
+<div class="ttc" id="agroup__iccard_html_gac72f7ce065811d873b92f9a808e68e00"><div class="ttname"><a href="group__iccard.html#gac72f7ce065811d873b92f9a808e68e00">iccard_open_cardslot</a></div><div class="ttdeci">int iccard_open_cardslot(const char *filename)</div><div class="ttdoc">打开IC卡读卡器</div></div>
+<div class="ttc" id="agroup__iccard_html_ga35934946546c1c02de707a882dd88aeb"><div class="ttname"><a href="group__iccard.html#ga35934946546c1c02de707a882dd88aeb">iccard_check_card_in_slot</a></div><div class="ttdeci">int iccard_check_card_in_slot(int fd)</div><div class="ttdoc">检查卡是否存在于卡槽中</div></div>
+<div class="ttc" id="agroup__iccard_html_ga756c9445e1911a836de33a5771ca23d3"><div class="ttname"><a href="group__iccard.html#ga756c9445e1911a836de33a5771ca23d3">iccard_close_cardslot</a></div><div class="ttdeci">int iccard_close_cardslot(int fd)</div><div class="ttdoc">关闭IC卡读卡器</div></div>
+<div class="ttc" id="agroup__iccard_html_ga9efd246119858f41d549c56dd6fa1d61"><div class="ttname"><a href="group__iccard.html#ga9efd246119858f41d549c56dd6fa1d61">iccard_power_up</a></div><div class="ttdeci">int iccard_power_up(int fd, int vcc, int mode, int *len, void *atr)</div><div class="ttdoc">IC卡上电</div></div>
+<!-- HTML footer for doxygen 1.8.6-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>iccard.h</b></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

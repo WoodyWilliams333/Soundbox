@@ -1,0 +1,29 @@
+
+menu "prebuilt"
+
+comment "prebuilt"
+
+config BR2_BUILDCONFIG_CFG_VENDOR_IN_SP
+	bool "vendor in sp(BR2_BUILDCONFIG_CFG_VENDER_IN_SP)"
+
+config BR2_BUILDCONFIG_CONFIG_PIN_INPUT_KBD
+	bool "input pin by keyboard(BR2_BUILDCONFIG_CONFIG_PIN_INPUT_KBD)"
+
+config BR2_BUILDCONFIG_CONFIG_DUAL_CHIP_KBD	
+	bool "keyboard control by two chip(BR2_BUILDCONFIG_CONFIG_DUAL_CHIP_KBD)"
+
+config BR2_BUILDCONFIG_CONFIG_CCORE_UPDATE	
+	bool "sp update for ccore(BR2_BUILDCONFIG_CONFIG_CCORE_UPDATE)"
+	
+config BR2_BUILDCONFIG_CONFIG_CCORE_SOTP_FLAG
+	bool "CCORE factory formatting sets SOTP flag(BR2_BUILDCONFIG_CONFIG_CCORE_SOTP_FLAG)"
+	
+config BR2_BUILDCONFIG_CONFIG_DIGITAL_DISPLAY
+	bool " digital tube display(BR2_BUILDCONFIG_CONFIG_DIGITAL_DISPLAY)"	
+	
+config BR2_BUILDCONFIG_CONFIG_TTS	
+	bool "text to speech(BR2_BUILDCONFIG_CONFIG_TTS)"
+	
+source ".config_wrapper/prebuilt_wrapper.in"
+
+endmenu

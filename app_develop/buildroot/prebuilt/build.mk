@@ -1,0 +1,49 @@
+
+TARGETS += prebuilt
+
+PREBUILT_DIR=$(BUILD_DIR)/prebuilt
+PREBUILT_SOURCE_PATH=$(WORKSPACE)/prebuilt
+PREBUILT_INSTALL_PATH=$(SYSTEM_DIR)
+PREBUILT_NDK_PATH=$(BR2_TOOLCHAIN_INSTALL_PATH)/ndk
+PREBUILT_SUBDIR_LIST=$(shell ls $(PREBUILT_SOURCE_PATH))
+PREBUILT_CONFIG_SUBDIRS = $(foreach f,$(PREBUILT_SUBDIR_LIST),$(if $(BR2_CONFIG_PREBUILT_$(shell echo $f | tr a-z- A-Z_)),$(f),))
+
+PREBUILT_SUBDIR_ENV=USRAPP_INSTALL_PATH=$(USRAPP_INSTALL_PATH) \
+		   LIBRARY_INSTALL_PATH=$(LIBRARY_INSTALL_PATH) \
+           FIRMWARE_INSTALL_PATH=$(FIRMWARE_INSTALL_PATH) \
+           TOOLS_INSTALL_PATH=$(TOOLS_INSTALL_PATH) \
+           CROSS_COMPILE=$(TARGET_CROSS) \
+           SDK_INSTALL_PATH=$(SDK_PATH) \
+		   SDK_INSTALL_USER_PATH=$(SDK_USER_PATH) \
+		   SYSTEM_PATH=$(SYSTEM_DIR) \
+		   RECOVERY_DIR=$(RECOVERY_DIR) \
+		   NDK_PATH=$(PREBUILT_NDK_PATH)
+
+
+PREBUILT_JOIN_LIST=$(patsubst %,prebuilt-%,$(PREBUILT_CONFIG_SUBDIRS))
+PREBUILT_JOIN_LIST_CLEAN=$(patsubst %,%-clean,$(PREBUILT_JOIN_LIST))
+PREBUILT_JOIN_LIST_INSTALL=$(patsubst %,%-install,$(PREBUILT_JOIN_LIST))
+
+define ALONE_PREBUILT_BUILD
+	@$(call MESSAGE,"Prebuilt $(1) ...")
+	@test -d $(PREBUILT_DIR)/$(1) || mkdir -p $(PREBUILT_DIR)/$(1)
+	@$(TARGET_MAKE_ENV) $(PREBUILT_SUBDIR_ENV) $(MAKE) -C $(PREBUILT_SOURCE_PATH)/$(1) O=$(PREBUILT_DIR)/$(1) $(2)
+endef
+
+.prebuilt_related_dir:
+	@test -d $(PREBUILT_INSTALL_PATH) || mkdir -p $(PREBUILT_INSTALL_PATH)
+	@test -d $(PREBUILT_DIR) || mkdir -p $(PREBUILT_DIR)
+
+prebuilt: $(PREBUILT_JOIN_LIST)
+
+prebuilt-clean:
+	rm -rf $(PREBUILT_DIR)
+
+$(PREBUILT_JOIN_LIST): .prebuilt_related_dir
+	$(call ALONE_PREBUILT_BUILD,$(patsubst prebuilt-%,%,$@),)
+
+$(PREBUILT_JOIN_LIST_CLEAN):
+	rm -rf $(PREBUILT_DIR)/$(patsubst prebuilt-%-clean,%,$(@))
+
+.PHONY: prebuilt prebuilt-clean
+

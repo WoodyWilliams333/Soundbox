@@ -1,0 +1,1 @@
+/usr/bin/cc -Wall -Wextra -Wno-unused -Werror  CMakeFiles/wolfcrypttest.dir/wolfcrypt/test/test.c.o -o wolfcrypt/test/testwolfcrypt  -Wl,-rpath,/home/dell/TEMP/wolfssl-5.7.6/wolfssl-5.7.6/cmake libwolfssl.so.43.0.0 -lm 

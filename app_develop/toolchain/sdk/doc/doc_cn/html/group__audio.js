@@ -1,0 +1,46 @@
+var group__audio =
+[
+    [ "AUDIO_TYPE_DTMF", "group__audio.html#gaa8243205fc8110ed3ab70c9591fccfe5", null ],
+    [ "AUDIO_TYPE_TTS", "group__audio.html#ga9282faa8cfb8d110fb0920368ba733ba", null ],
+    [ "TONE_Eight", "group__audio.html#ga9500b0eccf3ab344cd54116aff593ad9", null ],
+    [ "TONE_Five", "group__audio.html#gaa6ee46ec4e42822c3f13a3a08ee3788a", null ],
+    [ "TONE_Four", "group__audio.html#ga9749cd385bddacc01b407d2b67d394d3", null ],
+    [ "TONE_letterA", "group__audio.html#gac7948f4404e6bad80c1b18e275439870", null ],
+    [ "TONE_letterB", "group__audio.html#gaea20c0f341b0acb7de69e5c4c14a8882", null ],
+    [ "TONE_letterC", "group__audio.html#gab45aeb1d766c9489c1c506777d4dd6a2", null ],
+    [ "TONE_letterD", "group__audio.html#ga0475bf83f264014a727b2f6c052eb89c", null ],
+    [ "TONE_Nine", "group__audio.html#gac40676badd75ed96d0b86f4e91a36020", null ],
+    [ "TONE_One", "group__audio.html#gac7b7c640464c26e343b76905fbd0efe5", null ],
+    [ "TONE_Pond", "group__audio.html#ga7e696a349ec8759a9ce5dbec91127c48", null ],
+    [ "TONE_Seven", "group__audio.html#ga5cd6320ff6cbe5e1d5941baf2d317021", null ],
+    [ "TONE_Six", "group__audio.html#ga753d00e8af76ff6298749fae437d1879", null ],
+    [ "TONE_Star", "group__audio.html#ga56765556945aa5e21f47b6f2aafa2166", null ],
+    [ "TONE_Three", "group__audio.html#ga047193a988fe2d6b4da7d60c2cda210b", null ],
+    [ "TONE_Two", "group__audio.html#ga787a00c7d1001bd6f5e9f5d7be70031b", null ],
+    [ "TONE_Zero", "group__audio.html#gaa7d37c7a668681aebd7b69e4933a17c8", null ],
+    [ "TTS_MAX_TEXT_LEN", "group__audio.html#gab7365094b14d0ea3fd9e0daa44493874", null ],
+    [ "audio_tip_event_t", "group__audio.html#gaa2d448b4c4d447f3f3e811b99824527c", [
+      [ "AUDIO_TIP_POWER_OFF", "group__audio.html#ggaa2d448b4c4d447f3f3e811b99824527ca319c6d1ca879b86b1f5cb41b99c95d02", null ],
+      [ "AUDIO_TIP_USB_PLUG_IN", "group__audio.html#ggaa2d448b4c4d447f3f3e811b99824527cae364508787bee8a2c2b3d90a424ada0e", null ],
+      [ "AUDIO_TIP_USB_PLUG_OUT", "group__audio.html#ggaa2d448b4c4d447f3f3e811b99824527ca409919de53358079c97c81853bbe65dc", null ],
+      [ "AUDIO_TIP_LOW_BATTERY", "group__audio.html#ggaa2d448b4c4d447f3f3e811b99824527cac12684ae47bf6428fa809f3cb325e1d7", null ]
+    ] ],
+    [ "audioFormat_t", "group__audio.html#ga5adb5c4dd89a03a27d5c1ed62504eb73", [
+      [ "AUDIO_FORMAT_PCM", "group__audio.html#gga5adb5c4dd89a03a27d5c1ed62504eb73a7c07710b4811020347386048fdf8850d", null ],
+      [ "AUDIO_FORMAT_WAVPCM", "group__audio.html#gga5adb5c4dd89a03a27d5c1ed62504eb73a5a6d60f84dd56b1336ffa60322e34497", null ],
+      [ "AUDIO_FORMAT_MP3", "group__audio.html#gga5adb5c4dd89a03a27d5c1ed62504eb73a951b68a216661fb3fd6f139fee670841", null ],
+      [ "AUDIO_FORMAT_AMR", "group__audio.html#gga5adb5c4dd89a03a27d5c1ed62504eb73aec60d475a36fab127c7e8c500fd208bd", null ]
+    ] ],
+    [ "audio_abort", "group__audio.html#gac0229989ab0590c3572e392633348563", null ],
+    [ "audio_get_volume", "group__audio.html#ga58d7a5c04c32d8125edbb90a4dcccdbd", null ],
+    [ "audio_play", "group__audio.html#gaf74f676ae31f82711d3fe0f39d8f7ccc", null ],
+    [ "audio_play_file", "group__audio.html#gac8566fd052d10da8096db2d9a4ebfc4b", null ],
+    [ "audio_play_stream", "group__audio.html#ga902048a1246bb412fd4de429a6be69c1", null ],
+    [ "audio_set_volume", "group__audio.html#gaa755e5c30619b945466e9c96c5319b77", null ],
+    [ "audio_tts_play", "group__audio.html#ga9fc04437772d07ac42c83d74e5f2e326", null ],
+    [ "audio_tts_resume", "group__audio.html#ga4fe4bff0048c7e6aa72504d6a6c09b9e", null ],
+    [ "audio_tts_set_para", "group__audio.html#gaf6e8ae14323aea665397bef31bd83868", null ],
+    [ "audio_tts_suspend", "group__audio.html#ga384f12981db360e1d52e82891371074b", null ],
+    [ "audio_wav_play", "group__audio.html#gaf391ebbc7976268eb9ba98717e937b4d", null ],
+    [ "is_playing_tts", "group__audio.html#ga7047385a22e186474260a951dbf29db7", null ]
+];

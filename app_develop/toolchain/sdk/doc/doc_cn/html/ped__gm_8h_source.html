@@ -1,0 +1,270 @@
+<!-- HTML header for doxygen 1.8.6-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<title>MDP820: ped_gm.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="styleSheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<script type="text/javascript" src="version.js"></script>
+<script type="text/javascript" src="language.js"></script>
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="MDP820.jpg"/></td>
+  <td width="100%" style="padding-left: 0.5em;">
+   <div id="projectname" style="display:table-cell;vertical-align:middle;text-align:center">MDP820
+		<span id="projectnumber">
+			<select>
+				<option value ="8.2.3">8.2.3</option>
+			</select>
+		</span>
+   </div>
+   <div id="projectbrief">MDP820-API</div>
+  </td>
+  <td>
+    <span id="projectlang" style="margin-right: 1em;">
+		<select>
+			<!-- <option value ="ch">中文</option> -->
+			<!-- <option value ="en">English</option> -->
+		</select>
+	</span>
+   </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('ped__gm_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">ped_gm.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#ifndef __PED_GM_H__</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define __PED_GM_H__</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#ifndef CFG_GM_ENABLE</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#define CFG_GM_ENABLE           1</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="group___p_e_d.html#gae2ad3e0e197627e9784956c01243c8fb">   56</a></span>&#160;<span class="preprocessor">#define SM2_PRI_KEY_SIZE        32                                          </span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="group___p_e_d.html#gacabd4ab3a03521115db5bfbbbe28f019">   57</a></span>&#160;<span class="preprocessor">#define SM2_PUB_KEY_X_SIZE      32                                          </span></div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="group___p_e_d.html#ga261103f1cd4412cb5b8622875063d265">   58</a></span>&#160;<span class="preprocessor">#define SM2_PUB_KEY_Y_SIZE      32                                          </span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="group___p_e_d.html#gaf3e36c2df8abe1a521a4fa62cfcc7be0">   59</a></span>&#160;<span class="preprocessor">#define SM2_PUB_KEY_SIZE        (SM2_PUB_KEY_X_SIZE + SM2_PUB_KEY_Y_SIZE)   </span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="group___p_e_d.html#ga3cae8704c0a15c4fdf5e22fccae45aad">   60</a></span>&#160;<span class="preprocessor">#define SM2_SIGN_RESULT_SIZE    64                                          </span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="group___p_e_d.html#gafe773912bb61c5c6602a88caecb8919a">   61</a></span>&#160;<span class="preprocessor">#define SM3_HASH_SIZE           32                                          </span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span><span class="comment">/* @} */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="struct_s_m2___pri_key__t.html">   71</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="group___p_e_d.html#gaffe864d43c69b906915f1d4c5f24351d">   72</a></span>&#160;    <span class="keywordtype">int</span>     <a class="code" href="group___p_e_d.html#gaffe864d43c69b906915f1d4c5f24351d">len</a>;                        </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="group___p_e_d.html#ga308a7c5e3428461ff3da7f48d295a841">   73</a></span>&#160;    uint8_t key[<a class="code" href="group___p_e_d.html#gae2ad3e0e197627e9784956c01243c8fb">SM2_PRI_KEY_SIZE</a>];      </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;} <a class="code" href="struct_s_m2___pri_key__t.html">SM2_PriKey_t</a> ;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="struct_s_m2___pub_key__t.html">   83</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="group___p_e_d.html#ga7c8db61fa9a9c44f06decd29840a21b1">   84</a></span>&#160;    <span class="keywordtype">int</span>     <a class="code" href="group___p_e_d.html#ga7c8db61fa9a9c44f06decd29840a21b1">len</a>;                        </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="group___p_e_d.html#ga26e68826ea927c7f840ec0d2dc635481">   85</a></span>&#160;    uint8_t x[<a class="code" href="group___p_e_d.html#gacabd4ab3a03521115db5bfbbbe28f019">SM2_PUB_KEY_X_SIZE</a>];      </div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="group___p_e_d.html#ga7807720b9d792fd15b1adff45228f11f">   86</a></span>&#160;    uint8_t y[<a class="code" href="group___p_e_d.html#ga261103f1cd4412cb5b8622875063d265">SM2_PUB_KEY_Y_SIZE</a>];      </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;} <a class="code" href="struct_s_m2___pub_key__t.html">SM2_PubKey_t</a> ;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="struct_s_m2___key__t.html">   96</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="group___p_e_d.html#gae8c7628a14d7e421e0dc3b587da9fc7e">   97</a></span>&#160;    <a class="code" href="struct_s_m2___pri_key__t.html">SM2_PriKey_t</a> <a class="code" href="group___p_e_d.html#gae8c7628a14d7e421e0dc3b587da9fc7e">prikey</a>;                </div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="group___p_e_d.html#gae03ab25f427228626972ed3c5e66a77c">   98</a></span>&#160;    <a class="code" href="struct_s_m2___pub_key__t.html">SM2_PubKey_t</a> <a class="code" href="group___p_e_d.html#gae03ab25f427228626972ed3c5e66a77c">pubkey</a>;                </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;} <a class="code" href="struct_s_m2___key__t.html">SM2_Key_t</a> ;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="struct_s_m3___c_o_n_t_e_x_t__t.html">  108</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="group___p_e_d.html#gaeb3d79d4dd67adb9198575f15c0f2f5a">  109</a></span>&#160;    uint8_t context[256];               </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;} <a class="code" href="struct_s_m3___c_o_n_t_e_x_t__t.html">SM3_CONTEXT_t</a>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___p_e_d.html#ga0d6ec74ba0329f4d8a6385a05713e0df">ped_gm_get_random_nr</a>(uint32_t bytes, <span class="keywordtype">void</span> *data);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___p_e_d.html#ga723cd5b49790118b496750656da251b9">ped_sm3_init</a>(<a class="code" href="struct_s_m3___c_o_n_t_e_x_t__t.html">SM3_CONTEXT_t</a> *ctx);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___p_e_d.html#ga72f4992aec4e7884b7f028f9dd84cbf5">ped_sm3_update</a>(<a class="code" href="struct_s_m3___c_o_n_t_e_x_t__t.html">SM3_CONTEXT_t</a> *ctx, <span class="keyword">const</span> <span class="keywordtype">void</span> *data, <span class="keywordtype">int</span> len);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___p_e_d.html#ga3663acdf820ef362712482ffe244a5fc">ped_sm3_final</a>(<a class="code" href="struct_s_m3___c_o_n_t_e_x_t__t.html">SM3_CONTEXT_t</a> *ctx, uint8_t output[<a class="code" href="group___p_e_d.html#gafe773912bb61c5c6602a88caecb8919a">SM3_HASH_SIZE</a>]);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___p_e_d.html#ga680cd696ed5b49a299ee7c991b1b9b88">ped_sm2_genkey</a>(<a class="code" href="struct_s_m2___pri_key__t.html">SM2_PriKey_t</a> *PriKey, <a class="code" href="struct_s_m2___pub_key__t.html">SM2_PubKey_t</a> *PubKey, <span class="keywordtype">int</span> PriKeyExist);</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___p_e_d.html#gada88364a2976571f0602ab143d0c012b">ped_sm2_pubkey_encrypt</a>(<span class="keyword">const</span> <a class="code" href="struct_s_m2___pub_key__t.html">SM2_PubKey_t</a> *PubKey,</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                           uint32_t InLen,   <span class="keyword">const</span> <span class="keywordtype">void</span> *DataIn,</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                           uint32_t *OutLen, <span class="keywordtype">void</span> *DataOut);</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___p_e_d.html#gad4261f1696bbbbdaf950e56e2aeb8c97">ped_sm2_prikey_decrypt</a>(<span class="keyword">const</span> <a class="code" href="struct_s_m2___pri_key__t.html">SM2_PriKey_t</a> *PriKey,</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                           uint32_t InLen,   <span class="keyword">const</span> <span class="keywordtype">void</span> *DataIn,</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                           uint32_t *OutLen, <span class="keywordtype">void</span> *DataOut);</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___p_e_d.html#ga7ebe3818093f459dc77f133c062614c8">ped_sm2_get_hash_value</a>(<span class="keyword">const</span> <a class="code" href="struct_s_m2___pub_key__t.html">SM2_PubKey_t</a> *PubKey,</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                           <span class="keyword">const</span> <span class="keywordtype">void</span> *Msg, uint32_t MsgLen,</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                           <span class="keyword">const</span> <span class="keywordtype">void</span> *ID,  uint32_t IDLen,</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                           <span class="keywordtype">void</span> *sm3value);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___p_e_d.html#ga5617bdf2cca9aef3712379221cc15cc0">ped_sm2_sign</a>(<span class="keyword">const</span> <a class="code" href="struct_s_m2___key__t.html">SM2_Key_t</a> *Sm2Key,</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                 <span class="keyword">const</span> <span class="keywordtype">void</span> *Hash,  uint32_t HashLen,</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;                 <span class="keywordtype">void</span> *pResult,     uint32_t *pResultLen);</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___p_e_d.html#ga1b4cdf8128df1c62e188ff59d7b52400">ped_sm2_sign_by_key</a>(uint32_t KeyIndex,</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">void</span> *Hash,</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                        uint32_t HashLen,</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                        <span class="keywordtype">void</span> *pResult,</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                        uint32_t *pResultLen);</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="preprocessor">#if 0 // unsupported</span></div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160; </div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="keywordtype">int</span> ped_sm2_sign_by_key_ex(uint32_t KeyIndex,</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                           <span class="keyword">const</span> <span class="keywordtype">void</span> *message,</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;                           uint32_t message_len,</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;                           <span class="keyword">const</span> <span class="keywordtype">void</span> *<span class="keywordtype">id</span>,</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;                           uint32_t id_len,</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;                           <span class="keywordtype">void</span> *pResult,</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                           uint32_t *pResultLen);</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160; </div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___p_e_d.html#ga5c1cd8ea9f7f739bc2e76d59f91a3da5">ped_sm2_verify</a>(<span class="keyword">const</span> <a class="code" href="struct_s_m2___pub_key__t.html">SM2_PubKey_t</a> *PubKey,</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;                   <span class="keyword">const</span> <span class="keywordtype">void</span> *Hash,   <span class="keywordtype">int</span> HashLen,</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;                   <span class="keyword">const</span> <span class="keywordtype">void</span> *Sign,   <span class="keywordtype">int</span> SignLen);</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160; </div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="preprocessor">#if 0 // unsupported</span></div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160; </div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="keywordtype">int</span> ped_sm2_private_operation(uint32_t  KeyIndex,</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;                              <span class="keywordtype">void</span>       *output,</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;                              uint32_t   *outputLen,</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;                              <span class="keyword">const</span> <span class="keywordtype">void</span> *input,</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;                              uint32_t    inputLen);</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160; </div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___p_e_d.html#ga6bd412f1f7720a79397daf077af7a684">ped_sm2_export_pub_key</a>(uint32_t KeyIndex,</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;                           <span class="keywordtype">void</span> *PubKey,</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;                           uint32_t *PubKeyLen);</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160; </div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160; </div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;<span class="preprocessor">#if 0 //SM4堆成加解密接口可使用ped_symmetric_crypto接口</span></div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160; </div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;<span class="keywordtype">int</span> ped_sm4_calc(uint32_t       Mode,</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;                 uint8_t        IV[16],</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;                 uint32_t       KeyLen,</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;                 <span class="keyword">const</span> <span class="keywordtype">void</span>    *Key,</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;                 uint32_t       InLen,</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;                 <span class="keyword">const</span> <span class="keywordtype">void</span>    *input,</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;                 <span class="keywordtype">void</span>          *output); <span class="comment">//去掉此接口</span></div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160; </div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *<a class="code" href="group___p_e_d.html#gaf227f633f9e3a201e804d78a450b7ac5">get_mqtt_data</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160; </div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;}</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160; </div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __PED_GM_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="agroup___p_e_d_html_gae2ad3e0e197627e9784956c01243c8fb"><div class="ttname"><a href="group___p_e_d.html#gae2ad3e0e197627e9784956c01243c8fb">SM2_PRI_KEY_SIZE</a></div><div class="ttdeci">#define SM2_PRI_KEY_SIZE</div><div class="ttdef"><b>Definition:</b> ped_gm.h:56</div></div>
+<div class="ttc" id="astruct_s_m2___pub_key__t_html"><div class="ttname"><a href="struct_s_m2___pub_key__t.html">SM2_PubKey_t</a></div><div class="ttdoc">SM2公钥结构定义</div><div class="ttdef"><b>Definition:</b> ped_gm.h:83</div></div>
+<div class="ttc" id="agroup___p_e_d_html_gaf227f633f9e3a201e804d78a450b7ac5"><div class="ttname"><a href="group___p_e_d.html#gaf227f633f9e3a201e804d78a450b7ac5">get_mqtt_data</a></div><div class="ttdeci">unsigned char * get_mqtt_data(void)</div><div class="ttdoc">Get mqtt data.</div></div>
+<div class="ttc" id="astruct_s_m2___key__t_html"><div class="ttname"><a href="struct_s_m2___key__t.html">SM2_Key_t</a></div><div class="ttdoc">SM2密钥结构定义</div><div class="ttdef"><b>Definition:</b> ped_gm.h:96</div></div>
+<div class="ttc" id="agroup___p_e_d_html_ga261103f1cd4412cb5b8622875063d265"><div class="ttname"><a href="group___p_e_d.html#ga261103f1cd4412cb5b8622875063d265">SM2_PUB_KEY_Y_SIZE</a></div><div class="ttdeci">#define SM2_PUB_KEY_Y_SIZE</div><div class="ttdef"><b>Definition:</b> ped_gm.h:58</div></div>
+<div class="ttc" id="agroup___p_e_d_html_ga1b4cdf8128df1c62e188ff59d7b52400"><div class="ttname"><a href="group___p_e_d.html#ga1b4cdf8128df1c62e188ff59d7b52400">ped_sm2_sign_by_key</a></div><div class="ttdeci">int ped_sm2_sign_by_key(uint32_t KeyIndex, const void *Hash, uint32_t HashLen, void *pResult, uint32_t *pResultLen)</div><div class="ttdoc">使用私钥签署消息</div></div>
+<div class="ttc" id="agroup___p_e_d_html_gafe773912bb61c5c6602a88caecb8919a"><div class="ttname"><a href="group___p_e_d.html#gafe773912bb61c5c6602a88caecb8919a">SM3_HASH_SIZE</a></div><div class="ttdeci">#define SM3_HASH_SIZE</div><div class="ttdef"><b>Definition:</b> ped_gm.h:61</div></div>
+<div class="ttc" id="agroup___p_e_d_html_ga5617bdf2cca9aef3712379221cc15cc0"><div class="ttname"><a href="group___p_e_d.html#ga5617bdf2cca9aef3712379221cc15cc0">ped_sm2_sign</a></div><div class="ttdeci">int ped_sm2_sign(const SM2_Key_t *Sm2Key, const void *Hash, uint32_t HashLen, void *pResult, uint32_t *pResultLen)</div><div class="ttdoc">使用私钥签名内容</div></div>
+<div class="ttc" id="agroup___p_e_d_html_ga7ebe3818093f459dc77f133c062614c8"><div class="ttname"><a href="group___p_e_d.html#ga7ebe3818093f459dc77f133c062614c8">ped_sm2_get_hash_value</a></div><div class="ttdeci">int ped_sm2_get_hash_value(const SM2_PubKey_t *PubKey, const void *Msg, uint32_t MsgLen, const void *ID, uint32_t IDLen, void *sm3value)</div><div class="ttdoc">计算SM3的值</div></div>
+<div class="ttc" id="agroup___p_e_d_html_ga723cd5b49790118b496750656da251b9"><div class="ttname"><a href="group___p_e_d.html#ga723cd5b49790118b496750656da251b9">ped_sm3_init</a></div><div class="ttdeci">int ped_sm3_init(SM3_CONTEXT_t *ctx)</div><div class="ttdoc">初始化SM3</div></div>
+<div class="ttc" id="agroup___p_e_d_html_gaffe864d43c69b906915f1d4c5f24351d"><div class="ttname"><a href="group___p_e_d.html#gaffe864d43c69b906915f1d4c5f24351d">SM2_PriKey_t::len</a></div><div class="ttdeci">int len</div><div class="ttdef"><b>Definition:</b> ped_gm.h:72</div></div>
+<div class="ttc" id="astruct_s_m2___pri_key__t_html"><div class="ttname"><a href="struct_s_m2___pri_key__t.html">SM2_PriKey_t</a></div><div class="ttdoc">SM2私钥结构定义</div><div class="ttdef"><b>Definition:</b> ped_gm.h:71</div></div>
+<div class="ttc" id="agroup___p_e_d_html_ga0d6ec74ba0329f4d8a6385a05713e0df"><div class="ttname"><a href="group___p_e_d.html#ga0d6ec74ba0329f4d8a6385a05713e0df">ped_gm_get_random_nr</a></div><div class="ttdeci">int ped_gm_get_random_nr(uint32_t bytes, void *data)</div><div class="ttdoc">通过PED从RNG中获取一系列随机数据</div></div>
+<div class="ttc" id="agroup___p_e_d_html_ga680cd696ed5b49a299ee7c991b1b9b88"><div class="ttname"><a href="group___p_e_d.html#ga680cd696ed5b49a299ee7c991b1b9b88">ped_sm2_genkey</a></div><div class="ttdeci">int ped_sm2_genkey(SM2_PriKey_t *PriKey, SM2_PubKey_t *PubKey, int PriKeyExist)</div><div class="ttdoc">生成SM2密钥对.</div></div>
+<div class="ttc" id="agroup___p_e_d_html_ga72f4992aec4e7884b7f028f9dd84cbf5"><div class="ttname"><a href="group___p_e_d.html#ga72f4992aec4e7884b7f028f9dd84cbf5">ped_sm3_update</a></div><div class="ttdeci">int ped_sm3_update(SM3_CONTEXT_t *ctx, const void *data, int len)</div><div class="ttdoc">输入数据到SM3计算器</div></div>
+<div class="ttc" id="agroup___p_e_d_html_gae03ab25f427228626972ed3c5e66a77c"><div class="ttname"><a href="group___p_e_d.html#gae03ab25f427228626972ed3c5e66a77c">SM2_Key_t::pubkey</a></div><div class="ttdeci">SM2_PubKey_t pubkey</div><div class="ttdef"><b>Definition:</b> ped_gm.h:98</div></div>
+<div class="ttc" id="agroup___p_e_d_html_gae8c7628a14d7e421e0dc3b587da9fc7e"><div class="ttname"><a href="group___p_e_d.html#gae8c7628a14d7e421e0dc3b587da9fc7e">SM2_Key_t::prikey</a></div><div class="ttdeci">SM2_PriKey_t prikey</div><div class="ttdef"><b>Definition:</b> ped_gm.h:97</div></div>
+<div class="ttc" id="agroup___p_e_d_html_ga3663acdf820ef362712482ffe244a5fc"><div class="ttname"><a href="group___p_e_d.html#ga3663acdf820ef362712482ffe244a5fc">ped_sm3_final</a></div><div class="ttdeci">int ped_sm3_final(SM3_CONTEXT_t *ctx, uint8_t output[SM3_HASH_SIZE])</div><div class="ttdoc">得到SM3结果</div></div>
+<div class="ttc" id="agroup___p_e_d_html_ga5c1cd8ea9f7f739bc2e76d59f91a3da5"><div class="ttname"><a href="group___p_e_d.html#ga5c1cd8ea9f7f739bc2e76d59f91a3da5">ped_sm2_verify</a></div><div class="ttdeci">int ped_sm2_verify(const SM2_PubKey_t *PubKey, const void *Hash, int HashLen, const void *Sign, int SignLen)</div><div class="ttdoc">使用sm2公钥验证签名</div></div>
+<div class="ttc" id="agroup___p_e_d_html_gada88364a2976571f0602ab143d0c012b"><div class="ttname"><a href="group___p_e_d.html#gada88364a2976571f0602ab143d0c012b">ped_sm2_pubkey_encrypt</a></div><div class="ttdeci">int ped_sm2_pubkey_encrypt(const SM2_PubKey_t *PubKey, uint32_t InLen, const void *DataIn, uint32_t *OutLen, void *DataOut)</div><div class="ttdoc">使用sm2公钥加密数据</div></div>
+<div class="ttc" id="agroup___p_e_d_html_gad4261f1696bbbbdaf950e56e2aeb8c97"><div class="ttname"><a href="group___p_e_d.html#gad4261f1696bbbbdaf950e56e2aeb8c97">ped_sm2_prikey_decrypt</a></div><div class="ttdeci">int ped_sm2_prikey_decrypt(const SM2_PriKey_t *PriKey, uint32_t InLen, const void *DataIn, uint32_t *OutLen, void *DataOut)</div><div class="ttdoc">使用sm2私钥解密数据</div></div>
+<div class="ttc" id="agroup___p_e_d_html_ga7c8db61fa9a9c44f06decd29840a21b1"><div class="ttname"><a href="group___p_e_d.html#ga7c8db61fa9a9c44f06decd29840a21b1">SM2_PubKey_t::len</a></div><div class="ttdeci">int len</div><div class="ttdef"><b>Definition:</b> ped_gm.h:84</div></div>
+<div class="ttc" id="agroup___p_e_d_html_ga6bd412f1f7720a79397daf077af7a684"><div class="ttname"><a href="group___p_e_d.html#ga6bd412f1f7720a79397daf077af7a684">ped_sm2_export_pub_key</a></div><div class="ttdeci">int ped_sm2_export_pub_key(uint32_t KeyIndex, void *PubKey, uint32_t *PubKeyLen)</div><div class="ttdoc">导出sm2公钥</div></div>
+<div class="ttc" id="astruct_s_m3___c_o_n_t_e_x_t__t_html"><div class="ttname"><a href="struct_s_m3___c_o_n_t_e_x_t__t.html">SM3_CONTEXT_t</a></div><div class="ttdoc">SM3计算上下文结构定义</div><div class="ttdef"><b>Definition:</b> ped_gm.h:108</div></div>
+<div class="ttc" id="agroup___p_e_d_html_gacabd4ab3a03521115db5bfbbbe28f019"><div class="ttname"><a href="group___p_e_d.html#gacabd4ab3a03521115db5bfbbbe28f019">SM2_PUB_KEY_X_SIZE</a></div><div class="ttdeci">#define SM2_PUB_KEY_X_SIZE</div><div class="ttdef"><b>Definition:</b> ped_gm.h:57</div></div>
+<!-- HTML footer for doxygen 1.8.6-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>ped_gm.h</b></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

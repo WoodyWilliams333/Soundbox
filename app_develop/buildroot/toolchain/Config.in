@@ -1,0 +1,21 @@
+menu "Toolchain"
+
+config BR2_TOOLCHAIN_URL
+	string "NDK Toolchain"
+	default "http://10.1.40.23/pub/toolchain/ndk/ndk-toolchains-all.tar.bz2"
+	help
+	  Enable this option if you want to build sp.
+
+config BR2_TOOLCHAIN_INSTALL_PATH
+        string "NDK toolchain install PATH"
+        default "$(WORKSPACE)/toolchain/"
+        help
+            local path of the custom toolchain tarball to install.
+	
+config BR2_TOOLCHAIN_PREFIX
+	string "ARM9-ELF-EABI-THUMB Toolchain prefix for cross compile"
+	default "ndk/toolchains/arm-unknown-eabi-4.9.4/prebuilt/linux-x86/bin/arm-unknown-eabi-"
+	help
+	  Enable this option if you want to build sp.
+
+endmenu

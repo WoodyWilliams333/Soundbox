@@ -1,0 +1,45 @@
+var group___k_e_y =
+[
+    [ "key_info_t", "structkey__info__t.html", [
+      [ "key", "structkey__info__t.html#a491af94f54e8687ac74bda159e11937e", null ],
+      [ "status", "structkey__info__t.html#aa26b5920a0642319d12ff14bbc05d461", null ],
+      [ "tick_time", "structkey__info__t.html#a6ffac120b56a9a0d48746414490f6384", null ]
+    ] ],
+    [ "KEY0", "group___k_e_y.html#ga99719a7cffe5227eea81f3a682cde81d", null ],
+    [ "KEY1", "group___k_e_y.html#gaf709a8c6c00929607ff2bb1f35e14754", null ],
+    [ "KEY2", "group___k_e_y.html#ga28139a703782c6706c0c53bda00572d3", null ],
+    [ "KEY3", "group___k_e_y.html#ga110ce38bd8be5f986c9032a3535156f7", null ],
+    [ "KEY4", "group___k_e_y.html#ga27efa67a078d22ee2b5c207eda70649f", null ],
+    [ "KEY5", "group___k_e_y.html#ga122b3a5677ff81dd1dc52184fa3a2015", null ],
+    [ "KEY6", "group___k_e_y.html#ga594e35e84ada7965ed595f0eaee4467f", null ],
+    [ "KEY7", "group___k_e_y.html#gaa429a9ebd55c13fea342d411da3fe8b3", null ],
+    [ "KEY8", "group___k_e_y.html#ga6fa7f3dd405e2e8dcaf99dfbba51ccee", null ],
+    [ "KEY9", "group___k_e_y.html#ga6a1149b569f439319301264d7dce416d", null ],
+    [ "KEY_ALPHA", "group___k_e_y.html#ga530bffcbdc1ba68a26aa284dce027858", null ],
+    [ "KEY_BACKSPACE", "group___k_e_y.html#ga1e9a449dee19c686a2af4edcdc1a1042", null ],
+    [ "KEY_CAMERA", "group___k_e_y.html#gab77f97b07e337e36ac843645a8ddb1f6", null ],
+    [ "KEY_CANCEL", "group___k_e_y.html#ga563fc53821b2d091de040f4b521614e4", null ],
+    [ "KEY_CLEAR", "group___k_e_y.html#ga00c8ae284557a8ea5095c9103f66141c", null ],
+    [ "KEY_DOWN", "group___k_e_y.html#ga203163bc0189184a1de6ca8d1e53c6bf", null ],
+    [ "KEY_ENTER", "group___k_e_y.html#gabaee5edb96e542206ae6c8102ac228af", null ],
+    [ "KEY_F1", "group___k_e_y.html#ga2772a1f7024ba1fd62e88ec1adb541f8", null ],
+    [ "KEY_F2", "group___k_e_y.html#gae2e2edb31bb7796786da12f85f2d5cd1", null ],
+    [ "KEY_FN", "group___k_e_y.html#gab7e276e185110edf259906d0eefc55c0", null ],
+    [ "KEY_INC", "group___k_e_y.html#gae76e1c49caa99e6966c14f0c5390e1fc", null ],
+    [ "KEY_INVALID", "group___k_e_y.html#ga5d9f4f1e91410b8cc32d378cf5e15c37", null ],
+    [ "KEY_MENU", "group___k_e_y.html#ga711f41a42892af1b1457e0984a7f4ebc", null ],
+    [ "KEY_POWER", "group___k_e_y.html#gac1c4669bb83df8f8617e6d20a62a6c09", null ],
+    [ "KEY_PRNUP", "group___k_e_y.html#gab2c07ea0450a7118a08b0e08c8f06d86", null ],
+    [ "KEY_TIMEOUT", "group___k_e_y.html#gad781242a05d18e0c977f67822dad38a8", null ],
+    [ "KEY_UP", "group___k_e_y.html#gafa086fc916a81e7fd348ec00cf786916", null ],
+    [ "KEY_VOLUME_DEC", "group___k_e_y.html#ga76a99e9a38eaa290eb7ece50fe83912c", null ],
+    [ "KEY_VOLUME_INC", "group___k_e_y.html#gaedbf919edcbd17478d2c74c20a7598d9", null ],
+    [ "key_status_t", "group___k_e_y.html#ga4ac5f77a910e7a7deb581539b835bc0a", [
+      [ "KEY_STATUS_UP", "group___k_e_y.html#gga4ac5f77a910e7a7deb581539b835bc0aa0c08d1bbe30bc2e655b3d1984b845352", null ],
+      [ "KEY_STATUS_DOWN", "group___k_e_y.html#gga4ac5f77a910e7a7deb581539b835bc0aa24f060313dc40563668da6d8a343097a", null ]
+    ] ],
+    [ "kb_flush", "group___k_e_y.html#gaf61e1de94221487eed092e425b735786", null ],
+    [ "kb_get_key_info", "group___k_e_y.html#gae98a24c1c106e0bdba4ce06d7cfc134a", null ],
+    [ "kb_hit", "group___k_e_y.html#ga636b2948220bce8955dbe67a1cae460b", null ],
+    [ "kb_select_key_func", "group___k_e_y.html#gaa8eeb31871252814c41862dd6c8b9622", null ]
+];

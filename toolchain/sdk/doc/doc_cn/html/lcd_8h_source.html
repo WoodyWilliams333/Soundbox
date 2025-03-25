@@ -1,0 +1,274 @@
+<!-- HTML header for doxygen 1.8.6-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<title>MDP820: lcd.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="styleSheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<script type="text/javascript" src="version.js"></script>
+<script type="text/javascript" src="language.js"></script>
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="MDP820.jpg"/></td>
+  <td width="100%" style="padding-left: 0.5em;">
+   <div id="projectname" style="display:table-cell;vertical-align:middle;text-align:center">MDP820
+		<span id="projectnumber">
+			<select>
+				<option value ="8.2.3">8.2.3</option>
+			</select>
+		</span>
+   </div>
+   <div id="projectbrief">MDP820-API</div>
+  </td>
+  <td>
+    <span id="projectlang" style="margin-right: 1em;">
+		<select>
+			<!-- <option value ="ch">中文</option> -->
+			<!-- <option value ="en">English</option> -->
+		</select>
+	</span>
+   </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('lcd_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">lcd.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">// caution, doxygen defgroup header and footer and been both auto generated!!!</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#ifndef __LCD_H__</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#define __LCD_H__</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &lt;sys/types.h&gt;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &quot;linuxtypes.h&quot;</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">/*是否有必要导出到应用层? */</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="group___l_c_d.html#gacc35b52d3f5544d24af364835ee69370">   52</a></span>&#160;<span class="preprocessor">#define     SCREEN_DIR_0            0           </span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="group___l_c_d.html#gab8da4a4ce57ad360e3e897cc3ae0d688">   53</a></span>&#160;<span class="preprocessor">#define     SCREEN_DIR_180          1           </span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group___l_c_d.html#ga20b74c72560277ef9a48be3be86ee22e">   55</a></span>&#160;<span class="preprocessor">#define     SCR_WIDTH               ({uint32_t w;     \</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">                                        uint32_t h;   \</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">                                        uint32_t b;   \</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">                                        lcd_get_size(&amp;h, &amp;w, &amp;b);   \</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">                                        w;})    </span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="group___l_c_d.html#gacdae947e23455a477ebf229add03b2f6">   60</a></span>&#160;<span class="preprocessor">#define     SCR_HEIGHT              ({uint32_t w;     \</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">                                        uint32_t h;   \</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">                                        uint32_t b;   \</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">                                        lcd_get_size(&amp;h, &amp;w, &amp;b);   \</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">                                        h;})    </span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">//  lcdDisplay显示模式</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="group___l_c_d.html#ga9b4d46e117098b618bfd67b7e727557b">   67</a></span>&#160;<span class="preprocessor">#define     DISP_ASCII              (0   )      </span></div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="group___l_c_d.html#ga1160b182606fa551e2f7e98fd4c6ac02">   68</a></span>&#160;<span class="preprocessor">#define     DISP_CFONT              (1&lt;&lt;0)      </span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="group___l_c_d.html#ga7851c617977be604a68f58af153128d0">   69</a></span>&#160;<span class="preprocessor">#define     DISP_CLRLINE            (1&lt;&lt;5)      </span></div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="group___l_c_d.html#ga1eef019e52fcfe961e77ba9e42ad87ad">   70</a></span>&#160;<span class="preprocessor">#define     DISP_MEDIACY            (1&lt;&lt;6)      </span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="group___l_c_d.html#gac254b8d2ecea352d631680143cea1af6">   71</a></span>&#160;<span class="preprocessor">#define     DISP_REVERSE            (1&lt;&lt;7)      </span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="group___l_c_d.html#ga76e023a38aa5ab8d140f2731bf9a5f11">   72</a></span>&#160;<span class="preprocessor">#define     DISP_INVLINE            (1&lt;&lt;4)      </span></div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="group___l_c_d.html#gad9a17552eb25111eb6b42dae532d5e3d">   73</a></span>&#160;<span class="preprocessor">#define     DISP_FLIP               (1&lt;&lt;8)      </span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">//  图标控制</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="group___l_c_d.html#ga85ed1e7ada82ad6f74e852beffdf0e05">   76</a></span>&#160;<span class="preprocessor">#define     ICON_PHONE              1           </span></div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="group___l_c_d.html#ga257418275bae37a1213e9f146b29c266">   77</a></span>&#160;<span class="preprocessor">#define     ICON_SIGNAL             2           </span></div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="group___l_c_d.html#ga486f91f66fe91a441046888af434ab1f">   78</a></span>&#160;<span class="preprocessor">#define     ICON_PRINTER            3           </span></div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="group___l_c_d.html#ga0205eeec45ea4bbb7f4d6721a538cc73">   79</a></span>&#160;<span class="preprocessor">#define     ICON_ICCARD             4           </span></div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="group___l_c_d.html#ga21e3c54e7e0661254462db496b8ff760">   80</a></span>&#160;<span class="preprocessor">#define     ICON_LOCK               5           </span></div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="group___l_c_d.html#gabd9b6ccc54e8ea0a8eae55f6a6057056">   81</a></span>&#160;<span class="preprocessor">#define     ICON_BATTERY            6           </span></div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="group___l_c_d.html#ga27ce9cc119385e56b0575bd505ae9261">   82</a></span>&#160;<span class="preprocessor">#define     ICON_UP                 7           </span></div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="group___l_c_d.html#gac8baaf5b904b0ea729fadf261d40cadb">   83</a></span>&#160;<span class="preprocessor">#define     ICON_DOWN               8           </span></div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="group___l_c_d.html#ga4d36041806fa62ee9059985ec99ccefd">   84</a></span>&#160;<span class="preprocessor">#define     ICON_LINK               9           </span></div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="group___l_c_d.html#ga78774ef1f24e3e3f2a3fd28f05ea3688">   85</a></span>&#160;<span class="preprocessor">#define     ICON_WIFI               10          </span></div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="group___l_c_d.html#ga01e46ca8b11986d08b57f54dad2a83ba">   86</a></span>&#160;<span class="preprocessor">#define     CLOSEICON               0           </span></div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="group___l_c_d.html#ga1b347dc5a51d6d25e533df8c7ae50250">   87</a></span>&#160;<span class="preprocessor">#define     OPENICON                1           </span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#if 0</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">//  串输入控制和返回值</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#define     KB_MAXLEN               256         </span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#define     KB_EN_REVDISP           0x01        </span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#define     KB_EN_FLOAT             0x02        </span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#define     KB_EN_SHIFTLEFT         0x04        </span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#define     KB_EN_CRYPTDISP         0x08        </span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#define     KB_EN_CHAR              0x10        </span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#define     KB_EN_NUM               0x20        </span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#define     KB_EN_BIGFONT           0x40        </span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#define     KB_EN_PRESETSTR         0x80        </span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#define     KB_EN_NEWLINE           0x100       </span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#define     KB_EN_HEX               0x200       </span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">//  预设几组常用的输入控制模式</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#define     KB_BIG_ALPHA            0x1F5       </span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#define     KB_BIG_NUM              0x1E5       </span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#define     KB_BIG_PWD              0x6D        </span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#define     KB_SMALL_ALPHA          0x1B5       </span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#define     KB_SMALL_NUM            0x1A5       </span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#define     KB_SMALL_PWD            0x2D        </span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#define     KB_CANCEL               -1          </span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#define     KB_TIMEOUT              -2          </span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#define     KB_ERROR                -3          </span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">//  背光模式</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="group___l_c_d.html#gafd550fb9f584f2c889abf4ee40571913">  116</a></span>&#160;<span class="preprocessor">#define     LIGHT_OFF_TEMP          0           </span></div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="group___l_c_d.html#ga10660dd5c6a75bbb0cd44e2f7ad40225">  117</a></span>&#160;<span class="preprocessor">#define     LIGHT_TIMER_MODE        1           </span></div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="group___l_c_d.html#ga4b53906e2bf516120042d8bd9acbf417">  118</a></span>&#160;<span class="preprocessor">#define     LIGHT_ON_MODE           2           </span></div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="group___l_c_d.html#ga444a602bd3f29141ba84032df7b099ea">  119</a></span>&#160;<span class="preprocessor">#define     LIGHT_OFF_MODE          3           </span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#ifndef ICON_OFF</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#define ICON_OFF                    0</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#define ICON_ON                     !ICON_OFF</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#define UP_ICON                     122</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#define DOWN_ICON                   126</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="group___l_c_d.html#ga00ebec0c2c58a10c25fd5cd927622b6b">  129</a></span>&#160;<span class="preprocessor">#define LINE_WRAP                   1 </span></div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="group___l_c_d.html#gad4b7d32d38f0144101deb8e733258d68">  130</a></span>&#160;<span class="preprocessor">#define NO_WRAP                     0 </span></div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="group___l_c_d.html#ga938b13e77a04af2fc133803a084d9f1e">  132</a></span>&#160;<span class="preprocessor">#define NTD_ICON_VOLUME             3         </span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">void lcd_set_icon(int icon_no, int mode);</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___l_c_d.html#ga33860761a4a6c972b01e54bdd8617c33">lcd_flip</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___l_c_d.html#gaf3060e89e93c2e50366d6189e5b70296">lcd_flip_sync</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___l_c_d.html#ga96ecf7233cbf43e04dfde5d806085898">lcd_flip_region</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___l_c_d.html#ga0ff77b7b3880bab82d8b15cecfbb3322">lcd_get_size</a>(uint32_t *height, uint32_t *width, uint32_t *bits);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="keyword">const</span> uint8_t *<a class="code" href="group___l_c_d.html#ga569e1a2ee1ce6476bc41c73b62387ac9">lcd_get_buffer_addr</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___l_c_d.html#gaff677d2770f339e972b8a28c1544eb7e">lcd_get_status_bar_height</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="keywordtype">void</span> *<a class="code" href="group___l_c_d.html#gaf84ab53d58c17e1e06292ac13625ffea">lcd_get_sys_font</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160; </div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="keywordtype">void</span> *<a class="code" href="group___l_c_d.html#gaed92b2450858ddc66a6a5b79b2ed928a">lcd_get_sys_paint_full</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="keywordtype">void</span> *<a class="code" href="group___l_c_d.html#ga1b9fb1501abd779783813390176ed58a">lcd_get_sys_paint</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="keywordtype">void</span> * <a class="code" href="group___l_c_d.html#ga99dad40de77dfaaf6e42035fd1c2be36">lcd_get_sys_paint_icon</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___l_c_d.html#gaacc7159edb62d2c398af0737c43767ee">lcd_get_backlight_status</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    </div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___l_c_d.html#ga347a54d610aa145ceb547b10b55fadd0">lcd_set_backlight_time</a>(<span class="keywordtype">int</span> second);</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160; </div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___l_c_d.html#ga57192d3fca68db498f27db602a07fa91">ntd_display</a>(uint32_t mode, <span class="keywordtype">char</span> *str);</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___l_c_d.html#gaecaac9cd3ea8e5df2f00aec61d1edd52">ntd_icon_control</a>(uint32_t icon_idx, uint32_t val);</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160; </div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160; </div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___l_c_d.html#gaab68b9cbef75577682929d7c132891dd">ntd_get_number_count</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160; </div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___l_c_d.html#ga3016bfc53981e02cedb8cb7a95265b4a">ntd_set_disp_map</a>(<span class="keywordtype">char</span> key, uint8_t value);</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160; </div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___l_c_d.html#gac64461fd4047f37f86dd18b43dccdb1e">lcd_set_brightness</a>(<span class="keywordtype">int</span> brightness);</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160; </div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___l_c_d.html#ga7b39ba038e60dff493adae4ecdb80e6f">lcd_set_screen_rotation</a>(<span class="keywordtype">int</span> direction);</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160; </div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;}</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160; </div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/*  __LCD_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="agroup___l_c_d_html_ga57192d3fca68db498f27db602a07fa91"><div class="ttname"><a href="group___l_c_d.html#ga57192d3fca68db498f27db602a07fa91">ntd_display</a></div><div class="ttdeci">void ntd_display(uint32_t mode, char *str)</div><div class="ttdoc">余额显示</div></div>
+<div class="ttc" id="agroup___l_c_d_html_gac64461fd4047f37f86dd18b43dccdb1e"><div class="ttname"><a href="group___l_c_d.html#gac64461fd4047f37f86dd18b43dccdb1e">lcd_set_brightness</a></div><div class="ttdeci">int lcd_set_brightness(int brightness)</div><div class="ttdoc">设置屏幕背光亮度</div></div>
+<div class="ttc" id="agroup___l_c_d_html_gaacc7159edb62d2c398af0737c43767ee"><div class="ttname"><a href="group___l_c_d.html#gaacc7159edb62d2c398af0737c43767ee">lcd_get_backlight_status</a></div><div class="ttdeci">int lcd_get_backlight_status(void)</div><div class="ttdoc">获取LCD背光状态</div></div>
+<div class="ttc" id="agroup___l_c_d_html_ga569e1a2ee1ce6476bc41c73b62387ac9"><div class="ttname"><a href="group___l_c_d.html#ga569e1a2ee1ce6476bc41c73b62387ac9">lcd_get_buffer_addr</a></div><div class="ttdeci">const uint8_t * lcd_get_buffer_addr(void)</div><div class="ttdoc">获取屏幕除状态栏外的显示区域的缓存（起始）地址</div></div>
+<div class="ttc" id="agroup___l_c_d_html_gaed92b2450858ddc66a6a5b79b2ed928a"><div class="ttname"><a href="group___l_c_d.html#gaed92b2450858ddc66a6a5b79b2ed928a">lcd_get_sys_paint_full</a></div><div class="ttdeci">void * lcd_get_sys_paint_full(void)</div><div class="ttdoc">获取系统整屏的paint指针</div></div>
+<div class="ttc" id="agroup___l_c_d_html_ga33860761a4a6c972b01e54bdd8617c33"><div class="ttname"><a href="group___l_c_d.html#ga33860761a4a6c972b01e54bdd8617c33">lcd_flip</a></div><div class="ttdeci">void lcd_flip(void)</div><div class="ttdoc">刷新显示内容</div></div>
+<div class="ttc" id="agroup___l_c_d_html_ga7b39ba038e60dff493adae4ecdb80e6f"><div class="ttname"><a href="group___l_c_d.html#ga7b39ba038e60dff493adae4ecdb80e6f">lcd_set_screen_rotation</a></div><div class="ttdeci">void lcd_set_screen_rotation(int direction)</div><div class="ttdoc">设置屏幕方向</div></div>
+<div class="ttc" id="agroup___l_c_d_html_gaf84ab53d58c17e1e06292ac13625ffea"><div class="ttname"><a href="group___l_c_d.html#gaf84ab53d58c17e1e06292ac13625ffea">lcd_get_sys_font</a></div><div class="ttdeci">void * lcd_get_sys_font(void)</div><div class="ttdoc">获取系统默认显示的font指针</div></div>
+<div class="ttc" id="agroup___l_c_d_html_ga3016bfc53981e02cedb8cb7a95265b4a"><div class="ttname"><a href="group___l_c_d.html#ga3016bfc53981e02cedb8cb7a95265b4a">ntd_set_disp_map</a></div><div class="ttdeci">void ntd_set_disp_map(char key, uint8_t value)</div><div class="ttdoc">设置字符的显示规则，对应规则请看sdk 头文件对应位置的注释 参数value的对应规则如下:</div></div>
+<div class="ttc" id="agroup___l_c_d_html_ga96ecf7233cbf43e04dfde5d806085898"><div class="ttname"><a href="group___l_c_d.html#ga96ecf7233cbf43e04dfde5d806085898">lcd_flip_region</a></div><div class="ttdeci">int lcd_flip_region(void)</div><div class="ttdoc">刷新主屏幕区域(状态栏除外)的显示内容</div></div>
+<div class="ttc" id="agroup___l_c_d_html_ga99dad40de77dfaaf6e42035fd1c2be36"><div class="ttname"><a href="group___l_c_d.html#ga99dad40de77dfaaf6e42035fd1c2be36">lcd_get_sys_paint_icon</a></div><div class="ttdeci">void * lcd_get_sys_paint_icon(void)</div><div class="ttdoc">获取状态栏icon显示的paint指针</div></div>
+<div class="ttc" id="agroup___l_c_d_html_gaab68b9cbef75577682929d7c132891dd"><div class="ttname"><a href="group___l_c_d.html#gaab68b9cbef75577682929d7c132891dd">ntd_get_number_count</a></div><div class="ttdeci">int ntd_get_number_count(void)</div><div class="ttdoc">获取断码屏数字的数量</div></div>
+<div class="ttc" id="agroup___l_c_d_html_gaff677d2770f339e972b8a28c1544eb7e"><div class="ttname"><a href="group___l_c_d.html#gaff677d2770f339e972b8a28c1544eb7e">lcd_get_status_bar_height</a></div><div class="ttdeci">int lcd_get_status_bar_height(void)</div><div class="ttdoc">获取屏幕显示状态栏的高度</div></div>
+<div class="ttc" id="agroup___l_c_d_html_gaf3060e89e93c2e50366d6189e5b70296"><div class="ttname"><a href="group___l_c_d.html#gaf3060e89e93c2e50366d6189e5b70296">lcd_flip_sync</a></div><div class="ttdeci">int lcd_flip_sync(void)</div><div class="ttdoc">同步刷新显示内容</div></div>
+<div class="ttc" id="agroup___l_c_d_html_ga0ff77b7b3880bab82d8b15cecfbb3322"><div class="ttname"><a href="group___l_c_d.html#ga0ff77b7b3880bab82d8b15cecfbb3322">lcd_get_size</a></div><div class="ttdeci">int lcd_get_size(uint32_t *height, uint32_t *width, uint32_t *bits)</div><div class="ttdoc">获取lcd显示区域信息</div></div>
+<div class="ttc" id="agroup___l_c_d_html_gaecaac9cd3ea8e5df2f00aec61d1edd52"><div class="ttname"><a href="group___l_c_d.html#gaecaac9cd3ea8e5df2f00aec61d1edd52">ntd_icon_control</a></div><div class="ttdeci">void ntd_icon_control(uint32_t icon_idx, uint32_t val)</div><div class="ttdoc">控制段码屏的图标</div></div>
+<div class="ttc" id="agroup___l_c_d_html_ga1b9fb1501abd779783813390176ed58a"><div class="ttname"><a href="group___l_c_d.html#ga1b9fb1501abd779783813390176ed58a">lcd_get_sys_paint</a></div><div class="ttdeci">void * lcd_get_sys_paint(void)</div><div class="ttdoc">获取系统默认显示的paint指针</div></div>
+<div class="ttc" id="agroup___l_c_d_html_ga347a54d610aa145ceb547b10b55fadd0"><div class="ttname"><a href="group___l_c_d.html#ga347a54d610aa145ceb547b10b55fadd0">lcd_set_backlight_time</a></div><div class="ttdeci">int lcd_set_backlight_time(int second)</div><div class="ttdoc">设置屏幕背光时间</div></div>
+<!-- HTML footer for doxygen 1.8.6-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>lcd.h</b></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

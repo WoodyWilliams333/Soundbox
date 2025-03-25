@@ -1,0 +1,245 @@
+<!-- HTML header for doxygen 1.8.6-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<title>MDP820: font.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="styleSheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<script type="text/javascript" src="version.js"></script>
+<script type="text/javascript" src="language.js"></script>
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="MDP820.jpg"/></td>
+  <td width="100%" style="padding-left: 0.5em;">
+   <div id="projectname" style="display:table-cell;vertical-align:middle;text-align:center">MDP820
+		<span id="projectnumber">
+			<select>
+				<option value ="8.2.3">8.2.3</option>
+			</select>
+		</span>
+   </div>
+   <div id="projectbrief">MDP820-API</div>
+  </td>
+  <td>
+    <span id="projectlang" style="margin-right: 1em;">
+		<select>
+			<!-- <option value ="ch">中文</option> -->
+			<!-- <option value ="en">English</option> -->
+		</select>
+	</span>
+   </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('font_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">font.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#ifndef __FONT_H__</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#define __FONT_H__</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &quot;stdlib.h&quot;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">//#include &quot;common.h&quot;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">//#include &quot;complier.h&quot;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">//#include &quot;linuxlist.h&quot;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#gafa21a0c719e0566ecfb204c05afdac38">   49</a></span>&#160;<span class="keyword">typedef</span> uint16_t <a class="code" href="group___f_o_n_t.html#gafa21a0c719e0566ecfb204c05afdac38">WCHAR_t</a>;                                   </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga842861cf072bee1c74786937391d659f">   50</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">void</span> *<a class="code" href="group___f_o_n_t.html#ga842861cf072bee1c74786937391d659f">font_t</a>;                                       </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">/* 应用内容，应用层不关心，不必导出到SDK */</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#if 0</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#ifndef ARRAY_SIZE</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#define ARRAY_SIZE(x)                   (sizeof(x) / sizeof((x)[0]))</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#define FONT_LIB_FLAG                   &quot;.FONT.&quot;</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#define PIXTABLE_FLAG                   &quot;FONT HEAD INFO&quot;</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#define FONT_MAX_SUPPORT                64</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#define FONT_LIB_MAX_SUPPORT            128</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#gac74f6efc74e4fa32ca60c1f8cca8b479">   73</a></span>&#160;<span class="preprocessor">#define FONT_COURIER_NEW                &quot;CourierNew&quot;        </span></div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga2d3a5b6a1fa6cc36e094926c1f9c665a">   74</a></span>&#160;<span class="preprocessor">#define FONT_SONG                       &quot;宋体&quot;              </span></div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#gaa5f11f8f07c0eac3516809d0242d344a">   75</a></span>&#160;<span class="preprocessor">#define FONT_IMITATE_SONG               &quot;仿宋&quot;              </span></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga747710abcf9036f6ecb668eba9089e8a">   76</a></span>&#160;<span class="preprocessor">#define FONT_SYSTEM                     &quot;System&quot;            </span></div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga9597463959b63dd1e13461abc5e12a13">   77</a></span>&#160;<span class="preprocessor">#define FONT_ARIAL                      &quot;Arial&quot;             </span></div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga261844fa9fc1e0fc7fc434d5d0fcce59">   78</a></span>&#160;<span class="preprocessor">#define FONT_TAHOMA                     &quot;Tahoma&quot;            </span></div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga682764c30d1490ad9977b5f750e1951d">   79</a></span>&#160;<span class="preprocessor">#define FONT_VERDANA                    &quot;Verdana&quot;           </span></div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga5e21f6916def0692f83feac772ed9a57">   80</a></span>&#160;<span class="preprocessor">#define FONT_DOTUM                      &quot;Dotum&quot;             </span></div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga479defc44a02529ed097097a08b62c5e">   91</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_ASCII              &quot;ASCII&quot;             </span></div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga968160b270f688ac92f848186f2824a6">   92</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_GB2312             &quot;GB2312&quot;            </span></div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga24852e51cd03ab012a3a4fb599280381">   93</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_GB18030            &quot;GB18030&quot;           </span></div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#gaeb3faea4e44b6f2bfe251a6c8075985f">   94</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_VIETNAM            &quot;VIETNAM&quot;           </span></div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga19841a154dcbac6188717e4b38910920">   95</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_ARABIC             &quot;ARABIC&quot;            </span></div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#gad37a52f0c6bce41eeeefec2987756856">   96</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_UNICODE            &quot;UNICODE&quot;           </span></div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga7bb2f12615a64d3f291650b495333c67">   97</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_CP437              &quot;CP437&quot;             </span></div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#gaf7add5db735f9087ca306e7074f980fb">   98</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_CP737              &quot;CP737&quot;             </span></div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga70663eaa03a266e371e88cceb8d3c91e">   99</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_CP775              &quot;CP775&quot;             </span></div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga5308c3c9ed652c465e713c39b31e1147">  100</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_CP850              &quot;CP850&quot;             </span></div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga65965cde09c8786aa3de04a943f0d249">  101</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_CP852              &quot;CP852&quot;             </span></div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#gae7df2201e035881254b406875921b6ba">  102</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_CP855              &quot;CP855&quot;             </span></div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#gad851eba70763e7b189b8e258b0662c4b">  103</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_CP857              &quot;CP857&quot;             </span></div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga71ecb04dcaf0159aaa3b5f5b5a54852f">  104</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_CP860              &quot;CP860&quot;             </span></div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#gaf0f58afb76d63b2dfa893814a41ba8f1">  105</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_CP861              &quot;CP861&quot;             </span></div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga450e8fb640d41505cd77b3d2da7ad067">  106</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_CP862              &quot;CP862&quot;             </span></div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga26fe66a979ed5ef4512cdfcc03fdb36d">  107</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_CP863              &quot;CP863&quot;             </span></div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#gaeea7a8305822e6b2933de1ab63ec8391">  108</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_CP864              &quot;CP864&quot;             </span></div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga317872ae952108606b0c4bcdaf792fa5">  109</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_CP865              &quot;CP865&quot;             </span></div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga47ab831c87dc6d7c2cc3ab36682f3b3d">  110</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_CP866              &quot;CP866&quot;             </span></div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#gab5a5a98e193bbf34373993f058e05e54">  111</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_CP869              &quot;CP869&quot;             </span></div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga6ae5049e5d2f15f9e838e7f93696f97e">  112</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_CP874              &quot;CP874&quot;             </span></div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga0ce2c8246ad9d467151115da2408aebe">  113</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_CP932              &quot;CP932&quot;             </span></div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga707b826702877b11e2e0670d38985471">  114</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_CP936              &quot;CP936&quot;             </span></div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga94944a4cfedc1cac9bdeb39785b44b85">  115</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_CP949              &quot;CP949&quot;             </span></div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga8bd4fafef3ae38b6ec61e2dcbd5be865">  116</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_CP950              &quot;CP950&quot;             </span></div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga3d1806c932969e9b2656c6f6b2ec2b39">  117</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_CP1250             &quot;CP1250&quot;            </span></div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga7057ade360220d2d9ce16f37b5d3af40">  118</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_CP1251             &quot;CP1251&quot;            </span></div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#gacf88bd5272dd9ee3abf66b7ed5a9da55">  119</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_CP1252             &quot;CP1252&quot;            </span></div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga5735a2cb5a443e4d0b1b12d3e1c23289">  120</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_CP1255             &quot;CP1255&quot;            </span></div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#gaea693cda6fe34caa2983b92745d0c124">  121</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_ISO8859_1          &quot;ISO8859-1&quot;         </span></div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga9652feaa02d2e5ef2ce12d096088400f">  122</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_ISO8859_2          &quot;ISO8859-2&quot;         </span></div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#gab4f92674ea762a2dd739e34d58b3e0cc">  123</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_ISO8859_3          &quot;ISO8859-3&quot;         </span></div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga0cafb866283b3d8f93c7194c5d96b1ee">  124</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_ISO8859_4          &quot;ISO8859-4&quot;         </span></div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#gac2308f78b88856805a0c809f93cb04d5">  125</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_ISO8859_5          &quot;ISO8859-5&quot;         </span></div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#gabe0057e553d026802d6a9654cf90f3ff">  126</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_ISO8859_6          &quot;ISO8859-6&quot;         </span></div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#gaa04fd973f30fabb3da5fd6536c3c6045">  127</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_ISO8859_7          &quot;ISO8859-7&quot;         </span></div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga61ef482c4f60c6598c0adb95f050d481">  128</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_ISO8859_8          &quot;ISO8859-8&quot;         </span></div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga511d3191ded5324ab700624cb33937c2">  129</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_ISO8859_9          &quot;ISO8859-9&quot;         </span></div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga43e9193d922ea490271057bd8a5e1fd6">  130</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_ISO8859_10         &quot;ISO8859-10&quot;        </span></div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#gaf80bf343be8dbc3410117048ce918ad9">  131</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_ISO8859_11         &quot;ISO8859-11&quot;        </span></div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga990dbb7f804c9b6e767d99e000b8cbe8">  132</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_ISO8859_12         &quot;ISO8859-12&quot;        </span></div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga345a5469478274f4dfb11be7f563b467">  133</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_ISO8859_13         &quot;ISO8859-13&quot;        </span></div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga5c59fef6aeff3bdf5ac95ba6fce63f66">  134</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_ISO8859_14         &quot;ISO8859-14&quot;        </span></div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga57a63b191b0f407a46becfe9d13ceedf">  135</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_ISO8859_15         &quot;ISO8859-15&quot;        </span></div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga8c8bab5cfc1c94bbd4bbfb33cab8c38f">  136</a></span>&#160;<span class="preprocessor">#define FONT_CHARSET_ISO8859_16         &quot;ISO8859-16&quot;        </span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor"></span> </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="comment">//类型分类定义</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga38ea41101a3bef9b807e41c4c57808f1">  142</a></span>&#160;<span class="preprocessor">#define SET_PRIMARY_FONT                0   </span></div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga93a3be2c5520933a146d9bf5cc3b82d6">  143</a></span>&#160;<span class="preprocessor">#define SET_SECONDARY_FONT              1   </span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor">//Farsi定义</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga7258e8c18cfe619eefd14bbac5f5b8d0">  146</a></span>&#160;<span class="preprocessor">#define TYPE_CONNECTOR                  0   </span></div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#gad8e5fceb30dd0efa3d63f8e6475e9be1">  147</a></span>&#160;<span class="preprocessor">#define TYPE_NONCONNECTOR               1   </span></div>
+<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga7a090d94d7904c241707b65d4275814a">  148</a></span>&#160;<span class="preprocessor">#define TYPE_RHYME                      2   </span></div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#gacb45deff8d246f2e4120a3e5be989b0f">  149</a></span>&#160;<span class="preprocessor">#define TYPE_INTERPUNCTION              3   </span></div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga3e6753ab24644c173ed6edf8c0f490d0">  150</a></span>&#160;<span class="preprocessor">#define TYPE_INTER_NUM                  4   </span></div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga26d8c7975967e3eac4c483dd5f04ad25">  151</a></span>&#160;<span class="preprocessor">#define TYPE_CHAR                       5   </span></div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga079b4656d6747a8d13e9a0a4be2b5d4e">  152</a></span>&#160;<span class="preprocessor">#define TYPE_NUMBERIC                   6   </span></div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga31aed778a843932d8cbe3caac90e1d78">  153</a></span>&#160;<span class="preprocessor">#define TYPE_EXP                        7   </span></div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#gaa47d3c2fa05e95455d76cf052f9cca68">  154</a></span>&#160;<span class="preprocessor">#define TYPE_NONE                       8   </span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor">//Vietnam定义</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#gac0cad4ee9ce9306c6dce6faebf9ca7c7">  157</a></span>&#160;<span class="preprocessor">#define TYPE_NORMOL                     10  </span></div>
+<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga78970bb610db53aa93375f5be221a9f7">  158</a></span>&#160;<span class="preprocessor">#define TYPE_SUB                        11  </span></div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#gacfc9c9df203065f97e80cd864469a686">  159</a></span>&#160;<span class="preprocessor">#define TYPE_SUPER                      12  </span></div>
+<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#gac3b3c20b2aa3e70a5c649454526d93ee">  161</a></span>&#160;<span class="preprocessor">#define BigGlyphMetrics_size            8   </span></div>
+<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga8d22e946af20ae3df02525ebb76c1345">  162</a></span>&#160;<span class="preprocessor">#define SmallGlyphMetrics_size          5   </span></div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#gaaa137b681d7b140d5b9d34e4ec57a100">  163</a></span>&#160;<span class="preprocessor">#define BigGlyphMetrics                 1   </span></div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#gab2570ceb64235a0fc15fdf32afe911c2">  164</a></span>&#160;<span class="preprocessor">#define SmallGlyphMetrics               0   </span></div>
+<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="group___f_o_n_t.html#ga65a9cc9204a918a4c41b699b0495fe1c">  165</a></span>&#160;<span class="preprocessor">#define CHR(ch1,ch2,ch3,ch4)            (((ch1)&lt;&lt;24)|((ch2)&lt;&lt;16)|((ch3)&lt;&lt;8)|(ch4)) </span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="preprocessor">int font_open_user(const char *fontname, const char *charset, int style, int size, font_t *ppfont);</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___f_o_n_t.html#ga0861db489d1899cab68f07791cad7d21">font_close_user</a>(<span class="keyword">const</span> <a class="code" href="group___f_o_n_t.html#ga842861cf072bee1c74786937391d659f">font_t</a> pfont);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___f_o_n_t.html#ga42d5f6629561a06a362e6e1dfc689a7b">font_get_word_info_user</a>(<span class="keyword">const</span> <a class="code" href="group___f_o_n_t.html#ga842861cf072bee1c74786937391d659f">font_t</a> pfont, <span class="keyword">const</span> <span class="keywordtype">char</span> *lpText, <span class="keywordtype">int</span> *width, <span class="keywordtype">int</span> *height);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___f_o_n_t.html#ga3a78e8662c02a0cebdc844c2ab880bb4">font_get_width_user</a>(<span class="keyword">const</span> <a class="code" href="group___f_o_n_t.html#ga842861cf072bee1c74786937391d659f">font_t</a> pfont, <span class="keyword">const</span> <span class="keywordtype">char</span> *lpText, <span class="keywordtype">int</span> len);</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;}</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __FONT_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="agroup___f_o_n_t_html_ga3a78e8662c02a0cebdc844c2ab880bb4"><div class="ttname"><a href="group___f_o_n_t.html#ga3a78e8662c02a0cebdc844c2ab880bb4">font_get_width_user</a></div><div class="ttdeci">int font_get_width_user(const font_t pfont, const char *lpText, int len)</div><div class="ttdoc">获取字符串在指定字库下的宽度</div></div>
+<div class="ttc" id="agroup___f_o_n_t_html_ga0861db489d1899cab68f07791cad7d21"><div class="ttname"><a href="group___f_o_n_t.html#ga0861db489d1899cab68f07791cad7d21">font_close_user</a></div><div class="ttdeci">int font_close_user(const font_t pfont)</div><div class="ttdoc">关闭用户层的字库</div></div>
+<div class="ttc" id="agroup___f_o_n_t_html_ga842861cf072bee1c74786937391d659f"><div class="ttname"><a href="group___f_o_n_t.html#ga842861cf072bee1c74786937391d659f">font_t</a></div><div class="ttdeci">void * font_t</div><div class="ttdef"><b>Definition:</b> font.h:50</div></div>
+<div class="ttc" id="agroup___f_o_n_t_html_gafa21a0c719e0566ecfb204c05afdac38"><div class="ttname"><a href="group___f_o_n_t.html#gafa21a0c719e0566ecfb204c05afdac38">WCHAR_t</a></div><div class="ttdeci">uint16_t WCHAR_t</div><div class="ttdef"><b>Definition:</b> font.h:49</div></div>
+<div class="ttc" id="agroup___f_o_n_t_html_ga42d5f6629561a06a362e6e1dfc689a7b"><div class="ttname"><a href="group___f_o_n_t.html#ga42d5f6629561a06a362e6e1dfc689a7b">font_get_word_info_user</a></div><div class="ttdeci">int font_get_word_info_user(const font_t pfont, const char *lpText, int *width, int *height)</div><div class="ttdoc">获取字符(ASCII字符或汉字)在指定字库下的宽度和高度</div></div>
+<!-- HTML footer for doxygen 1.8.6-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>font.h</b></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>
